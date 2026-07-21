@@ -537,6 +537,140 @@
           ]
         }
       }
+    },
+    "36022": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName017",
+      "RuleExplanationLabel": "SpecialRuleExplanation017",
+      "RuleType": {
+        "5": {
+          "Parameters": [
+            100,
+            100,
+            100,
+            50,
+            100,
+            100
+          ]
+        },
+        "8": {
+          "Parameters": [
+            8,
+            1,
+            60
+          ]
+        }
+      }
+    },
+    "7011": {
+      "ContentsType": 2,
+      "Reset": {
+        "ResetFlag": 1,
+        "PopupLabel": "SpecialRuleReset001"
+      },
+      "RuleType": {
+        "0": {
+          "Parameters": [
+            4500
+          ]
+        }
+      }
+    },
+    "1428": {
+      "ContentsType": 2,
+      "RuleType": {
+        "0": {
+          "Parameters": [
+            4500
+          ]
+        }
+      }
+    },
+    "36023": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName018",
+      "RuleExplanationLabel": "SpecialRuleExplanation018",
+      "RuleType": {
+        "0": {
+          "Parameters": [
+            60000,
+            0
+          ]
+        },
+        "5": {
+          "Parameters": [
+            100,
+            100,
+            100,
+            100,
+            200,
+            100
+          ]
+        },
+        "6": {
+          "Parameters": [
+            100,
+            100,
+            100,
+            100,
+            70,
+            100
+          ]
+        }
+      }
+    },
+    "36024": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName003",
+      "RuleExplanationLabel": "SpecialRuleExplanation003",
+      "RuleType": {
+        "4": {
+          "Parameters": [
+            500
+          ]
+        }
+      }
+    },
+    "36025": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName001",
+      "RuleExplanationLabel": "SpecialRuleExplanation001",
+      "RuleType": {
+        "1": {
+          "Parameters": [
+            500
+          ]
+        }
+      }
+    },
+    "24081": {
+      "ContentsType": 3,
+      "RuleNameLabel": "SpecialRuleName020",
+      "RuleType": {
+        "0": {
+          "Parameters": [
+            1000000,
+            75
+          ]
+        },
+        "6": {
+          "Parameters": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ]
+        },
+        "11": {
+          "Parameters": [
+            0,
+            200,
+            99999
+          ]
+        }
+      }
     }
   }
 }

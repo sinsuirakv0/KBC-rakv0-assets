@@ -35,7 +35,7 @@ gamatoto_connection	データを更新しています・・・
 gamatoto_connection_failed	探検残り時間の取得に失敗しました。通信環境の良い所で再起動してください。
 gamatoto_fraud	端末時間が変更された可能性があります。しばらくの間、探検残り時間が進みません。
 reset_item_reward	<color=255,255,0>報酬リセット！</color><br>報酬アイテムの「取得済み」状態がリセットされました<br>もう一度獲得することができます
-reset_tower_state	<color=255,255,0>報酬・クリア状況リセット！</color><br>報酬アイテムの「取得済み」状態と<br>ステージのクリア状況がリセットされました
+reset_tower_state	<color=255,255,0>クリア状況リセット！</color><br>ステージをクリアすることで<br>報酬を再び獲得できるようになりました
 reward_energy	統率力回復のチャンスにゃ！<br>動画を見て統率力を%d回復しますか？</flash>
 clear_adreward_1	獲得経験値アップのチャンスにゃ!!<br>動画を見て<flash>「経験値${xp}」×2</flash>をゲットしますか？
 reward_freegatya	1日1回、動画視聴で福引ガチャを<br>無料でまわすことができます。<br>動画を視聴しますか？
@@ -68,7 +68,7 @@ everyplay_not_supported	お使いの端末には対応しておりません
 everyplay_no_related_videos	関連動画が見つかりませんでした。
 cat_challenge01	<flash>ネコ道場へようこそ！</flash><br>敵を倒すとスコアが加算される腕試しステージ！<br>何度も挑戦してハイスコアを目指そう！<br>※敵を倒してもお金はもらえないぞ※
 data_download_error_catfood_20000	不正の恐れがあるデータが検出されましたので、セーブデータの引継ぎが出来ません。恐れ入りますが、サポートまでご連絡ください。
-cat_challenge_item	ネコ道場のステージでは<br>「スピードアップ」と「ニャンピュータ」が使い放題にゃ！<br>※速度ブースト発動時はアイテムを消費します
+cat_challenge_item	ネコ道場のステージでは<br>「スピードアップ」と「ニャンピュータ」のみ使用可能にゃ！<br>※ニャンピュータが使い放題となります
 zombie_clear00	<flash>${stageName}をゾンビから守りました！</flash><br>ネコカンを10個ゲットしました！
 zombie_clear01	<flash>%@エリアをゾンビから守りました！</flash><br>%@エリアのお宝発見率アップ！
 zombie_clear02	<flash>日本の全地域をゾンビから守りました！</flash><br>統率力の最大値が${EnergyNum}アップ！
@@ -284,6 +284,15 @@ unlock_popup_message_73	<flash>宇宙編に新たな章が出現！</flash><br>�
 unlock_popup_message_74	<flash>全クリアボーナス！</flash><br>アイテム「%@+%d」<br>ゲット！！
 unlock_popup_message_75	<flash>ステージ選択画面に戻る機能が解放されました！</flash><br>ステージクリア後に<br>ステージ選択画面へ戻ることができます
 unlock_popup_message_76	<flash>「にゃんこメダル」が解放されました！</flash><br>ネコ基地のメニューから<br>確認することができます
+battle_tutorial_0	お金をためてキャラクターを生産し、<br>敵の城を攻め落とそう！
+battle_tutorial_1	右上のアイコンを押すことでスピードアップ！<br>再度タップすることで元のスピードに戻る！
+battle_tutorial_2	左下のボタンをタップすると<br>お金の最大値とたまるスピードがアップ！
+battle_tutorial_3	チャージがたまったら右下のボタンで<br>にゃんこ砲を発射できる！<br>射程内の敵を一気に攻撃しよう！
+tutorial_popup0	このステージは現在挑戦できません<br>まずは次の佐賀県を攻略しよう！
+tutorial_popup1	このステージは現在挑戦できません<br>まずは次の鹿児島県を攻略しよう！
+tutorial_popup2	<color=255,255,0>アイテムの使用方法</color><br>獲得したアイテムを使いたいときは<br>下のアイテムアイコンを選択するのだ！<br>注意：戦闘開始前のみ選択可能
+tutorial_popup3	右の「ロック解除」をタップすれば<br>アイテムの選択状態をキープでき<br>毎回選択する必要がなくなります
+tutorial_popup4	経験値が不足しています。
 Castle_Tutorial00	<flash>オトート開発隊へ入隊おめでとう！</flash><br>ここではにゃんこ城の見た目や性能を<br>拡張開発できるぞ！
 Castle_Tutorial01	にゃんこ城の開発隊長オトートをタップして<br>開発の設計図を選択しよう！
 Castle_Tutorial02	装備変更をタップして<br>にゃんこ城を着せ替えてみよう！
@@ -377,6 +386,7 @@ mission_receive_item_chara	<color=255,255,0>報酬：キャラクター「${char
 mission_receive_item_chara_evolve	<color=255,255,0>報酬：キャラクター「${charaName}」第3形態</color>
 mission_receive_item_chara_evolve2	<color=255,255,0>報酬：キャラクター「${charaName}」第4形態</color>
 mission_receive_item_map	<color=255,255,0>報酬：「${mapName}」挑戦権</color>
+mission_receive_item_money	<color=255,255,0>報酬：${itemName} ${itemNum}円</color>
 mission_receive_bulk	以下のミッション報酬を受け取りました
 mission_receive_bulk_not_all	<color=255,255,0>所持上限を超えるため<br>ミッション報酬を受け取れませんでした</color>
 mission_receive_bulk_not_part	<color=255,255,0>アイテム所持数の上限を超えます</color><br>上限を超えた分は所持数に反映されませんが<br>報酬を受け取ってミッションを達成しますか？
@@ -386,6 +396,7 @@ mission_receive_bulk_item_chara	キャラクター「${charaName}」
 mission_receive_bulk_item_chara_evolve	キャラクター「${charaName}」第3形態
 mission_receive_bulk_item_chara_evolve2	キャラクター「${charaName}」第4形態
 mission_receive_bulk_item_map	「${mapName}」挑戦権
+mission_receive_bulk_item_money	${itemName} ${itemNum}円
 stage_shortcut	「${stageName}」<br>ステージ選択画面に移動しますか？<br>${specialText}
 stage_shortcut_nekovitan	ネコビタンステージの<br>「${stageName}」<br>ステージ選択画面に移動しますか？<br>${specialText}
 stage_shortcut_not_found	<color=255,255,0>まだ解放されていないステージのため<br>ステージへ移動できません</color>
@@ -656,30 +667,33 @@ VAMPErrorCodeNoAdStock	広告在庫がありません
 VAMPErrorCodeAdnetworkError	通信がタイムアウトしました
 VAMPIncentiveError	読み込みエラーのため<br>受け取りに失敗しました
 everyplay_community_url	https://everyplay.com/niyankoda-zhan-zheng/home
-GiftMessage_000	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>第二章を全てクリアすれば、<br>超レアキャラ「ネコヴァルキリー」を<br>手に入れることが出来るぞ
-GiftMessage_001	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>第三章を全てクリアすれば、<br>超レアキャラ「ネコムート」を<br>手に入れることが出来るぞ
+GiftMessage_000	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>第二章を全てクリアすれば、<br>EXキャラ「ネコヴァルキリー」を<br>手に入れることが出来るぞ
+GiftMessage_001	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>第三章を全てクリアすれば、<br>EXキャラ「ネコムート」を<br>手に入れることが出来るぞ
 GiftMessage_002	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>未来編第二章を全てクリアすれば、<br>ＥＸキャラ「ネコヴァルキリー」を第3形態<br>に進化することが出来るぞ
-GiftMessage_003	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>滋賀県をクリアすれば、<br>超レアキャラ「マメマメにゃんこ」を<br>手に入れることが出来るぞ
-GiftMessage_004	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>第一章をクリアすれば、<br>超レアキャラ「もねこ」を<br>手に入れることが出来るぞ
-GiftMessage_005	<flash>ステージクリアボーナス１</flash><br>「脱獄トンネル」最終ステージクリアで<br>超レアキャラ「ウルフとウルルン」を<br>まれに手に入れることが出来るぞ
-GiftMessage_006	<flash>ステージクリアボーナス２</flash><br>「終わりを告げる夜」最終ステージクリアで<br>超レアキャラ「コニャンダム」を<br>まれに手に入れることが出来るぞ
+GiftMessage_003	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>滋賀県をクリアすれば、<br>EXキャラ「マメマメにゃんこ」を<br>手に入れることが出来るぞ
+GiftMessage_004	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>第一章をクリアすれば、<br>EXキャラ「もねこ」を<br>手に入れることが出来るぞ
+GiftMessage_005	<flash>ステージクリアボーナス${progressText}</flash><br>「脱獄トンネル」最終ステージクリアで<br>EXキャラ「ウルフとウルルン」を<br>たまに手に入れることが出来るぞ
+GiftMessage_006	<flash>ステージクリアボーナス${progressText}</flash><br>「終わりを告げる夜」最終ステージクリアで<br>EXキャラ「コニャンダム」を<br>たまに手に入れることが出来るぞ
 GiftMessage_007	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>未来編第三章を全てクリアすれば、<br>ＥＸキャラ「ネコムート」を第3形態<br>に進化することが出来るぞ
-GiftMessage_008	<flash>ステージクリアボーナス３</flash><br>「脆弱性と弱酸性」最終ステージクリアで<br>超レアキャラ「ネコずきんミーニャ」を<br>まれに手に入れることが出来るぞ
-GiftMessage_009	<flash>ステージクリアボーナス４</flash><br>「ハリーウッド帝国」最終ステージクリアで<br>超レアキャラ「宮木武蔵」を<br>まれに手に入れることが出来るぞ
+GiftMessage_008	<flash>ステージクリアボーナス${progressText}</flash><br>「脆弱性と弱酸性」最終ステージクリアで<br>EXキャラ「ネコずきんミーニャ」を<br>たまに手に入れることが出来るぞ
+GiftMessage_009	<flash>ステージクリアボーナス${progressText}</flash><br>「ハリーウッド帝国」最終ステージクリアで<br>EXキャラ「宮木武蔵」を<br>たまに手に入れることが出来るぞ
 GiftMessage_010	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>宇宙編第一章を全てクリアすれば、<br>謎のごほうびを<br>手に入れることが出来るぞ
 GiftMessage_011	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>未来編第一章を全てクリアすれば、<br>「にゃんコンボ」に新たな力を<br>加えることが出来るぞ
-GiftMessage_012	<flash>ステージクリアボーナス５</flash><br>「真・伝説のはじまり」最終ステージクリアで<br>超レアキャラ「ぶんぶんネコライダー」を第3形態<br>に進化することが出来るぞ
+GiftMessage_012	<flash>ステージクリアボーナス</flash><br>「真・伝説のはじまり」最終ステージクリアで<br>EXキャラ「ぶんぶんネコライダー」を第3形態<br>に進化することが出来るぞ
 GiftMessage_013	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>宇宙編第二章を全てクリアすれば、<br>謎のごほうびを<br>手に入れることが出来るぞ
 GiftMessage_014	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>宇宙編第三章を全てクリアすれば、<br>謎のごほうびを<br>手に入れることが出来るぞ
 GiftMessage_015	<flash>☆★☆　ステージクリアボーナス　☆★☆</flash><br>宇宙編第三章で謎の生命体を倒せば、<br>謎のごほうびを<br>手に入れることが出来るぞ
-GiftMessage_016	<flash>ステージクリアボーナス６</flash><br>「魂底からの帰化」最終ステージクリアで<br>超レアキャラ「土偶戦士ドグ丸」を<br>まれに手に入れることが出来るぞ
-GiftMessage_017	<flash>ステージクリアボーナス７</flash><br>「ところてん金鉱」最終ステージクリアで<br>超レアキャラ「フェンリルとウルス」を<br>まれに手に入れることが出来るぞ
+GiftMessage_016	<flash>ステージクリアボーナス${progressText}</flash><br>「魂底からの帰化」最終ステージクリアで<br>EXキャラ「土偶戦士ドグ丸」を<br>たまに手に入れることが出来るぞ
+GiftMessage_017	<flash>ステージクリアボーナス${progressText}</flash><br>「ところてん金鉱」最終ステージクリアで<br>EXキャラ「フェンリルとウルス」を<br>たまに手に入れることが出来るぞ
 GiftMessage_018	<flash>「古代研究所」ステージレベル4に謎の生命体が出現！</flash>
-GiftMessage_019	<flash>ステージクリアボーナス８</flash><br>「古代樹の迷宮」最終ステージクリアで<br>超レアキャラ「古神面ドロン」を<br>まれに手に入れることが出来るぞ
-GiftMessage_020	<flash>ステージクリアボーナス９</flash><br>「千年獣の霊峰」最終ステージクリアで<br>超レアキャラ「古獣ナーラ」を<br>まれに手に入れることが出来るぞ
-GiftMessage_021	<flash>ステージクリアボーナス１０</flash><br>「枯れた思考の庭」最終ステージクリアで<br>超レアキャラ「論の賢者ソラクティス」を<br>まれに手に入れることが出来るぞ
+GiftMessage_019	<flash>ステージクリアボーナス${progressText}</flash><br>「古代樹の迷宮」最終ステージクリアで<br>EXキャラ「古神面ドロン」を<br>たまに手に入れることが出来るぞ
+GiftMessage_020	<flash>ステージクリアボーナス${progressText}</flash><br>「千年獣の霊峰」最終ステージクリアで<br>EXキャラ「古獣ナーラ」を<br>たまに手に入れることが出来るぞ
+GiftMessage_021	<flash>ステージクリアボーナス${progressText}</flash><br>「枯れた思考の庭」最終ステージクリアで<br>EXキャラ「論の賢者ソラクティス」を<br>たまに手に入れることが出来るぞ
 GiftMessage_022	<flash>「古代神樹」ステージレベル4に謎の敵が出現！</flash>
-GiftMessage_023	<flash>ステージクリアボーナス１１</flash><br>「万物誘う真理の大渦」最終ステージクリアで<br>超レアキャラ「理の賢者ニュトーン」を<br>まれに手に入れることが出来るぞ
+GiftMessage_023	<flash>ステージクリアボーナス${progressText}</flash><br>「万物誘う真理の大渦」最終ステージクリアで<br>EXキャラ「理の賢者ニュトーン」を<br>たまに手に入れることが出来るぞ
+GiftMessage_024	<flash>ステージクリアボーナス${progressText}</flash><br>「変異を伴う継承の楽園」最終ステージクリアで<br>EXキャラ「淘の賢者ダーヴィン」を<br>たまに手に入れることが出来るぞ
+GiftMessage_progress_0	（あと${mapNum}マップ）
+GiftMessage_progress_1	（挑戦可能マップ）
 LvUpLimit_txt	パワーアップ可能なレベル上限に達しています
 LvUpLimitMax_txt	現バージョンでのレベル上限に達しています
 option_qrcode_title	「マイＱＲコード」
@@ -716,7 +730,7 @@ nekovitan_shop1	ネコビタンを購入するために<br>アイテムショッ
 kill_application	アプリを終了しますか？
 receive_item_none_BoxText	※受信BOXには受け取れるアイテムがありません。
 nyanko_club_gift_txt_clubitemID0	<flash>にゃんこクラブゴールド会員<br>レアチケット1枚プレゼント！</flash><br>
-nyanko_club_gift_txt_clubitemID1	<flash>にゃんこクラブゴールド会員<br>30日間スピードアップが使い放題！</flash><br>
+nyanko_club_gift_txt_clubitemID2	<flash>にゃんこクラブゴールド会員<br>30日間戦闘スキップに使うニャンピュータの数が1個に！</flash><br>
 nyanko_club_expiration_date_txt1	にゃんこクラブゴールド会員の有効期限が<br>あと%d日になりました<br>ゴールド会員の継続はにゃんこクラブより可能です
 nyanko_club_expiration_date_txt2	にゃんこクラブのゴールド会員の有効期限が<br>まもなく終わります<br>ゴールド会員の継続はにゃんこクラブより可能です
 nyanko_club_error_time_manipulation_txt1	端末時刻にずれが発生しています。※復帰まで最大で2日程度かかる場合もございます。
@@ -814,6 +828,7 @@ potential_skill_name65	小烈波
 potential_skill_name66	超賢者特効
 potential_skill_name67	爆波攻撃
 potential_skill_name68	烈波カウンター
+potential_skill_name69	爆波ダメージ無効
 return_stageselect_error00	このイベント期間が終了しました！<br>ネコ基地に戻ります！
 return_stageselect_error01	このイベントはこれ以上挑戦できません！<br>ネコ基地に戻ります！
 return_stageselect_error02	未受取の報酬があります！<br>ネコ基地へ移動します！
@@ -844,8 +859,7 @@ legend_sns	我らが「にゃんこ軍団」がレジェンドクエストの%@�
 nekodojo_sns	我らが「にゃんこ軍団」がネコ道場%@で、%d点を獲得しました。%s %s
 ranking_sns	我らが「にゃんこ軍団」がランキングステージ %@で、%d点を獲得しました。%s %s
 challenge_sns	我らが「にゃんこ軍団」がチャレンジバトル %@で、%d点を獲得しました。%s %s
-tower_sns	我らが「にゃんこ軍団」がにゃんこ塔の%@を侵略しました。%s %s
-tower_sns_006	我らが「にゃんこ軍団」が異界にゃんこ塔の%@を侵略しました。%s %s
+tower_sns	我らが「にゃんこ軍団」が%sの%@を侵略しました。%s %s
 sns_txt1	我らが「にゃんこ軍団」が%@を侵略しました。%s %s
 zombie_sns	我らが「にゃんこ軍団」が%@をゾンビから守りました。%s %s
 Invasion_sns	我らが「にゃんこ軍団」が謎の生命体から宇宙を守りました。%s %s
@@ -865,7 +879,7 @@ slot_SNS_003	#にゃんこスロット でネコカン%d個ゲットしたにゃ
 slot_SNS_004	#にゃんこスロット でネコカン%d個ゲットしたにゃ！<br><br>#にゃんこ大戦争 #11と1_2周年 #わんわんアニバーサリー
 slot_SNS_005	#にゃんこスロットⅡ でネコカン%d個ゲットしたにゃ！<br><br>#にゃんこ大戦争 #12と1_2周年
 slot_SNS_006	#にゃんこスロットⅡ でネコカン%d個ゲットしたにゃ！<br><br>#にゃんこ大戦争
-slot_SNS_007	#にゃんこスロットⅡ でネコカン%d個ゲットしたにゃ！<br><br>#にゃんこ大戦争 #13周年
+slot_SNS_007	#にゃんこスロットⅡ でネコカン%d個ゲットしたにゃ！<br><br>#にゃんこ大戦争 #13と1_2周年
 medal_txt1	%s獲得！
 medal_txt2	メダル%d個獲得！
 medal_unknown	「？？？」<br>？？？
@@ -897,6 +911,7 @@ slot_clearteam_txt_3	編成画面で「前回クリア時の編成を利用す�
 slot_clearteam_error	<color=255,255,0>このステージには前回クリア時の編成がありません</color>
 slot_copy_clearteam	前回クリアした編成をコピーしました<br>コピー先のスロットに移動して<br>「置き換え」を選んでください
 slot_paste_clearteam	前回クリアした編成に置き換えます<br>よろしいですか？
+slot_explanation	ステージレベル4クリア時の編成は<br>他のステージレベルとは別に保存されます<br>ステージレベル4のクリア履歴がある場合<br>その編成を利用できます
 hidden_rarity_0	粗悪な地図
 hidden_rarity_1	普通の地図
 hidden_rarity_2	最高の地図
@@ -1052,14 +1067,15 @@ stageskip_message_6	大天使エクスエル強襲 ${stageName1}をクリア！<
 stageskip_message_7	ビッグペンZ強襲 ${stageName1}をクリア！<br>次回の挑戦では<flash>${stageName2}</flash>からスタートできます
 stageskip_message_8	オーメンズ強襲 ${stageName1}をクリア！<br>次回の挑戦では<flash>${stageName2}</flash>からスタートできます
 stageskip_message_9	大型土器ダイハニワン強襲 ${stageName1}をクリア！<br>次回の挑戦では<flash>${stageName2}</flash>からスタートできます
+stageskip_message_10	黄金にゃんこ塔 ${stageName1}をクリア！<br>次回の挑戦では<flash>${stageName2}</flash>からスタートできます
 unlock_popup_message_106	<flash>宇宙編全クリアボーナス！</flash><br>神さまを倒したことで「ネコ超人」が出現しました！</flash><br>にゃんこガチャ＋から入手可能です
 unlock_popup_message_107	<flash>「にゃんこガチャ+」が解放されました！</flash><br>にゃんこ貯蔵庫へ保存できるキャラクター 64体 → <color=255,255,0>128体</color><br>基本キャラクターの交換NP 1 → <color=255,255,0>2</color>
-scratch_SNS_000	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2024
+scratch_SNS_000	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2026
 scratch_SNS_001	#新春にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！！<br>参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #新春にゃんこスクラッチ
 scratch_SNS_002	#にゃんこ学園購買部特製スクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加してたくさんネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #トキメキにゃんこ学園
 scratch_SNS_003	#ぷちにゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>今すぐ参加してネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #ぷちにゃんこスクラッチ
 scratch_SNS_004	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2025
-scratch_SNS_005	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2025
+scratch_SNS_005	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2026
 unlock_popup_message_108	<flash>ネコビタンステージ「ブルーインパクト」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
 unlock_popup_message_109	<flash>ネコビタンステージ「狂乱のもねこ降臨」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
 unlock_popup_message_110	<flash>ネコビタンステージ「緊急暴風警報」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
@@ -1110,6 +1126,9 @@ unlock_popup_message_154	<flash>「覚醒のネコムート」の本能が解放
 unlock_popup_message_155	<flash>「メタフィリバスター」の本能が解放！</flash><br>謎の生命体を倒し新たな力に目覚めました<br>第3形態に進化してLv30到達後、<br>パワーアップ画面から能力を解放/強化できます
 unlock_popup_message_156	<flash>宇宙編3章に謎の生命体が襲来！</flash>
 unlock_popup_message_157	<flash>「超・神さまゴールデン」の本能が解放！</flash><br>やぁ！元気してる？<br>僕が強くなるところ見たいよね？<br>パワーアップ画面で今すぐチェケラ！
+unlock_popup_message_158	<flash>新たなキャラクターが出現しました！</flash><br>パワーアップ画面から取得可能です
+unlock_popup_message_159	※ポップアップを表示しないためテキスト記載なし※
+unlock_popup_message_160	<flash>EXキャラクターに「神さま」が出現しました！</flash><br>パワーアップ画面から取得可能です<br>※戦闘で困った時、神頼みできるかも...
 drop_info_single	<color=0,0,0>このステージで<br>1回だけドロップする報酬</color><br><color=255,0,0>${dropContents}</color><color=0,0,0>は<br>${statusWord}</color>
 drop_info_multi	<color=0,0,0>このステージで<br>1回だけドロップする報酬</color><br><color=255,0,0>${dropContents}</color><color=0,0,0>等は<br>${statusWord}</color>
 drop_contents1	${itemName}+${itemNum}
@@ -1118,7 +1137,8 @@ drop_contents3	「${charaName}」第3形態
 drop_contents4	「${charaName}」第4形態
 status_acquire	すでに取得済みです
 status_unacquired	まだ取得していません
-boost_message	<color=255,0,255>スピードアップ</color><br><color=0,0,0>アイテム消費で速度ブースト発動<br>戦闘中アイテムをタップして<br>OFF・2倍速・3倍速に切り替え可能</color>
+speedup_message	<color=0,0,0>スピードアップ<br>戦闘スピードが2倍速になります<br>戦闘中アイコンをタップすれば<br>ON・OFFが可能</color>
+boost_message	<color=255,0,255>スピードアップ</color><br><color=0,0,0>戦闘スピードが2倍速になります（使い放題）<br>アイテム消費で3倍速のブースト発動<br>戦闘中アイコンをタップして<br>OFF・2倍速・3倍速に切り替え可能</color>
 AccountDelete_error01	削除コードの作成に失敗しました。<br>端末の通信状況を確認してください。
 AccountDelete_error02	アカウントの削除に失敗しました。<br>端末の通信状況を確認してください。
 AccountDelete_error03	削除コードの有効期限が切れています。<br>最初からやり直してください。
@@ -1131,7 +1151,7 @@ labyrinth_start	地底迷宮イベント開催中！<br>（イベント開催期
 labyrinth_announce1	地底迷宮イベント結果発表<br>（イベント開催期間：${startDate} ～ ${endDate}）<br>最終順位：上位 ${rankingNum}％！<br>報酬を受信BOXから受け取ることができます<br>（受け取り期間は１か月間です）
 labyrinth_announce2	地底迷宮イベント結果発表<br>（イベント開催期間：${startDate} ～ ${endDate}）<br>最終順位：上位 ${rankingNum}％！<br>今回は報酬圏外にゃ<br>つぎも頑張るにゃ～
 labyrinth_announce3	地底迷宮イベント終了！<br>つぎの挑戦を待ってるにゃ～！
-labyrinth_challenge_item	地底迷宮のステージでは<br>「スピードアップ」と「ニャンピュータ」が使い放題にゃ！<br>※速度ブースト発動時はアイテムを消費します
+labyrinth_challenge_item	地底迷宮のステージでは<br>「スピードアップ」と「ニャンピュータ」のみ使用可能にゃ！<br>※ニャンピュータが使い放題となります
 labyrinth_play_error1	<color=255,255,0>地底迷宮ではクリア済みのステージに挑戦できません</color>
 labyrinth_play_error2	<color=255,255,0>挑戦に必要なキャラクターが編成されていません<br>編成できるキャラクターを10体編成してください</color>
 labyrinth_slot_error	<color=255,255,0>地底迷宮では前回クリア時の編成は利用できません</color>
@@ -1183,6 +1203,7 @@ item_pack_name_88	限定キャラクター「チョコサプネコC」購入
 item_pack_name_89	プラチナチケット ダブル販売 1回目 購入
 item_pack_name_90	プラチナチケット ダブル販売 2回目 購入
 item_pack_name_91	コラボ記念パック 購入
+item_pack_name_92	限定キャラクター「パックマン」購入
 ScatCPU_info1	${itemName1}を<flash>${itemNum1}個</flash>使用して<br>戦闘スキップを開始しますか？<br>（本日のスキップ可能回数残り ${itemNum2}回）
 ScatCPU_info2	<flash>ニャンピュータ使い放題中はニャンピュータの消費なし！</flash><br>戦闘スキップを開始しますか？<br>（本日のスキップ可能回数残り ${itemNum}回）
 ScatCPU_XPdrop	<color=255,255,0>完全勝利!!</color><br>ステージクリア経験値<flash>ゲット！！</flash><br>「経験値 ${itemNum}」
@@ -1219,6 +1240,9 @@ SpecialRuleName013	二束三文
 SpecialRuleName014	給料日
 SpecialRuleName015	大勝負
 SpecialRuleName016	ハイスピード
+SpecialRuleName017	半額セット 激レア
+SpecialRuleName018	物価高騰 超激レア
+SpecialRuleName020	100万使い切り
 SpecialRuleExplanation000	【おこづかい制】<br>最初にお金をたくさんもらえます<br>ただし、時間経過や敵の撃破などで<br>所持金が増えることはありません
 SpecialRuleExplanation001	【生産スピード統一】<br>すべての味方キャラクターの<br>生産スピードが同じになり固定されます
 SpecialRuleExplanation002	【レア度代表戦】<br>各レア度ごとに1体ずつしか生産できません<br>編成は自由に行う事ができます
@@ -1236,18 +1260,24 @@ SpecialRuleExplanation013	【二束三文】<br>すべての味方キャラク�
 SpecialRuleExplanation014	【給料日】<br>最初にお金をたくさんもらえます<br>ただし、時間経過や敵の撃破などで<br>所持金が増えることはありません<br>さらにレア度：超激レアの生産時間が20%に短縮されます
 SpecialRuleExplanation015	【大勝負】<br>超激レアのコストが２倍になりますが<br>超激レアキャラクター生産時の出現数が3体になります
 SpecialRuleExplanation016	【ハイスピード】<br>すべてのキャラクターの移動速度が上昇し<br>味方キャラクターの生産コストと生産時間が短縮されます
+SpecialRuleExplanation017	【半額セット 激レア】<br>激レアの生産コストが50％OFFになり<br>生産時の出現数が2体になります
+SpecialRuleExplanation018	【物価高騰 超激レア】<br>最初にお金をたくさんもらえますが<br>時間経過と敵撃破で所持金が増えません<br>加えて、超激レアのコストが2倍になります
 BonusNameLabel000	攻撃力ダウン
 BonusNameLabel001	ふっとばす
-BonusNameLabel002	めっぽう強い
+BonusNameLabel002	めっぽう強い（攻）
 BonusNameLabel003	動きを止める
 BonusNameLabel004	超ダメージ
 BonusNameLabel005	動きを遅くする
+BonusNameLabel006	めっぽう強い（防）
+BonusNameLabel007	打たれ強い
 BonusExplanationLabel000	【スコアボーナス：攻撃力ダウン】<br> 敵に攻撃力ダウンを付与する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel001	【スコアボーナス：ふっとばす】<br> 敵をふっとばす<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
-BonusExplanationLabel002	【スコアボーナス：めっぽう強い】<br> めっぽう強いキャラクターで対象属性の敵を攻撃する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
+BonusExplanationLabel002	【スコアボーナス：めっぽう強い（攻）】<br> めっぽう強いキャラクターで対象属性の敵を攻撃する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel003	【スコアボーナス：動きを止める】<br> 敵に動きを止めるを付与する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel004	【スコアボーナス：超ダメージ】<br> 超ダメージキャラクターで対象属性の敵を攻撃する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel005	【スコアボーナス：動きを遅くする】<br> 敵に動きを遅くするを付与する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
+BonusExplanationLabel006	【スコアボーナス：めっぽう強い（防）】<br> めっぽう強いキャラクターで対象属性の敵から攻撃を受ける<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
+BonusExplanationLabel007	【スコアボーナス：打たれ強い】<br> 打たれ強いキャラクターで対象属性の敵から攻撃を受ける<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 Account_iOS13_error	iOS 13未満の方はAppleでサインインがご利用頂けません
 treasure_get	ダブルタップでゲットできるステージへ移動します
 treasure_geterror	ステージが解放されていないため移動できません
@@ -1309,6 +1339,7 @@ leadershipreturn_pop3	敗北と戦闘離脱時に<br>統率力が戻るステー
 leadershipreturn_pop4	敗北と戦闘離脱時に<br>統率力が戻るステージです
 equipment_filteringMiss	<color=255,255,0>絞り込みの結果、該当する本能玉は<br>見つかりませんでした。</color>
 SpecialRuleReset000	<color=255,255,0>軍資金リセット！</color><br>キャラクターの生産に使う軍資金の<br>所持金額をリセットしました
+SpecialRuleReset001	<color=255,255,0>経費リセット！</color><br>キャラクターの生産に使う経費の<br>所持金額をリセットしました
 slot_autoset_error_1	<color=255,255,0>ステージに出現する敵キャラクターが未確認です</color>
 slot_autoset_error_2	<color=255,255,0>出撃可能なキャラクターが見つかりませんでした。</color>
 slot_autoset_error_3	<color=255,255,0>変更可能なキャラクターがいません</color>
@@ -1338,3 +1369,6 @@ clear_count_reward_title	クリア回数報酬
 clear_count_reward_title2	クリア
 update_version_guide	<color=255,255,0>新しいバージョンが利用可能です。ストアを開きますか？</color><br>※イベント内容が表示されない場合、アプリを<br>最新版にアップデートする必要があります。
 Recommended_levelup_tutorial1	毎週水曜にゃんこDAYで選ばれたキャラは<br>通常より少ないXPで<br>パワーアップすることができます
+loginbonus_highlight	目玉報酬ゲットまで<br>あと${dayNum}日
+Stage_lock00	アイテムが不足しています。
+Stage_battle00	戦闘を中止しますか？<br>今ならアイテムが戻ります（10秒以内）
