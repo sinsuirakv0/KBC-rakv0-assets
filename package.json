@@ -1,0 +1,9 @@
+{
+  "name": "kbc-rakv0-assets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "assets:classify": "node scripts/classify-assets.mjs",
+    "test": "node --test tests/classify-assets.test.mjs"
+  }
+}

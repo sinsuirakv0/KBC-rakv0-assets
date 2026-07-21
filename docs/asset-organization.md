@@ -5,32 +5,9 @@ whose names contain `__v<version>-<source>` are not retained.
 
 ## Directory layout
 
-Every asset is stored below its source group:
+Assets are organized by meaning rather than by the encrypted pack that carried them. Units and enemies have dedicated entity trees, while shared assets use semantic groups such as `game-data`, `maps`, `images`, `animation-assets`, and `resources`.
 
-- `data`
-- `download`
-- `image`
-- `image-data`
-- `map`
-- `number`
-- `resource`
-- `unit`
-
-Within a group, use the following structure:
-
-`<group>/<category>/<extension>/<filename>`
-
-`category` is derived from the base filename by lowercasing it, removing a
-trailing `__server-*` source suffix, replacing every consecutive run of digits
-with `_`, then trimming leading and trailing `_` characters.
-
-Examples:
-
-- `MapData_000.csv` -> `data/mapdata/csv/MapData_000.csv`
-- `battle_soul_000.maanim` -> `image-data/battle_soul/maanim/battle_soul_000.maanim`
-- `img009_C_013__server-EImageServer.png` -> `image/img__c/png/img009_C_013__server-EImageServer.png`
-
-Files without an extension use `raw` as their extension directory.
+The authoritative layout and conflict rules are documented in `docs/asset-classifier.md` and implemented by `scripts/classify-assets.mjs`. Do not classify new files manually.
 
 ## Update policy
 
