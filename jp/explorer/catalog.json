@@ -20,7 +20,29 @@
           "rawRoot": "jp/apks/150501",
           "available": true,
           "fileCount": 20073,
-          "totalSize": 220312483
+          "totalSize": 220312483,
+          "archive": {
+            "provider": "github-release",
+            "repository": "sinsuirakv0/battlecats-apk",
+            "tag": "battlecats-jp-history",
+            "releaseUrl": "https://github.com/sinsuirakv0/battlecats-apk/releases/tag/battlecats-jp-history",
+            "assets": [
+              {
+                "name": "battlecats-jp-150501.parts.json",
+                "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/battlecats-jp-history/battlecats-jp-150501.parts.json",
+                "bytes": 359,
+                "sha256": "d522afbd9ecd632172d466558bcc98bc6caa78c0324b6ad9037f32fcd23856c2",
+                "apiId": 526386477
+              },
+              {
+                "name": "battlecats-jp-150501.tar.gz",
+                "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/battlecats-jp-history/battlecats-jp-150501.tar.gz",
+                "bytes": 425992264,
+                "sha256": "d5ce8922287e71dc10ce5d09f10897baa8b1f007938e4afffdb376d4518d4c32",
+                "apiId": 526386265
+              }
+            ]
+          }
         }
       ]
     },
