@@ -7,7 +7,7 @@
 手作業でこのディレクトリを編集しないでください。
 
 - `asset-index.json`: 全実ファイルのsize、SHA-256、採用元を記録します。
-- `motion-index.json`: siteとsave-app/labの旧公開キーを、現在のraw相対パスへ対応させます。
+- 旧パス互換用JSONはこの生成物には含めません。必要な場合は利用側の専用JSONとして別途作成します。
 - `build-report.json`: server上書き、同内容統合、採用元の集計を記録します。
 
 生成・検証契約はリポジトリの `docs/raw-layout.md` を参照してください。

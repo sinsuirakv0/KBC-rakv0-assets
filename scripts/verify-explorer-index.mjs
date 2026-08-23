@@ -24,7 +24,7 @@ export async function verifyExplorerIndex(options = {}) {
 
 async function verifyAvailableSnapshot(repoRoot, snapshot, manifest, concurrency) {
   const rawRoot = path.join(repoRoot, ...snapshot.rawRoot.split("/"));
-  const files = (await listFiles(rawRoot)).filter(file => !(snapshot.rawRoot === "jp/sitedata" && ["asset-index.json", "motion-index.json", "build-report.json", "README.md"].includes(file.relativePath)));
+  const files = (await listFiles(rawRoot)).filter(file => !(snapshot.rawRoot === "jp/sitedata" && ["asset-index.json", "build-report.json", "README.md"].includes(file.relativePath)));
   const actualPaths = files.map(file => normalizeRelativePath(file.relativePath));
   const indexedPaths = Object.keys(manifest.files);
   if (actualPaths.length !== indexedPaths.length || actualPaths.some((item, index) => item !== indexedPaths[index])) throw new Error(`Explorer manifest paths differ: ${snapshot.rawRoot}`);

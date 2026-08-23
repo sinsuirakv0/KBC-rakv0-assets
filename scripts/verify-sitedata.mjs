@@ -10,14 +10,12 @@ import {
   createAssetIndex,
   createBuildPlan,
   createBuildReport,
-  createMotionIndex,
   findOldClassifiedPaths,
   hashSelectedFiles,
   loadBuildContext,
   readSitedataReadme,
   summarizePlan,
 } from "./build-sitedata.mjs";
-import { verifyMotionConsumerContracts } from "./motion-contract.mjs";
 
 export async function verifySitedata(options = {}) {
   const concurrency = options.concurrency ?? 16;
@@ -30,13 +28,10 @@ export async function verifySitedata(options = {}) {
   await hashSelectedFiles(plan, concurrency);
 
   const expectedAssetIndex = createAssetIndex(plan, context.versionRecord);
-  const expectedMotionIndex = createMotionIndex(plan, context.versionRecord);
   const expectedBuildReport = createBuildReport(plan, context.versionRecord);
   const actualAssetIndex = await readJson(path.join(context.outputRoot, "asset-index.json"));
-  const actualMotionIndex = await readJson(path.join(context.outputRoot, "motion-index.json"));
   const actualBuildReport = await readJson(path.join(context.outputRoot, "build-report.json"));
   assertDeepEqual(actualAssetIndex, expectedAssetIndex, "asset-index.json is stale or invalid.");
-  assertDeepEqual(actualMotionIndex, expectedMotionIndex, "motion-index.json is stale or invalid.");
   assertDeepEqual(actualBuildReport, expectedBuildReport, "build-report.json is stale or invalid.");
   const [actualReadme, expectedReadme] = await Promise.all([
     readFile(path.join(context.outputRoot, "README.md")),
@@ -79,26 +74,14 @@ export async function verifySitedata(options = {}) {
     }
   });
 
-  for (const [legacyPath, rawPath] of Object.entries(actualMotionIndex.assets)) {
-    if (!/^(units|enemies|resources|number)\//.test(legacyPath)) {
-      throw new Error(`Unsupported legacy motion path: ${legacyPath}`);
-    }
-    if (!Object.prototype.hasOwnProperty.call(actualAssetIndex.files, rawPath)) {
-      throw new Error(`Missing motion index target: ${rawPath}`);
-    }
-  }
-
   const oldPaths = await findOldClassifiedPaths(context.repoRoot);
   if (oldPaths.length > 0) {
     throw new Error(`Old classified paths remain: ${oldPaths.join(",")}`);
   }
-  const consumerContracts = verifyMotionConsumerContracts(actualMotionIndex.assets);
   return {
     ...summarizePlan(plan, context.versionRecord),
     assetIndexCount: indexedPaths.length,
-    motionIndexCount: Object.keys(actualMotionIndex.assets).length,
     oldClassifiedPathCount: oldPaths.length,
-    consumerContractKeyCount: consumerContracts.checkedKeyCount,
   };
 }
 

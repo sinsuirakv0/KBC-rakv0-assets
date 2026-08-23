@@ -29,7 +29,6 @@ export const SITE_DATA_GROUPS = Object.freeze([
 
 export const GENERATED_METADATA_FILES = Object.freeze([
   "asset-index.json",
-  "motion-index.json",
   "build-report.json",
   "README.md",
 ]);
@@ -47,14 +46,6 @@ const LOCAL_ROOTS = Object.freeze({
   UnitLocal: { outputGroup: "Unit", family: "unit" },
 });
 
-const VERSION_SUFFIX_PATTERN = /__v\d+(?:\.\d+)+(?:-[a-z0-9_-]+)?$/i;
-const SERVER_SUFFIX_PATTERN = /__server-[a-z0-9_-]+$/i;
-const NUMBERED_ASSET_PATTERN = /^(\d{3,})_([fcsue])(?:(\d{2}))?\.(png|imgcut|mamodel|maanim)$/i;
-const UNIT_UI_PATTERN = /^(uni|udi)(\d{3,})_([fcsu])(?:(\d{2}))?\.png$/i;
-const GACHA_UNIT_PATTERN = /^gatyachara_(\d{3,})_([fcsu])\.png$/i;
-const UNIT_DATA_PATTERN = /^unit(\d+)\.csv$/i;
-const UNIT_EXPLANATION_PATTERN = /^Unit_Explanation(\d+)_([a-z]{2})\.csv$/i;
-const ENEMY_ICON_PATTERN = /^enemy_icon_(\d+)\.png$/i;
 const OLD_CLASSIFIED_GROUPS = Object.freeze([
   "animation-assets",
   "downloads",
@@ -152,33 +143,15 @@ export async function createBuildPlan(options) {
     );
   }
 
-  const motionDecision = createLegacyMappings(candidates);
-  if (motionDecision.collisions.length > 0) {
-    throw new BuildConflictError(
-      `Found ${motionDecision.collisions.length} legacy keys that resolve to different raw paths.`,
-      motionDecision.collisions,
-    );
-  }
-
   const selected = rawDecision.selected.sort((left, right) => (
     compareText(left.outputPath, right.outputPath)
   ));
-  const selectedByOutput = new Map(selected.map(candidate => [candidate.outputPath, candidate]));
-  const motionAssets = {};
-  for (const mapping of motionDecision.mappings) {
-    if (!selectedByOutput.has(mapping.rawPath)) {
-      throw new Error(`Legacy mapping target is not selected: ${mapping.rawPath}`);
-    }
-    motionAssets[mapping.legacyPath] = mapping.rawPath;
-  }
 
   return {
     candidates,
     selected,
-    motionAssets,
     overwrites: rawDecision.overwrites,
     identicalDuplicates: rawDecision.identicalDuplicates,
-    legacyAliasCount: motionDecision.mappings.length,
     collisions: [],
   };
 }
@@ -205,14 +178,6 @@ export function createAssetIndex(plan, versionRecord) {
     gameVersion: versionRecord.versionName,
     versionCode: versionRecord.versionCode,
     files,
-  };
-}
-
-export function createMotionIndex(plan, versionRecord) {
-  return {
-    schemaVersion: 1,
-    gameVersion: versionRecord.versionName,
-    assets: plan.motionAssets,
   };
 }
 
@@ -243,7 +208,6 @@ export function createBuildReport(plan, versionRecord) {
     )),
     overwrites: plan.overwrites,
     identicalDuplicates: plan.identicalDuplicates,
-    legacyAliasCount: plan.legacyAliasCount,
     collisions: plan.collisions,
   };
 }
@@ -277,7 +241,6 @@ export async function applyBuildPlan({
 
     const metadata = [
       ["asset-index.json", createAssetIndex(plan, versionRecord)],
-      ["motion-index.json", createMotionIndex(plan, versionRecord)],
       ["build-report.json", createBuildReport(plan, versionRecord)],
     ];
     for (const [filename, payload] of metadata) {
@@ -383,85 +346,11 @@ export function summarizePlan(plan, versionRecord) {
     largestFile: largest,
     overwriteCount: plan.overwrites.length,
     identicalDuplicateCount: plan.identicalDuplicates.length,
-    motionIndexCount: Object.keys(plan.motionAssets).length,
   };
 }
 
 export async function readSitedataReadme() {
   return readFile(new URL("../templates/sitedata-README.md", import.meta.url));
-}
-
-export function deriveLegacyPaths(candidate) {
-  if (!candidate.family) return [];
-  const filename = path.posix.basename(candidate.outputPath);
-  const normalizedFilename = normalizeFilename(filename);
-  const extension = path.posix.extname(normalizedFilename).slice(1).toLowerCase();
-  const numberedMatch = normalizedFilename.match(NUMBERED_ASSET_PATTERN);
-  if (numberedMatch && (candidate.family === "number" || candidate.family === "image-data")) {
-    const [, rawId, rawForm, rawMotionIndex] = numberedMatch;
-    const form = rawForm.toLowerCase();
-    const entityRoot = form === "e"
-      ? `enemies/${formatEntityId(rawId)}`
-      : `units/${formatEntityId(rawId)}/${form}`;
-    const paths = [resolveBattlePath(entityRoot, extension, rawMotionIndex)];
-    if (form !== "e") {
-      paths.push(`number/${form}/${extension}/${normalizedFilename}`);
-    }
-    return paths;
-  }
-
-  const unitUiMatch = normalizedFilename.match(UNIT_UI_PATTERN);
-  if (unitUiMatch && candidate.family === "unit") {
-    const [, family, rawId, rawForm, rawVariant] = unitUiMatch;
-    const uiFamily = family.toLowerCase() === "uni" ? "thumbnail" : "icon";
-    const variant = rawVariant === undefined ? "" : `-${rawVariant}`;
-    return [`units/${formatEntityId(rawId)}/${rawForm.toLowerCase()}/${uiFamily}${variant}.png`];
-  }
-
-  const gachaMatch = normalizedFilename.match(GACHA_UNIT_PATTERN);
-  if (gachaMatch && candidate.family === "image") {
-    return [`units/${formatEntityId(gachaMatch[1])}/${gachaMatch[2].toLowerCase()}/gacha.png`];
-  }
-  const unitDataMatch = normalizedFilename.match(UNIT_DATA_PATTERN);
-  if (unitDataMatch && candidate.family === "data" && Number(unitDataMatch[1]) > 0) {
-    return [`units/${formatEntityId(Number(unitDataMatch[1]) - 1)}/stats.csv`];
-  }
-  const explanationMatch = normalizedFilename.match(UNIT_EXPLANATION_PATTERN);
-  if (explanationMatch && (candidate.family === "resource" || candidate.family === "unit")) {
-    const entityId = Number(explanationMatch[1]) - 1;
-    if (entityId >= 0) {
-      return [`units/${formatEntityId(entityId)}/names-${explanationMatch[2].toLowerCase()}.csv`];
-    }
-  }
-  const enemyIconMatch = normalizedFilename.match(ENEMY_ICON_PATTERN);
-  if (enemyIconMatch && candidate.family === "image") {
-    return [`enemies/${formatEntityId(enemyIconMatch[1])}/icon.png`];
-  }
-  if (candidate.family === "resource") {
-    return [`resources/${deriveCategory(normalizedFilename)}/${normalizedFilename}`];
-  }
-  return [];
-}
-
-export function deriveLegacyPath(candidate) {
-  return deriveLegacyPaths(candidate)[0] ?? null;
-}
-
-export function normalizeFilename(filename) {
-  const extension = path.extname(filename);
-  let stem = path.basename(filename, extension);
-  stem = stem.replace(VERSION_SUFFIX_PATTERN, "");
-  stem = stem.replace(SERVER_SUFFIX_PATTERN, "");
-  return `${stem}${extension}`;
-}
-
-export function deriveCategory(filename) {
-  const extension = path.extname(filename);
-  const stem = path.basename(filename, extension);
-  return stem
-    .replace(/\d+/g, "_")
-    .replace(/^_+|_+$/g, "")
-    .toLowerCase() || "raw";
 }
 
 export async function selectCandidates(candidates, keySelector) {
@@ -500,37 +389,6 @@ export async function selectCandidates(candidates, keySelector) {
     selected: [...selectedByPath.values()],
     overwrites,
     identicalDuplicates,
-    collisions,
-  };
-}
-
-export function createLegacyMappings(candidates) {
-  const byLegacyPath = new Map();
-  const collisions = [];
-  for (const candidate of [...candidates].sort(compareCandidate)) {
-    for (const legacyPath of deriveLegacyPaths(candidate).sort(compareText)) {
-      const previous = byLegacyPath.get(legacyPath);
-      if (!previous) {
-        byLegacyPath.set(legacyPath, {
-          legacyPath,
-          rawPath: candidate.outputPath,
-          source: toSourceRecord(candidate),
-        });
-        continue;
-      }
-      if (previous.rawPath !== candidate.outputPath) {
-        collisions.push({
-          path: legacyPath,
-          rawPaths: [previous.rawPath, candidate.outputPath].sort(compareText),
-          sources: [previous.source, toSourceRecord(candidate)],
-        });
-      }
-    }
-  }
-  return {
-    mappings: [...byLegacyPath.values()].sort((left, right) => (
-      compareText(left.legacyPath, right.legacyPath)
-    )),
     collisions,
   };
 }
@@ -601,21 +459,6 @@ function toSourceRecord(candidate) {
     priority: candidate.priority,
     path: candidate.sourceRepoPath,
   };
-}
-
-function resolveBattlePath(entityRoot, extension, rawMotionIndex) {
-  if (extension === "png") return `${entityRoot}/sprite.png`;
-  if (extension === "imgcut") return `${entityRoot}/cuts.imgcut`;
-  if (extension === "mamodel") return `${entityRoot}/model.mamodel`;
-  if (extension === "maanim") {
-    const filename = rawMotionIndex === undefined ? "animation.maanim" : `${rawMotionIndex}.maanim`;
-    return `${entityRoot}/animations/${filename}`;
-  }
-  throw new Error(`Unsupported battle extension: ${extension}`);
-}
-
-function formatEntityId(value) {
-  return String(Number(value)).padStart(3, "0");
 }
 
 async function assertSafeOutput(outputRoot, inputRoots) {

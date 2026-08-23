@@ -1,6 +1,6 @@
 ﻿# KBC-rakv0-assets
 
-にゃんこ大戦争JP版の復号済み生データと、サイト配信用の確定データを管理するリポジトリです。旧来の `units/`、`enemies/`、`resources/` などの分類済み実体は置かず、互換アクセスは `jp/sitedata/motion-index.json` で解決します。
+にゃんこ大戦争JP版の復号済み生データと、サイト配信用の確定データを管理するリポジトリです。旧来の `units/`、`enemies/`、`resources/` などの分類済み実体は置かず、実データは `jp/sitedata/asset-index.json` で管理します。旧パス互換用JSONは別途、利用側の要件に合わせて作成します。
 
 ## ディレクトリ
 

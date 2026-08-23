@@ -9,8 +9,6 @@ import {
   BuildConflictError,
   applyBuildPlan,
   createBuildPlan,
-  deriveLegacyPaths,
-  deriveLegacyPath,
   resolveServerRoot,
   scanBuildInputs,
   selectCandidates,
@@ -40,12 +38,6 @@ test("Local is the base and server applies from unprefixed through A to Z", asyn
   const shared = plan.selected.find(candidate => candidate.outputPath === "Image/shared.png");
   assert.equal(shared.sourceRoot, "XImageServer");
   assert.equal(plan.overwrites.filter(item => item.path === "Image/shared.png").length, 3);
-  assert.equal(plan.motionAssets["units/007/f/cuts.imgcut"], "ImageData/007_f.imgcut");
-  assert.equal(plan.motionAssets["number/f/imgcut/007_f.imgcut"], "ImageData/007_f.imgcut");
-  assert.equal(
-    plan.motionAssets["resources/enemyname/Enemyname.tsv"],
-    "res/Enemyname.tsv",
-  );
   assert.equal(plan.selected.find(item => item.outputPath.startsWith("assets/")).sourceKind, "apk");
 });
 
@@ -78,62 +70,6 @@ test("same-priority different content is an unresolved collision", async () => {
   );
 });
 
-test("a duplicate legacy key that points to different raw paths fails closed", async () => {
-  const temporaryRoot = await mkdtemp(path.join(os.tmpdir(), "legacy-collision-"));
-  const numberPath = path.join(temporaryRoot, "number.png");
-  const imageDataPath = path.join(temporaryRoot, "image-data.png");
-  await writeFile(numberPath, "same");
-  await writeFile(imageDataPath, "same");
-  const common = {
-    size: 4,
-    priority: 0,
-    sourceKind: "apk",
-    generation: "local",
-    sourceRelativePath: "007_f.png",
-  };
-  const candidates = [
-    {
-      ...common,
-      sourcePath: numberPath,
-      sourceRepoPath: "NumberLocal/007_f.png",
-      sourceRoot: "NumberLocal",
-      outputPath: "Number/007_f.png",
-      family: "number",
-    },
-    {
-      ...common,
-      sourcePath: imageDataPath,
-      sourceRepoPath: "ImageDataLocal/007_f.png",
-      sourceRoot: "ImageDataLocal",
-      outputPath: "ImageData/007_f.png",
-      family: "image-data",
-    },
-  ];
-  await assert.rejects(
-    () => createBuildPlan({ candidates }),
-    error => error instanceof BuildConflictError && /different raw paths/.test(error.message),
-  );
-});
-
-test("legacy mapping covers unit, enemy and resource contracts", () => {
-  assert.deepEqual(
-    deriveLegacyPaths(candidate("ImageData/872_f02.maanim", "image-data")),
-    ["units/872/f/animations/02.maanim", "number/f/maanim/872_f02.maanim"],
-  );
-  assert.deepEqual(
-    deriveLegacyPaths(candidate("Number/013_e.png", "number")),
-    ["enemies/013/sprite.png"],
-  );
-  assert.equal(
-    deriveLegacyPath(candidate("Unit/uni007_c00.png", "unit")),
-    "units/007/c/thumbnail-00.png",
-  );
-  assert.equal(
-    deriveLegacyPath(candidate("res/Enemyname.tsv", "resource")),
-    "resources/enemyname/Enemyname.tsv",
-  );
-});
-
 test("generated output and indexes are deterministic", async () => {
   const fixture = await createFixture();
   await writeAsset(fixture.apkRoot, "assets/base.pack", "base");
@@ -159,7 +95,7 @@ test("generated output and indexes are deterministic", async () => {
     inputRoots: [fixture.apkRoot, fixture.serverRoot],
     concurrency: 2,
   });
-  for (const indexName of ["asset-index.json", "motion-index.json", "build-report.json", "README.md"]) {
+  for (const indexName of ["asset-index.json", "build-report.json", "README.md"]) {
     assert.equal(
       await readFile(path.join(firstOutput, indexName), "utf8"),
       await readFile(path.join(secondOutput, indexName), "utf8"),
