@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body {
+  -webkit-text-size-adjust: none;
+  height: 100%;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,img,form{
+	margin:0;
+	padding:0;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+img{
+	border:none;
+	max-width: 100%;
+    height: auto;
+}
+
+img.icon{
+	vertical-align: middle;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+table th{
+	font-weight:normal;
+	vertical-align:top;
+}
+
+ol,ul{
+	list-style:none;
+}
+body{
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	line-height:1.8;
+	font-size:12px;
+	text-align:center;
+	/*background: url(../img/bg.png);*/
+	height: 100%;
+}
+table{
+	font-size:1em;
+}
+h1,h2,h3,h4,h5{
+	font-size:100%;
+	font-weight:normal;
+}
+
+h4 {
+	font-size: 100%;
+	font-weight: bold;
+	color: #333;
+	padding: 3px 7px;
+	background: #f1f1f1;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+
+a{
+	outline:none;
+	text-decoration:none;
+}
+
+.clearfix:after {  
+  content: ".";   
+  display: block;   
+  height: 0;   
+  clear: both;   
+  visibility: hidden;  
+}  
+  
+.clearfix { display: inline-table; }  
+  
+/* Hides from IE-mac \*/  
+* html .clearfix { height: 1%; }  
+.clearfix { display: block; }  
+/* End hide from IE-mac */
+
+span.fw{
+	font-weight: bold;
+}
+
+span.orange{
+	color: #FF6600;
+}
+
+span.red{
+	color: #F00;
+}
+
+span.yellow{
+	color: #FF0;
+}
+
+span.green{
+	color: #008f03;
+}
+
+
+span.pink{
+	color: #F0C;
+}
+
+span.blue{
+	color: #00baff;
+}
+
+span.fs76{
+	font-size: 76%;
+}
+
+.mb10{
+	margin-bottom: 10px;
+}
+
+.attention{
+	font-size: 80%;
+	text-align: left;
+	padding: 5px 10px 10px;
+	color: #FFF;
+}
+
+/* Article 
+******************************************************************************************************************************************************************************************************/
+
+article {
+	text-align: left;
+	margin: 0 auto;
+	min-height: 100%;
+	background: #FFF;
+}
+
+@media only screen and (min-device-width: 768px) { article{ max-width: 640px; } }
+
+article .block{
+	padding: 10px;
+	position: relative;
+	background: #FFF;
+}
+
+h2{
+	font-size: 140%;
+	font-weight: bold;
+	color:  #FFF;
+	padding: 7px 10px;
+		
+	background: rgb(56,56,56); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(56,56,56,1) 0%, rgba(25,25,25,1) 26%, rgba(0,0,0,1) 51%, rgba(25,25,25,1) 83%, rgba(30,30,30,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,56,56,1)), color-stop(26%,rgba(25,25,25,1)), color-stop(51%,rgba(0,0,0,1)), color-stop(83%,rgba(25,25,25,1)), color-stop(100%,rgba(30,30,30,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(56,56,56,1) 0%,rgba(25,25,25,1) 26%,rgba(0,0,0,1) 51%,rgba(25,25,25,1) 83%,rgba(30,30,30,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(56,56,56,1) 0%,rgba(25,25,25,1) 26%,rgba(0,0,0,1) 51%,rgba(25,25,25,1) 83%,rgba(30,30,30,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(56,56,56,1) 0%,rgba(25,25,25,1) 26%,rgba(0,0,0,1) 51%,rgba(25,25,25,1) 83%,rgba(30,30,30,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(56,56,56,1) 0%,rgba(25,25,25,1) 26%,rgba(0,0,0,1) 51%,rgba(25,25,25,1) 83%,rgba(30,30,30,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#1e1e1e',GradientType=0 ); /* IE6-9 */
+
+}
+
+p.txt{
+	margin: 0 0 10px 0;
+}
+
+.chara_ttl01{
+	background-color:#fb4;
+	font-weight:bold;
+	padding:5px;
+	margin:0 0 5px 0;
+}
+
+p.ttl{
+	border-left: 5px solid #000000;
+	padding: 0 0 0 10px;
+	border-bottom: 1px dotted #666;
+	margin: 0 0 5px 0;
+}
+
+
+/* Table Styles 
+******************************************************************************************************************************************************************************************************/
+
+.table_style {
+	clear: both;
+	text-align: center;
+	width: 100%;
+	border: solid #ccc 1px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 auto;
+}
+
+.table_style th {
+	text-align: left;
+	padding: 4px;
+	background: #f1f1f1;
+	border-right: solid #ccc 1px;
+	border-bottom: solid #ccc 1px;
+	vertical-align: top;
+}
+
+.table_style th.wid15 {
+	width:16%;
+	min-width:70px;
+}
+
+
+.table_style td {
+	text-align: left;
+	padding: 4px;
+	border-right: solid #ccc 1px;
+	border-bottom: solid #ccc 1px;
+	vertical-align: top;
+	min-height: 30px;
+	position: relative;
+}
+
+.table_style .complete{
+	margin:0 0 0 0.5em;
+}
+
+.table_style .complete img{
+	height: 24px;
+	vertical-align:middle;
+}
+
+
+/* ユーザー情報
+******************************************************************************************************************************************************************************************************/
+.u_info{
+	margin:10px 0;
+}
+
+.u_info td{
+	vertical-align: middle;
+}
+
+.u_info #rank{
+	padding: 1% 2.5%;
+	font-weight: bold;
+	font-size: 1.3em;
+	display: block;
+}
+
+.u_info #energy{
+	padding: 3.5% 2.5%;
+	font-weight: bold;
+	font-size: 1.3em;
+	float: left;
+	display: block;
+}
+
+.u_info #np{
+	padding: 0 0 0 2.5%;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.u_info td.u_data01{
+	width: 20%;
+	background-color: #f1f1f1;
+	position: static;/* border消失防止 */
+}
+
+.u_info td.u_data02{
+	overflow: hidden;
+	padding: 0 4px 0 4px;
+}
+
+.u_info .u_box{
+	clear: both;
+	overflow: hidden;
+	padding: 2px 0 0 0;
+}
+
+.u_info .u_box:first-child{
+	padding: 0 0 0 0;
+}
+
+.u_info .u_item{
+	width:10.8%;
+	margin:0 0.85%;
+	float:left;
+	text-align: center;
+	position: relative;
+}
+
+.u_info .u_item p{
+	margin: -1em 0 0 0;
+}
+
+.u_info .u_item.basic p{
+	margin: -1.3em 0 0 0;
+}
+
+.u_info .u_item.fruit img{
+	width:85%;
+}
+
+.u_info .u_item.seed p{
+	margin: -1.5em 0 0 0;
+}
+
+.u_info .u_item.fruit p{
+	margin: -0.8em 0 0 0;
+}
+
+.u_info .castle img{
+	width:90%;
+}
+
+.u_info .eye img{
+	width:85%;
+}
+
+
+.u_info .bold_num{
+	padding: 0 0 0 2.5%;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+/* 説明文
+******************************************************************************************************************************************************************************************************/
+.desc{
+	background: #FFFFFF;
+	color: #000000;
+	padding: 10px;
+}

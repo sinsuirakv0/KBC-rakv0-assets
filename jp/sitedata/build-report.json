@@ -1,0 +1,5753 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "15.5.1",
+  "versionCode": 1505010,
+  "scannedFileCount": 53853,
+  "selectedFileCount": 53563,
+  "selectedSources": [
+    {
+      "kind": "apk",
+      "root": "DataLocal",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 8865,
+      "size": 8564399
+    },
+    {
+      "kind": "apk",
+      "root": "DownloadLocal",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 6,
+      "size": 9860
+    },
+    {
+      "kind": "apk",
+      "root": "ImageDataLocal",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 8470,
+      "size": 16534313
+    },
+    {
+      "kind": "apk",
+      "root": "ImageLocal",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 519,
+      "size": 33475951
+    },
+    {
+      "kind": "apk",
+      "root": "MapLocal",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 395,
+      "size": 22419744
+    },
+    {
+      "kind": "apk",
+      "root": "NumberLocal",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 138,
+      "size": 6012503
+    },
+    {
+      "kind": "apk",
+      "root": "UnitLocal",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 121,
+      "size": 856779
+    },
+    {
+      "kind": "apk",
+      "root": "assets",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 233,
+      "size": 128376506
+    },
+    {
+      "kind": "apk",
+      "root": "resLocal",
+      "generation": "local",
+      "priority": 0,
+      "fileCount": 1140,
+      "size": 2057808
+    },
+    {
+      "kind": "server",
+      "root": "ImageServer",
+      "generation": "base",
+      "priority": 100,
+      "fileCount": 834,
+      "size": 26618874
+    },
+    {
+      "kind": "server",
+      "root": "MapServer",
+      "generation": "base",
+      "priority": 100,
+      "fileCount": 36,
+      "size": 8957480
+    },
+    {
+      "kind": "server",
+      "root": "AMapServer",
+      "generation": "A",
+      "priority": 101,
+      "fileCount": 428,
+      "size": 5052085
+    },
+    {
+      "kind": "server",
+      "root": "ANumberServer",
+      "generation": "A",
+      "priority": 101,
+      "fileCount": 397,
+      "size": 29197277
+    },
+    {
+      "kind": "server",
+      "root": "AUnitServer",
+      "generation": "A",
+      "priority": 101,
+      "fileCount": 566,
+      "size": 4704744
+    },
+    {
+      "kind": "server",
+      "root": "BNumberServer",
+      "generation": "B",
+      "priority": 102,
+      "fileCount": 415,
+      "size": 34496461
+    },
+    {
+      "kind": "server",
+      "root": "BUnitServer",
+      "generation": "B",
+      "priority": 102,
+      "fileCount": 592,
+      "size": 4191999
+    },
+    {
+      "kind": "server",
+      "root": "CImageServer",
+      "generation": "C",
+      "priority": 103,
+      "fileCount": 63,
+      "size": 3480643
+    },
+    {
+      "kind": "server",
+      "root": "CMapServer",
+      "generation": "C",
+      "priority": 103,
+      "fileCount": 470,
+      "size": 5192399
+    },
+    {
+      "kind": "server",
+      "root": "CNumberServer",
+      "generation": "C",
+      "priority": 103,
+      "fileCount": 118,
+      "size": 10828083
+    },
+    {
+      "kind": "server",
+      "root": "CUnitServer",
+      "generation": "C",
+      "priority": 103,
+      "fileCount": 153,
+      "size": 1253091
+    },
+    {
+      "kind": "server",
+      "root": "DImageServer",
+      "generation": "D",
+      "priority": 104,
+      "fileCount": 253,
+      "size": 7360286
+    },
+    {
+      "kind": "server",
+      "root": "DMapServer",
+      "generation": "D",
+      "priority": 104,
+      "fileCount": 203,
+      "size": 1869382
+    },
+    {
+      "kind": "server",
+      "root": "DNumberServer",
+      "generation": "D",
+      "priority": 104,
+      "fileCount": 213,
+      "size": 21196448
+    },
+    {
+      "kind": "server",
+      "root": "DUnitServer",
+      "generation": "D",
+      "priority": 104,
+      "fileCount": 288,
+      "size": 2423015
+    },
+    {
+      "kind": "server",
+      "root": "EImageServer",
+      "generation": "E",
+      "priority": 105,
+      "fileCount": 80,
+      "size": 2613491
+    },
+    {
+      "kind": "server",
+      "root": "EMapServer",
+      "generation": "E",
+      "priority": 105,
+      "fileCount": 76,
+      "size": 569537
+    },
+    {
+      "kind": "server",
+      "root": "ENumberServer",
+      "generation": "E",
+      "priority": 105,
+      "fileCount": 60,
+      "size": 5680103
+    },
+    {
+      "kind": "server",
+      "root": "EUnitServer",
+      "generation": "E",
+      "priority": 105,
+      "fileCount": 70,
+      "size": 557538
+    },
+    {
+      "kind": "server",
+      "root": "FImageServer",
+      "generation": "F",
+      "priority": 106,
+      "fileCount": 154,
+      "size": 11493825
+    },
+    {
+      "kind": "server",
+      "root": "FMapServer",
+      "generation": "F",
+      "priority": 106,
+      "fileCount": 89,
+      "size": 700445
+    },
+    {
+      "kind": "server",
+      "root": "FNumberServer",
+      "generation": "F",
+      "priority": 106,
+      "fileCount": 82,
+      "size": 9134428
+    },
+    {
+      "kind": "server",
+      "root": "FUnitServer",
+      "generation": "F",
+      "priority": 106,
+      "fileCount": 120,
+      "size": 962706
+    },
+    {
+      "kind": "server",
+      "root": "GImageServer",
+      "generation": "G",
+      "priority": 107,
+      "fileCount": 141,
+      "size": 4339635
+    },
+    {
+      "kind": "server",
+      "root": "GMapServer",
+      "generation": "G",
+      "priority": 107,
+      "fileCount": 125,
+      "size": 1121798
+    },
+    {
+      "kind": "server",
+      "root": "GNumberServer",
+      "generation": "G",
+      "priority": 107,
+      "fileCount": 121,
+      "size": 11651503
+    },
+    {
+      "kind": "server",
+      "root": "GUnitServer",
+      "generation": "G",
+      "priority": 107,
+      "fileCount": 184,
+      "size": 1478441
+    },
+    {
+      "kind": "server",
+      "root": "HImageServer",
+      "generation": "H",
+      "priority": 108,
+      "fileCount": 37,
+      "size": 9566801
+    },
+    {
+      "kind": "server",
+      "root": "HMapServer",
+      "generation": "H",
+      "priority": 108,
+      "fileCount": 10,
+      "size": 92229
+    },
+    {
+      "kind": "server",
+      "root": "HNumberServer",
+      "generation": "H",
+      "priority": 108,
+      "fileCount": 9,
+      "size": 262553
+    },
+    {
+      "kind": "server",
+      "root": "HUnitServer",
+      "generation": "H",
+      "priority": 108,
+      "fileCount": 16,
+      "size": 104102
+    },
+    {
+      "kind": "server",
+      "root": "IImageServer",
+      "generation": "I",
+      "priority": 109,
+      "fileCount": 480,
+      "size": 5662549
+    },
+    {
+      "kind": "server",
+      "root": "IMapServer",
+      "generation": "I",
+      "priority": 109,
+      "fileCount": 380,
+      "size": 1658173
+    },
+    {
+      "kind": "server",
+      "root": "INumberServer",
+      "generation": "I",
+      "priority": 109,
+      "fileCount": 232,
+      "size": 18097454
+    },
+    {
+      "kind": "server",
+      "root": "IUnitServer",
+      "generation": "I",
+      "priority": 109,
+      "fileCount": 332,
+      "size": 2235962
+    },
+    {
+      "kind": "server",
+      "root": "JImageServer",
+      "generation": "J",
+      "priority": 110,
+      "fileCount": 273,
+      "size": 5914928
+    },
+    {
+      "kind": "server",
+      "root": "JMapServer",
+      "generation": "J",
+      "priority": 110,
+      "fileCount": 332,
+      "size": 974474
+    },
+    {
+      "kind": "server",
+      "root": "JNumberServer",
+      "generation": "J",
+      "priority": 110,
+      "fileCount": 128,
+      "size": 12577613
+    },
+    {
+      "kind": "server",
+      "root": "JUnitServer",
+      "generation": "J",
+      "priority": 110,
+      "fileCount": 206,
+      "size": 1566185
+    },
+    {
+      "kind": "server",
+      "root": "KImageServer",
+      "generation": "K",
+      "priority": 111,
+      "fileCount": 97,
+      "size": 2174542
+    },
+    {
+      "kind": "server",
+      "root": "KMapServer",
+      "generation": "K",
+      "priority": 111,
+      "fileCount": 371,
+      "size": 3347137
+    },
+    {
+      "kind": "server",
+      "root": "KNumberServer",
+      "generation": "K",
+      "priority": 111,
+      "fileCount": 72,
+      "size": 6605406
+    },
+    {
+      "kind": "server",
+      "root": "KUnitServer",
+      "generation": "K",
+      "priority": 111,
+      "fileCount": 90,
+      "size": 740148
+    },
+    {
+      "kind": "server",
+      "root": "LImageServer",
+      "generation": "L",
+      "priority": 112,
+      "fileCount": 86,
+      "size": 1962184
+    },
+    {
+      "kind": "server",
+      "root": "LMapServer",
+      "generation": "L",
+      "priority": 112,
+      "fileCount": 212,
+      "size": 547020
+    },
+    {
+      "kind": "server",
+      "root": "LNumberServer",
+      "generation": "L",
+      "priority": 112,
+      "fileCount": 88,
+      "size": 9100326
+    },
+    {
+      "kind": "server",
+      "root": "LUnitServer",
+      "generation": "L",
+      "priority": 112,
+      "fileCount": 150,
+      "size": 1081472
+    },
+    {
+      "kind": "server",
+      "root": "MImageServer",
+      "generation": "M",
+      "priority": 113,
+      "fileCount": 116,
+      "size": 1864364
+    },
+    {
+      "kind": "server",
+      "root": "MMapServer",
+      "generation": "M",
+      "priority": 113,
+      "fileCount": 451,
+      "size": 1076901
+    },
+    {
+      "kind": "server",
+      "root": "MNumberServer",
+      "generation": "M",
+      "priority": 113,
+      "fileCount": 114,
+      "size": 10636405
+    },
+    {
+      "kind": "server",
+      "root": "MUnitServer",
+      "generation": "M",
+      "priority": 113,
+      "fileCount": 184,
+      "size": 1423748
+    },
+    {
+      "kind": "server",
+      "root": "NImageServer",
+      "generation": "N",
+      "priority": 114,
+      "fileCount": 91,
+      "size": 2218050
+    },
+    {
+      "kind": "server",
+      "root": "NMapServer",
+      "generation": "N",
+      "priority": 114,
+      "fileCount": 364,
+      "size": 3172667
+    },
+    {
+      "kind": "server",
+      "root": "NNumberServer",
+      "generation": "N",
+      "priority": 114,
+      "fileCount": 48,
+      "size": 3177943
+    },
+    {
+      "kind": "server",
+      "root": "NUnitServer",
+      "generation": "N",
+      "priority": 114,
+      "fileCount": 52,
+      "size": 348409
+    },
+    {
+      "kind": "server",
+      "root": "OImageServer",
+      "generation": "O",
+      "priority": 115,
+      "fileCount": 111,
+      "size": 5122748
+    },
+    {
+      "kind": "server",
+      "root": "OMapServer",
+      "generation": "O",
+      "priority": 115,
+      "fileCount": 503,
+      "size": 2216054
+    },
+    {
+      "kind": "server",
+      "root": "ONumberServer",
+      "generation": "O",
+      "priority": 115,
+      "fileCount": 73,
+      "size": 3754768
+    },
+    {
+      "kind": "server",
+      "root": "OUnitServer",
+      "generation": "O",
+      "priority": 115,
+      "fileCount": 108,
+      "size": 800585
+    },
+    {
+      "kind": "server",
+      "root": "PImageServer",
+      "generation": "P",
+      "priority": 116,
+      "fileCount": 78,
+      "size": 3626633
+    },
+    {
+      "kind": "server",
+      "root": "PMapServer",
+      "generation": "P",
+      "priority": 116,
+      "fileCount": 304,
+      "size": 2051750
+    },
+    {
+      "kind": "server",
+      "root": "PNumberServer",
+      "generation": "P",
+      "priority": 116,
+      "fileCount": 62,
+      "size": 2949372
+    },
+    {
+      "kind": "server",
+      "root": "PUnitServer",
+      "generation": "P",
+      "priority": 116,
+      "fileCount": 110,
+      "size": 735051
+    },
+    {
+      "kind": "server",
+      "root": "QImageServer",
+      "generation": "Q",
+      "priority": 117,
+      "fileCount": 168,
+      "size": 5619229
+    },
+    {
+      "kind": "server",
+      "root": "QMapServer",
+      "generation": "Q",
+      "priority": 117,
+      "fileCount": 605,
+      "size": 5412301
+    },
+    {
+      "kind": "server",
+      "root": "QNumberServer",
+      "generation": "Q",
+      "priority": 117,
+      "fileCount": 140,
+      "size": 10173465
+    },
+    {
+      "kind": "server",
+      "root": "QUnitServer",
+      "generation": "Q",
+      "priority": 117,
+      "fileCount": 226,
+      "size": 1567108
+    },
+    {
+      "kind": "server",
+      "root": "RImageServer",
+      "generation": "R",
+      "priority": 118,
+      "fileCount": 365,
+      "size": 6487897
+    },
+    {
+      "kind": "server",
+      "root": "RMapServer",
+      "generation": "R",
+      "priority": 118,
+      "fileCount": 641,
+      "size": 1499956
+    },
+    {
+      "kind": "server",
+      "root": "RNumberServer",
+      "generation": "R",
+      "priority": 118,
+      "fileCount": 179,
+      "size": 6727155
+    },
+    {
+      "kind": "server",
+      "root": "RUnitServer",
+      "generation": "R",
+      "priority": 118,
+      "fileCount": 208,
+      "size": 1185363
+    },
+    {
+      "kind": "server",
+      "root": "SImageServer",
+      "generation": "S",
+      "priority": 119,
+      "fileCount": 69,
+      "size": 2013041
+    },
+    {
+      "kind": "server",
+      "root": "SMapServer",
+      "generation": "S",
+      "priority": 119,
+      "fileCount": 198,
+      "size": 5498311
+    },
+    {
+      "kind": "server",
+      "root": "SNumberServer",
+      "generation": "S",
+      "priority": 119,
+      "fileCount": 65,
+      "size": 3299343
+    },
+    {
+      "kind": "server",
+      "root": "SUnitServer",
+      "generation": "S",
+      "priority": 119,
+      "fileCount": 92,
+      "size": 546388
+    },
+    {
+      "kind": "server",
+      "root": "TImageServer",
+      "generation": "T",
+      "priority": 120,
+      "fileCount": 44,
+      "size": 1898248
+    },
+    {
+      "kind": "server",
+      "root": "TMapServer",
+      "generation": "T",
+      "priority": 120,
+      "fileCount": 111,
+      "size": 1459826
+    },
+    {
+      "kind": "server",
+      "root": "TNumberServer",
+      "generation": "T",
+      "priority": 120,
+      "fileCount": 50,
+      "size": 3245354
+    },
+    {
+      "kind": "server",
+      "root": "TUnitServer",
+      "generation": "T",
+      "priority": 120,
+      "fileCount": 76,
+      "size": 627302
+    },
+    {
+      "kind": "server",
+      "root": "UImageServer",
+      "generation": "U",
+      "priority": 121,
+      "fileCount": 56,
+      "size": 1480270
+    },
+    {
+      "kind": "server",
+      "root": "UMapServer",
+      "generation": "U",
+      "priority": 121,
+      "fileCount": 232,
+      "size": 757050
+    },
+    {
+      "kind": "server",
+      "root": "UNumberServer",
+      "generation": "U",
+      "priority": 121,
+      "fileCount": 55,
+      "size": 3223280
+    },
+    {
+      "kind": "server",
+      "root": "UUnitServer",
+      "generation": "U",
+      "priority": 121,
+      "fileCount": 68,
+      "size": 487971
+    },
+    {
+      "kind": "server",
+      "root": "VImageServer",
+      "generation": "V",
+      "priority": 122,
+      "fileCount": 32,
+      "size": 2404307
+    },
+    {
+      "kind": "server",
+      "root": "VMapServer",
+      "generation": "V",
+      "priority": 122,
+      "fileCount": 151,
+      "size": 1567350
+    },
+    {
+      "kind": "server",
+      "root": "VNumberServer",
+      "generation": "V",
+      "priority": 122,
+      "fileCount": 33,
+      "size": 2320084
+    },
+    {
+      "kind": "server",
+      "root": "VUnitServer",
+      "generation": "V",
+      "priority": 122,
+      "fileCount": 48,
+      "size": 355643
+    },
+    {
+      "kind": "server",
+      "root": "WImageDataServer",
+      "generation": "W",
+      "priority": 123,
+      "fileCount": 16165,
+      "size": 79648880
+    },
+    {
+      "kind": "server",
+      "root": "XImageServer",
+      "generation": "X",
+      "priority": 124,
+      "fileCount": 155,
+      "size": 5759820
+    },
+    {
+      "kind": "server",
+      "root": "XMapServer",
+      "generation": "X",
+      "priority": 124,
+      "fileCount": 450,
+      "size": 1496409
+    },
+    {
+      "kind": "server",
+      "root": "XNumberServer",
+      "generation": "X",
+      "priority": 124,
+      "fileCount": 127,
+      "size": 7169181
+    },
+    {
+      "kind": "server",
+      "root": "XUnitServer",
+      "generation": "X",
+      "priority": 124,
+      "fileCount": 166,
+      "size": 1200556
+    }
+  ],
+  "overwrites": [
+    {
+      "path": "Image/bg017.png",
+      "winner": {
+        "kind": "server",
+        "root": "GImageServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GImageServer/bg017.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/bg017.png"
+      }
+    },
+    {
+      "path": "Image/bg029.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/bg029.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/bg029.png"
+      }
+    },
+    {
+      "path": "Image/bg059.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/bg059.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/bg059.png"
+      }
+    },
+    {
+      "path": "Image/bg065.png",
+      "winner": {
+        "kind": "server",
+        "root": "GImageServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GImageServer/bg065.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/bg065.png"
+      }
+    },
+    {
+      "path": "Image/bg066.png",
+      "winner": {
+        "kind": "server",
+        "root": "GImageServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GImageServer/bg066.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/bg066.png"
+      }
+    },
+    {
+      "path": "Image/enemy_icon_055.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/enemy_icon_055.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/enemy_icon_055.png"
+      }
+    },
+    {
+      "path": "Image/enemy_icon_186.png",
+      "winner": {
+        "kind": "server",
+        "root": "SImageServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SImageServer/enemy_icon_186.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/enemy_icon_186.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_001.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/event_bnr_C_001.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/event_bnr_C_001.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_008.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/event_bnr_C_008.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/event_bnr_C_008.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_013.png",
+      "winner": {
+        "kind": "server",
+        "root": "CImageServer",
+        "generation": "C",
+        "priority": 103,
+        "path": "jp/server/CImageServer/event_bnr_C_013.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_013.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_013.png",
+      "winner": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/event_bnr_C_013.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "CImageServer",
+        "generation": "C",
+        "priority": 103,
+        "path": "jp/server/CImageServer/event_bnr_C_013.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_021.png",
+      "winner": {
+        "kind": "server",
+        "root": "CImageServer",
+        "generation": "C",
+        "priority": 103,
+        "path": "jp/server/CImageServer/event_bnr_C_021.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_021.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_024.png",
+      "winner": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/event_bnr_C_024.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_024.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_024.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/event_bnr_C_024.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/event_bnr_C_024.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_031.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/event_bnr_C_031.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_031.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_031.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/event_bnr_C_031.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/event_bnr_C_031.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_049.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/event_bnr_C_049.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/event_bnr_C_049.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_052.png",
+      "winner": {
+        "kind": "server",
+        "root": "FImageServer",
+        "generation": "F",
+        "priority": 106,
+        "path": "jp/server/FImageServer/event_bnr_C_052.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_052.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_052.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/event_bnr_C_052.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "FImageServer",
+        "generation": "F",
+        "priority": 106,
+        "path": "jp/server/FImageServer/event_bnr_C_052.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_065.png",
+      "winner": {
+        "kind": "server",
+        "root": "GImageServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GImageServer/event_bnr_C_065.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_065.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_071.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/event_bnr_C_071.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_071.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_092.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/event_bnr_C_092.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_092.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_096.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/event_bnr_C_096.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_096.png"
+      }
+    },
+    {
+      "path": "Image/event_bnr_C_107.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/event_bnr_C_107.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/event_bnr_C_107.png"
+      }
+    },
+    {
+      "path": "Image/gatyachara_155_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/gatyachara_155_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/gatyachara_155_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyachara_375_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/gatyachara_375_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "FImageServer",
+        "generation": "F",
+        "priority": 106,
+        "path": "jp/server/FImageServer/gatyachara_375_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyachara_758_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "UImageServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UImageServer/gatyachara_758_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "SImageServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SImageServer/gatyachara_758_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyaitemD_00_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/gatyaitemD_00_f.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/gatyaitemD_00_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyaitemD_145_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/gatyaitemD_145_f.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/gatyaitemD_145_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyaitemD_19_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "NImageServer",
+        "generation": "N",
+        "priority": 114,
+        "path": "jp/server/NImageServer/gatyaitemD_19_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/gatyaitemD_19_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyaitemD_19_z.png",
+      "winner": {
+        "kind": "server",
+        "root": "NImageServer",
+        "generation": "N",
+        "priority": 114,
+        "path": "jp/server/NImageServer/gatyaitemD_19_z.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/gatyaitemD_19_z.png"
+      }
+    },
+    {
+      "path": "Image/gatyaitemD_20_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/gatyaitemD_20_f.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/gatyaitemD_20_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyaitemD_21_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/gatyaitemD_21_f.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/gatyaitemD_21_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyaitemD_29_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/gatyaitemD_29_f.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/gatyaitemD_29_f.png"
+      }
+    },
+    {
+      "path": "Image/img007_C_001.png",
+      "winner": {
+        "kind": "server",
+        "root": "XImageServer",
+        "generation": "X",
+        "priority": 124,
+        "path": "jp/server/XImageServer/img007_C_001.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img007_C_001.png"
+      }
+    },
+    {
+      "path": "Image/img007_C_126.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img007_C_126.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "MImageServer",
+        "generation": "M",
+        "priority": 113,
+        "path": "jp/server/MImageServer/img007_C_126.png"
+      }
+    },
+    {
+      "path": "Image/img009_10.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img009_10.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "FImageServer",
+        "generation": "F",
+        "priority": 106,
+        "path": "jp/server/FImageServer/img009_10.png"
+      }
+    },
+    {
+      "path": "Image/img009_3.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img009_3.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/img009_3.png"
+      }
+    },
+    {
+      "path": "Image/img009_4.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img009_4.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/img009_4.png"
+      }
+    },
+    {
+      "path": "Image/img009_5.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img009_5.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/img009_5.png"
+      }
+    },
+    {
+      "path": "Image/img009_6.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img009_6.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/img009_6.png"
+      }
+    },
+    {
+      "path": "Image/img009_7.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img009_7.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/img009_7.png"
+      }
+    },
+    {
+      "path": "Image/img009_8.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img009_8.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/img009_8.png"
+      }
+    },
+    {
+      "path": "Image/img009_9.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img009_9.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/img009_9.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_008.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img009_C_008.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/img009_C_008.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_013.png",
+      "winner": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/img009_C_013.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "CImageServer",
+        "generation": "C",
+        "priority": 103,
+        "path": "jp/server/CImageServer/img009_C_013.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_013.png",
+      "winner": {
+        "kind": "server",
+        "root": "MImageServer",
+        "generation": "M",
+        "priority": 113,
+        "path": "jp/server/MImageServer/img009_C_013.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/img009_C_013.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_024.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img009_C_024.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/img009_C_024.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_031.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/img009_C_031.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/img009_C_031.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_041.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/img009_C_041.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/img009_C_041.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_049.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/img009_C_049.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EImageServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EImageServer/img009_C_049.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_052.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/img009_C_052.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "FImageServer",
+        "generation": "F",
+        "priority": 106,
+        "path": "jp/server/FImageServer/img009_C_052.png"
+      }
+    },
+    {
+      "path": "Image/img009_C_065.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img009_C_065.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "GImageServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GImageServer/img009_C_065.png"
+      }
+    },
+    {
+      "path": "Image/img009_S_127.png",
+      "winner": {
+        "kind": "server",
+        "root": "KImageServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KImageServer/img009_S_127.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/img009_S_127.png"
+      }
+    },
+    {
+      "path": "Image/img009_nekoDojo_000.png",
+      "winner": {
+        "kind": "server",
+        "root": "KImageServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KImageServer/img009_nekoDojo_000.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "FImageServer",
+        "generation": "F",
+        "priority": 106,
+        "path": "jp/server/FImageServer/img009_nekoDojo_000.png"
+      }
+    },
+    {
+      "path": "Image/img011_logo_C_065.png",
+      "winner": {
+        "kind": "server",
+        "root": "XImageServer",
+        "generation": "X",
+        "priority": 124,
+        "path": "jp/server/XImageServer/img011_logo_C_065.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "GImageServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GImageServer/img011_logo_C_065.png"
+      }
+    },
+    {
+      "path": "Image/img011_logo_C_107.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img011_logo_C_107.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img011_logo_C_107.png"
+      }
+    },
+    {
+      "path": "Image/img011_logo_C_107.png",
+      "winner": {
+        "kind": "server",
+        "root": "XImageServer",
+        "generation": "X",
+        "priority": 124,
+        "path": "jp/server/XImageServer/img011_logo_C_107.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img011_logo_C_107.png"
+      }
+    },
+    {
+      "path": "Image/img012_ja_C_065.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img012_ja_C_065.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img012_ja_C_065.png"
+      }
+    },
+    {
+      "path": "Image/img012_space_C_065.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img012_space_C_065.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img012_space_C_065.png"
+      }
+    },
+    {
+      "path": "Image/img012_w_C_065.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img012_w_C_065.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img012_w_C_065.png"
+      }
+    },
+    {
+      "path": "Image/img045_00_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/img045_00_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_00_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_145_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img045_145_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_145_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_20_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/img045_20_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_20_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_21_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/img045_21_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_21_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_29_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img045_29_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_29_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_913_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "IImageServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IImageServer/img045_913_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "FImageServer",
+        "generation": "F",
+        "priority": 106,
+        "path": "jp/server/FImageServer/img045_913_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_921_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img045_921_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "GImageServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GImageServer/img045_921_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_932_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QImageServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QImageServer/img045_932_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "JImageServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JImageServer/img045_932_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_938_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img045_938_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_938_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_939_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img045_939_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_939_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_950_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RImageServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RImageServer/img045_950_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_950_ja.png"
+      }
+    },
+    {
+      "path": "Image/img045_954_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "SImageServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SImageServer/img045_954_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img045_954_ja.png"
+      }
+    },
+    {
+      "path": "Image/rc089.png",
+      "winner": {
+        "kind": "server",
+        "root": "FImageServer",
+        "generation": "F",
+        "priority": 106,
+        "path": "jp/server/FImageServer/rc089.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/rc089.png"
+      }
+    },
+    {
+      "path": "Image/scratch_000.png",
+      "winner": {
+        "kind": "server",
+        "root": "OImageServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OImageServer/scratch_000.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/scratch_000.png"
+      }
+    },
+    {
+      "path": "Image/worldmap_anim000.png",
+      "winner": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/worldmap_anim000.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/worldmap_anim000.png"
+      }
+    },
+    {
+      "path": "ImageData/186_e.imgcut",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/186_e.imgcut"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/186_e.imgcut"
+      }
+    },
+    {
+      "path": "ImageData/186_e.mamodel",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/186_e.mamodel"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/186_e.mamodel"
+      }
+    },
+    {
+      "path": "ImageData/186_e00.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/186_e00.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/186_e00.maanim"
+      }
+    },
+    {
+      "path": "ImageData/186_e02.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/186_e02.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/186_e02.maanim"
+      }
+    },
+    {
+      "path": "ImageData/186_e03.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/186_e03.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/186_e03.maanim"
+      }
+    },
+    {
+      "path": "ImageData/455_c02.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/455_c02.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/455_c02.maanim"
+      }
+    },
+    {
+      "path": "ImageData/455_f02.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/455_f02.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/455_f02.maanim"
+      }
+    },
+    {
+      "path": "ImageData/486_e03.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/486_e03.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/486_e03.maanim"
+      }
+    },
+    {
+      "path": "ImageData/517_c03.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/517_c03.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/517_c03.maanim"
+      }
+    },
+    {
+      "path": "ImageData/517_f03.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/517_f03.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/517_f03.maanim"
+      }
+    },
+    {
+      "path": "ImageData/633_s02.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/633_s02.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/633_s02.maanim"
+      }
+    },
+    {
+      "path": "ImageData/725_c02.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/725_c02.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/725_c02.maanim"
+      }
+    },
+    {
+      "path": "ImageData/725_f02.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/725_f02.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/725_f02.maanim"
+      }
+    },
+    {
+      "path": "Map/Skill_name_025.png",
+      "winner": {
+        "kind": "server",
+        "root": "XMapServer",
+        "generation": "X",
+        "priority": 124,
+        "path": "jp/server/XMapServer/Skill_name_025.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "JMapServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JMapServer/Skill_name_025.png"
+      }
+    },
+    {
+      "path": "Map/castleCustom_name_00.png",
+      "winner": {
+        "kind": "server",
+        "root": "IMapServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IMapServer/castleCustom_name_00.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/castleCustom_name_00.png"
+      }
+    },
+    {
+      "path": "Map/castleCustom_name_01.png",
+      "winner": {
+        "kind": "server",
+        "root": "IMapServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IMapServer/castleCustom_name_01.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/castleCustom_name_01.png"
+      }
+    },
+    {
+      "path": "Map/castleCustom_name_02.png",
+      "winner": {
+        "kind": "server",
+        "root": "IMapServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IMapServer/castleCustom_name_02.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/castleCustom_name_02.png"
+      }
+    },
+    {
+      "path": "Map/castleCustom_name_03.png",
+      "winner": {
+        "kind": "server",
+        "root": "IMapServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IMapServer/castleCustom_name_03.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/castleCustom_name_03.png"
+      }
+    },
+    {
+      "path": "Map/castleCustom_name_04.png",
+      "winner": {
+        "kind": "server",
+        "root": "IMapServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/IMapServer/castleCustom_name_04.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/castleCustom_name_04.png"
+      }
+    },
+    {
+      "path": "Map/map024_00.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/map024_00.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "JMapServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JMapServer/map024_00.png"
+      }
+    },
+    {
+      "path": "Map/map024_00.png",
+      "winner": {
+        "kind": "server",
+        "root": "XMapServer",
+        "generation": "X",
+        "priority": 124,
+        "path": "jp/server/XMapServer/map024_00.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/map024_00.png"
+      }
+    },
+    {
+      "path": "Map/mapname018_c_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "EMapServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EMapServer/mapname018_c_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "AMapServer",
+        "generation": "A",
+        "priority": 101,
+        "path": "jp/server/AMapServer/mapname018_c_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname018_c_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "JMapServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JMapServer/mapname018_c_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EMapServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EMapServer/mapname018_c_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname046_c_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "JMapServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JMapServer/mapname046_c_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EMapServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EMapServer/mapname046_c_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname047_c_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "JMapServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JMapServer/mapname047_c_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "EMapServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/EMapServer/mapname047_c_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname056_a_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "VMapServer",
+        "generation": "V",
+        "priority": 122,
+        "path": "jp/server/VMapServer/mapname056_a_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapname056_a_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname111_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname111_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DMapServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DMapServer/mapname111_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname112_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname112_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DMapServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DMapServer/mapname112_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname114_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname114_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DMapServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DMapServer/mapname114_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname208_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname208_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "JMapServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JMapServer/mapname208_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname234_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname234_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "LMapServer",
+        "generation": "L",
+        "priority": 112,
+        "path": "jp/server/LMapServer/mapname234_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname235_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname235_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "LMapServer",
+        "generation": "L",
+        "priority": 112,
+        "path": "jp/server/LMapServer/mapname235_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname236_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname236_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "LMapServer",
+        "generation": "L",
+        "priority": 112,
+        "path": "jp/server/LMapServer/mapname236_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname237_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname237_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "LMapServer",
+        "generation": "L",
+        "priority": 112,
+        "path": "jp/server/LMapServer/mapname237_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname308_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname308_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "PMapServer",
+        "generation": "P",
+        "priority": 116,
+        "path": "jp/server/PMapServer/mapname308_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname309_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapname309_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "PMapServer",
+        "generation": "P",
+        "priority": 116,
+        "path": "jp/server/PMapServer/mapname309_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname320_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "VMapServer",
+        "generation": "V",
+        "priority": 122,
+        "path": "jp/server/VMapServer/mapname320_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapname320_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapname321_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "VMapServer",
+        "generation": "V",
+        "priority": 122,
+        "path": "jp/server/VMapServer/mapname321_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapname321_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_19_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_19_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_19_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_20_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_20_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_20_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_21_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_21_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_21_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_22_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_22_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_22_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_23_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_23_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_23_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_24_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_24_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_24_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_25_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_25_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_25_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_26_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_26_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_26_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_27_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_27_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_27_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_28_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_28_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_28_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_29_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_29_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_29_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_30_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_30_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_30_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_31_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_31_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_31_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_32_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_32_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_32_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_33_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_33_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_33_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_34_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_34_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_34_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_35_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_35_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_35_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_36_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_36_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_36_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_37_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_37_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_37_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_38_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_38_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_38_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_39_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GMapServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GMapServer/mapsn000_39_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_39_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_40_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_40_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_40_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_41_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_41_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_41_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_42_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_42_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_42_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_43_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_43_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_43_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_44_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_44_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_44_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_45_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_45_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_45_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_46_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_46_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_46_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_47_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_47_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_47_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_48_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_48_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_48_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn000_49_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "KMapServer",
+        "generation": "K",
+        "priority": 111,
+        "path": "jp/server/KMapServer/mapsn000_49_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn000_49_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_00_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_00_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_00_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_01_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_01_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_01_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_02_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_02_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_02_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_03_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_03_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_03_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_04_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_04_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_04_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_05_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_05_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_05_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_06_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_06_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_06_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_07_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_07_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_07_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_08_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_08_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_08_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_09_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_09_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_09_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_10_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_10_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_10_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_11_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_11_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_11_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_12_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_12_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_12_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_13_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_13_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_13_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_14_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_14_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_14_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_15_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_15_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_15_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_16_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_16_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_16_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_17_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_17_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_17_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_18_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_18_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_18_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_19_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_19_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_19_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_20_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_20_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_20_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_21_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_21_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_21_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_22_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_22_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_22_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_23_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_23_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_23_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_24_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_24_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_24_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_25_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_25_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_25_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_26_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_26_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_26_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_27_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_27_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_27_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_28_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_28_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_28_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_29_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn006_29_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_29_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_30_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_30_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_30_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_31_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_31_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_31_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_32_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_32_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_32_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_33_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_33_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_33_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_34_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_34_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_34_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_35_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_35_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_35_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_36_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_36_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_36_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_37_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_37_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_37_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_38_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_38_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_38_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_39_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "QMapServer",
+        "generation": "Q",
+        "priority": 117,
+        "path": "jp/server/QMapServer/mapsn006_39_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_39_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_40_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_40_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_40_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_41_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_41_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_41_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_42_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_42_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_42_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_43_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_43_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_43_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_44_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_44_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_44_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_45_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_45_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_45_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_46_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_46_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_46_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_47_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_47_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_47_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_48_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_48_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_48_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn006_49_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn006_49_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn006_49_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_00_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_00_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_00_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_01_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_01_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_01_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_02_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_02_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_02_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_03_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_03_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_03_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_04_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_04_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_04_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_05_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_05_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_05_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_06_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_06_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_06_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_07_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_07_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_07_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_08_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "OMapServer",
+        "generation": "O",
+        "priority": 115,
+        "path": "jp/server/OMapServer/mapsn007_08_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_08_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn007_09_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn007_09_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn007_09_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_00_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_00_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_00_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_01_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_01_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_01_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_02_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_02_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_02_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_03_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_03_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_03_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_04_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_04_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_04_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_05_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_05_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_05_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_06_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_06_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_06_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_07_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_07_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_07_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_08_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_08_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_08_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_09_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_09_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_09_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_10_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_10_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_10_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_11_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_11_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_11_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_12_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_12_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_12_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_13_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_13_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_13_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_14_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_14_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_14_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_15_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_15_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_15_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_16_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_16_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_16_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_17_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_17_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_17_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_18_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_18_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_18_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_19_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_19_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_19_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_20_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_20_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_20_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_21_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_21_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_21_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_22_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_22_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_22_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_23_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_23_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_23_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_24_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_24_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_24_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_25_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_25_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_25_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_26_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_26_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_26_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_27_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_27_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_27_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_28_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_28_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_28_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_29_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_29_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_29_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_30_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_30_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_30_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_31_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_31_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_31_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_32_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_32_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_32_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_33_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_33_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_33_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_34_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_34_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_34_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_35_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_35_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_35_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_36_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_36_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_36_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_37_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_37_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_37_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_38_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_38_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_38_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_39_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_39_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_39_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_40_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_40_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_40_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_41_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_41_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_41_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_42_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_42_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_42_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_43_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_43_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_43_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_44_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_44_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_44_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_45_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_45_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_45_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_46_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_46_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_46_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_47_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_47_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_47_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_48_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_48_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_48_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn010_49_v_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn010_49_v_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn010_49_v_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn018_00_c_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "JMapServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JMapServer/mapsn018_00_c_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "AMapServer",
+        "generation": "A",
+        "priority": 101,
+        "path": "jp/server/AMapServer/mapsn018_00_c_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn018_01_c_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "JMapServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JMapServer/mapsn018_01_c_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "AMapServer",
+        "generation": "A",
+        "priority": 101,
+        "path": "jp/server/AMapServer/mapsn018_01_c_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn052_00_ex_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "PMapServer",
+        "generation": "P",
+        "priority": 116,
+        "path": "jp/server/PMapServer/mapsn052_00_ex_ja.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "MapLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/MapLocal/mapsn052_00_ex_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn065_07_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "PMapServer",
+        "generation": "P",
+        "priority": 116,
+        "path": "jp/server/PMapServer/mapsn065_07_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "CMapServer",
+        "generation": "C",
+        "priority": 103,
+        "path": "jp/server/CMapServer/mapsn065_07_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn366_01_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn366_01_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn366_01_s_ja.png"
+      }
+    },
+    {
+      "path": "Map/mapsn366_02_s_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "UMapServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UMapServer/mapsn366_02_s_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/mapsn366_02_s_ja.png"
+      }
+    },
+    {
+      "path": "Number/055_e.png",
+      "winner": {
+        "kind": "server",
+        "root": "JNumberServer",
+        "generation": "J",
+        "priority": 110,
+        "path": "jp/server/JNumberServer/055_e.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ANumberServer",
+        "generation": "A",
+        "priority": 101,
+        "path": "jp/server/ANumberServer/055_e.png"
+      }
+    },
+    {
+      "path": "Number/057_e.png",
+      "winner": {
+        "kind": "server",
+        "root": "INumberServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/INumberServer/057_e.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ANumberServer",
+        "generation": "A",
+        "priority": 101,
+        "path": "jp/server/ANumberServer/057_e.png"
+      }
+    },
+    {
+      "path": "Number/107_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "INumberServer",
+        "generation": "I",
+        "priority": 109,
+        "path": "jp/server/INumberServer/107_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ANumberServer",
+        "generation": "A",
+        "priority": 101,
+        "path": "jp/server/ANumberServer/107_f.png"
+      }
+    },
+    {
+      "path": "Number/155_c.png",
+      "winner": {
+        "kind": "server",
+        "root": "RNumberServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RNumberServer/155_c.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BNumberServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BNumberServer/155_c.png"
+      }
+    },
+    {
+      "path": "Number/155_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "RNumberServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RNumberServer/155_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BNumberServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BNumberServer/155_f.png"
+      }
+    },
+    {
+      "path": "Number/166_e.png",
+      "winner": {
+        "kind": "server",
+        "root": "ENumberServer",
+        "generation": "E",
+        "priority": 105,
+        "path": "jp/server/ENumberServer/166_e.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BNumberServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BNumberServer/166_e.png"
+      }
+    },
+    {
+      "path": "Number/185_e.png",
+      "winner": {
+        "kind": "server",
+        "root": "DNumberServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DNumberServer/185_e.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BNumberServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BNumberServer/185_e.png"
+      }
+    },
+    {
+      "path": "Number/186_e.png",
+      "winner": {
+        "kind": "server",
+        "root": "SNumberServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SNumberServer/186_e.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "NumberLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/NumberLocal/186_e.png"
+      }
+    },
+    {
+      "path": "Number/262_e.png",
+      "winner": {
+        "kind": "server",
+        "root": "RNumberServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RNumberServer/262_e.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "CNumberServer",
+        "generation": "C",
+        "priority": 103,
+        "path": "jp/server/CNumberServer/262_e.png"
+      }
+    },
+    {
+      "path": "Number/758_c.png",
+      "winner": {
+        "kind": "server",
+        "root": "UNumberServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UNumberServer/758_c.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "SNumberServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SNumberServer/758_c.png"
+      }
+    },
+    {
+      "path": "Number/758_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "UNumberServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UNumberServer/758_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "SNumberServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SNumberServer/758_f.png"
+      }
+    },
+    {
+      "path": "Unit/udi155_c.png",
+      "winner": {
+        "kind": "server",
+        "root": "RUnitServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RUnitServer/udi155_c.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BUnitServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BUnitServer/udi155_c.png"
+      }
+    },
+    {
+      "path": "Unit/udi155_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "RUnitServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RUnitServer/udi155_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BUnitServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BUnitServer/udi155_f.png"
+      }
+    },
+    {
+      "path": "Unit/udi181_c.png",
+      "winner": {
+        "kind": "server",
+        "root": "DUnitServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DUnitServer/udi181_c.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BUnitServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BUnitServer/udi181_c.png"
+      }
+    },
+    {
+      "path": "Unit/udi758_c.png",
+      "winner": {
+        "kind": "server",
+        "root": "UUnitServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UUnitServer/udi758_c.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "SUnitServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SUnitServer/udi758_c.png"
+      }
+    },
+    {
+      "path": "Unit/udi758_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "UUnitServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UUnitServer/udi758_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "SUnitServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SUnitServer/udi758_f.png"
+      }
+    },
+    {
+      "path": "Unit/uni155_c00.png",
+      "winner": {
+        "kind": "server",
+        "root": "RUnitServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RUnitServer/uni155_c00.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BUnitServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BUnitServer/uni155_c00.png"
+      }
+    },
+    {
+      "path": "Unit/uni155_f00.png",
+      "winner": {
+        "kind": "server",
+        "root": "RUnitServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RUnitServer/uni155_f00.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BUnitServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BUnitServer/uni155_f00.png"
+      }
+    },
+    {
+      "path": "Unit/uni181_c00.png",
+      "winner": {
+        "kind": "server",
+        "root": "DUnitServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DUnitServer/uni181_c00.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "BUnitServer",
+        "generation": "B",
+        "priority": 102,
+        "path": "jp/server/BUnitServer/uni181_c00.png"
+      }
+    },
+    {
+      "path": "Unit/uni758_c00.png",
+      "winner": {
+        "kind": "server",
+        "root": "UUnitServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UUnitServer/uni758_c00.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "SUnitServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SUnitServer/uni758_c00.png"
+      }
+    },
+    {
+      "path": "Unit/uni758_f00.png",
+      "winner": {
+        "kind": "server",
+        "root": "UUnitServer",
+        "generation": "U",
+        "priority": 121,
+        "path": "jp/server/UUnitServer/uni758_f00.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "SUnitServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SUnitServer/uni758_f00.png"
+      }
+    }
+  ],
+  "identicalDuplicates": [
+    {
+      "path": "Image/gatyachara_248_f.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/gatyachara_248_f.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/gatyachara_248_f.png"
+      }
+    },
+    {
+      "path": "Image/gatyachara_248_z.png",
+      "winner": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/gatyachara_248_z.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "ImageServer",
+        "generation": "base",
+        "priority": 100,
+        "path": "jp/server/ImageServer/gatyachara_248_z.png"
+      }
+    },
+    {
+      "path": "Image/img013.png",
+      "winner": {
+        "kind": "server",
+        "root": "HImageServer",
+        "generation": "H",
+        "priority": 108,
+        "path": "jp/server/HImageServer/img013.png"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageLocal/img013.png"
+      }
+    },
+    {
+      "path": "Image/img045_45_ja.png",
+      "winner": {
+        "kind": "server",
+        "root": "GImageServer",
+        "generation": "G",
+        "priority": 107,
+        "path": "jp/server/GImageServer/img045_45_ja.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "DImageServer",
+        "generation": "D",
+        "priority": 104,
+        "path": "jp/server/DImageServer/img045_45_ja.png"
+      }
+    },
+    {
+      "path": "ImageData/186_e01.maanim",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/186_e01.maanim"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/apks/150501/ImageDataLocal/186_e01.maanim"
+      }
+    },
+    {
+      "path": "Map/map042_01.png",
+      "winner": {
+        "kind": "server",
+        "root": "SMapServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SMapServer/map042_01.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/map042_01.png"
+      }
+    },
+    {
+      "path": "Map/map042_02.png",
+      "winner": {
+        "kind": "server",
+        "root": "SMapServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SMapServer/map042_02.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/map042_02.png"
+      }
+    },
+    {
+      "path": "Map/map042_03.png",
+      "winner": {
+        "kind": "server",
+        "root": "SMapServer",
+        "generation": "S",
+        "priority": 119,
+        "path": "jp/server/SMapServer/map042_03.png"
+      },
+      "replaced": {
+        "kind": "server",
+        "root": "RMapServer",
+        "generation": "R",
+        "priority": 118,
+        "path": "jp/server/RMapServer/map042_03.png"
+      }
+    }
+  ],
+  "legacyAliasCount": 42537,
+  "collisions": []
+}

@@ -1,0 +1,147 @@
+import { isDeepStrictEqual } from "node:util";
+import { readFile, readdir } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+import { compareText, listFiles, mapConcurrent, sha256File } from "./apk-ledger.mjs";
+import {
+  GENERATED_METADATA_FILES,
+  SITE_DATA_GROUPS,
+  createAssetIndex,
+  createBuildPlan,
+  createBuildReport,
+  createMotionIndex,
+  findOldClassifiedPaths,
+  hashSelectedFiles,
+  loadBuildContext,
+  readSitedataReadme,
+  summarizePlan,
+} from "./build-sitedata.mjs";
+import { verifyMotionConsumerContracts } from "./motion-contract.mjs";
+
+export async function verifySitedata(options = {}) {
+  const concurrency = options.concurrency ?? 16;
+  const context = await loadBuildContext({ ...options, concurrency });
+  const plan = await createBuildPlan({
+    repoRoot: context.repoRoot,
+    apkRoot: context.apkRoot,
+    serverRoot: context.serverRoot,
+  });
+  await hashSelectedFiles(plan, concurrency);
+
+  const expectedAssetIndex = createAssetIndex(plan, context.versionRecord);
+  const expectedMotionIndex = createMotionIndex(plan, context.versionRecord);
+  const expectedBuildReport = createBuildReport(plan, context.versionRecord);
+  const actualAssetIndex = await readJson(path.join(context.outputRoot, "asset-index.json"));
+  const actualMotionIndex = await readJson(path.join(context.outputRoot, "motion-index.json"));
+  const actualBuildReport = await readJson(path.join(context.outputRoot, "build-report.json"));
+  assertDeepEqual(actualAssetIndex, expectedAssetIndex, "asset-index.json is stale or invalid.");
+  assertDeepEqual(actualMotionIndex, expectedMotionIndex, "motion-index.json is stale or invalid.");
+  assertDeepEqual(actualBuildReport, expectedBuildReport, "build-report.json is stale or invalid.");
+  const [actualReadme, expectedReadme] = await Promise.all([
+    readFile(path.join(context.outputRoot, "README.md")),
+    readSitedataReadme(),
+  ]);
+  if (!actualReadme.equals(expectedReadme) || actualReadme[0] !== 0xef
+    || actualReadme[1] !== 0xbb || actualReadme[2] !== 0xbf) {
+    throw new Error("sitedata README.md is stale or does not have a UTF-8 BOM.");
+  }
+
+  const rootEntries = await readdir(context.outputRoot, { withFileTypes: true });
+  const actualGroups = rootEntries
+    .filter(entry => entry.isDirectory())
+    .map(entry => entry.name)
+    .sort(compareText);
+  const expectedGroups = [...SITE_DATA_GROUPS].sort(compareText);
+  if (!isDeepStrictEqual(actualGroups, expectedGroups)) {
+    throw new Error(`Unexpected sitedata groups: ${actualGroups.join(",")}`);
+  }
+  const rootFiles = rootEntries.filter(entry => entry.isFile()).map(entry => entry.name).sort(compareText);
+  if (!isDeepStrictEqual(rootFiles, [...GENERATED_METADATA_FILES].sort(compareText))) {
+    throw new Error(`Unexpected sitedata metadata files: ${rootFiles.join(",")}`);
+  }
+
+  const outputFiles = (await listFiles(context.outputRoot))
+    .filter(file => !GENERATED_METADATA_FILES.includes(file.relativePath));
+  const indexedPaths = Object.keys(actualAssetIndex.files);
+  const actualPaths = outputFiles.map(file => file.relativePath);
+  if (!isDeepStrictEqual(actualPaths, indexedPaths)) {
+    throw new Error("asset-index.json paths do not exactly match sitedata files.");
+  }
+  await mapConcurrent(outputFiles, concurrency, async file => {
+    const indexed = actualAssetIndex.files[file.relativePath];
+    if (file.size !== indexed.size) {
+      throw new Error(`Size mismatch: ${file.relativePath}`);
+    }
+    const sha256 = await sha256File(file.absolutePath);
+    if (sha256 !== indexed.sha256) {
+      throw new Error(`SHA-256 mismatch: ${file.relativePath}`);
+    }
+  });
+
+  for (const [legacyPath, rawPath] of Object.entries(actualMotionIndex.assets)) {
+    if (!/^(units|enemies|resources|number)\//.test(legacyPath)) {
+      throw new Error(`Unsupported legacy motion path: ${legacyPath}`);
+    }
+    if (!Object.prototype.hasOwnProperty.call(actualAssetIndex.files, rawPath)) {
+      throw new Error(`Missing motion index target: ${rawPath}`);
+    }
+  }
+
+  const oldPaths = await findOldClassifiedPaths(context.repoRoot);
+  if (oldPaths.length > 0) {
+    throw new Error(`Old classified paths remain: ${oldPaths.join(",")}`);
+  }
+  const consumerContracts = verifyMotionConsumerContracts(actualMotionIndex.assets);
+  return {
+    ...summarizePlan(plan, context.versionRecord),
+    assetIndexCount: indexedPaths.length,
+    motionIndexCount: Object.keys(actualMotionIndex.assets).length,
+    oldClassifiedPathCount: oldPaths.length,
+    consumerContractKeyCount: consumerContracts.checkedKeyCount,
+  };
+}
+
+async function readJson(filePath) {
+  const source = await readFile(filePath, "utf8");
+  try {
+    return JSON.parse(source.replace(/^\uFEFF/, ""));
+  } catch (error) {
+    throw new Error(`Invalid JSON: ${filePath}`, { cause: error });
+  }
+}
+
+function assertDeepEqual(actual, expected, message) {
+  if (!isDeepStrictEqual(actual, expected)) throw new Error(message);
+}
+
+function parseArguments(argv) {
+  const options = { concurrency: 16 };
+  for (let index = 0; index < argv.length; index += 1) {
+    const argument = argv[index];
+    if (argument === "--repo-root") options.repoRoot = requireValue(argv, ++index, argument);
+    else if (argument === "--ledger") options.ledgerPath = requireValue(argv, ++index, argument);
+    else if (argument === "--server-root") options.serverRoot = requireValue(argv, ++index, argument);
+    else if (argument === "--output") options.outputRoot = requireValue(argv, ++index, argument);
+    else if (argument === "--concurrency") options.concurrency = Number(requireValue(argv, ++index, argument));
+    else throw new Error(`Unknown argument: ${argument}`);
+  }
+  return options;
+}
+
+function requireValue(argv, index, option) {
+  const value = argv[index];
+  if (!value || value.startsWith("--")) throw new Error(`${option} requires a value.`);
+  return value;
+}
+
+const isEntryPoint = process.argv[1]
+  && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url));
+if (isEntryPoint) {
+  verifySitedata(parseArguments(process.argv.slice(2)))
+    .then(result => process.stdout.write(`${JSON.stringify(result, null, 2)}\n`))
+    .catch(error => {
+      process.stderr.write(`${error.stack ?? error.message}\n`);
+      process.exitCode = 1;
+    });
+}
