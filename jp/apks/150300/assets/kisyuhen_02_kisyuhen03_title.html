@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no,email=no">
+<link rel="stylesheet" type="text/css" href="kisyuhen.css" />
+<title>機種変更</title>
+<script type="text/javascript">
+function setTransferType(type) {
+  var elements = document.getElementsByName("transfer_type_" + type);
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.display = "";
+  }
+}
+</script>
+</head>
+<body class="layout_b">
+<div align="center" style="height:100%">
+    <div id="main_area_bk">
+        <p><span class="midashi_red">機種変更手続き中です</span></p>
+        <p><span style="color:#ffff00; font-size:small">※機種変更手続き中はゲームプレイはできません。</span></p>
+        <hr noshade width="97%" color="#999966">
+        <div class="ac_link_conts02">
+           <p>
+				サーバーへデータが保存され、機種変更の手続きが完了しました。<br>
+				<span style="font-weight: bold; font-size: 1.15em;">このままアプリを終了</span>し、新しい端末で以下の手順に沿って、引継ぎを行ってください。<br>
+				<br>
+				<span style="color:#ff00ff; font-weight: bold;">新しい端末でのデータ受け取り手順（※スクリーンショット推奨）</span><br>
+				【1】「にゃんこ大戦争」をダウンロード<br>
+				【2】タイトル画面で[オプション]を選択<br>
+				【3】オプションの[アカウント・機種変更]を選択<br>
+				【4】「機種変更・アカウント連携メニュー」画面の[機種変更手続き]を選択<br>
+				【5】「機種変更手続きメニュー」画面の[新しい端末でデータを受け取る]を選択<br>
+				【6】「手続きをしたデータを引継ぐ」画面で「引継ぎコード」と「認証番号」を入力<br>
+				【7】入力後に[引継ぎ開始]を選択<br>
+			</p>
+			
+            <ul class="transfer_code">
+                <li name="transfer_type_0" style="display: none;">引継ぎコード： <span id="accountId"></span></li>
+                <li name="transfer_type_0" style="display: none;">認証番号： <span id="pin"></span></li>
+            </ul>
+        </div>
+        <div class="ac_link_notes">
+          <p>※ご注意<br>
+            データを引継ぐ手続きの際は「引継ぎコード」と「認証番号」が必要になりますので、忘れないように必ずメモしてください。<br>
+            上記をお忘れになられますとデータを復帰させることはできませんのでご注意ください。<br>
+            サーバへのデータ保管期間は3ヶ月間となります。3ヶ月以内に引継ぎを行ってください。<br>
+            <br>
+					</p>
+        </div>
+        <hr noshade width="97%" color="#999966">
+        <br>
+        <div class="ac_link_txt01">
+            <p class="ac_btn_red"><a href="ponos-api://function?cloudsave_stop=1">機種変更手続きを中止する</a></p>
+<!--            <p style="color:#ffff00; font-size:small">
+                すでに他端末で機種変更手続きが完了している場合、<br>
+                本端末のゲームは始めから開始となります。<br>
+                機種変更手続き完了後、本端末で始めからゲームを遊ぶ場合も<br>
+                上記ボタンを押してください。</p>-->
+        </div>
+			
+			<br>
+    </div>
+</div>
+</body>
+</html>
