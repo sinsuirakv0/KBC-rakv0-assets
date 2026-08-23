@@ -16,7 +16,7 @@ import {
 } from "../scripts/build-explorer-index.mjs";
 
 test("sitedata generated metadata is excluded from Explorer payloads", () => {
-  for (const name of ["asset-index.json", "build-report.json", "character-index.json", "README.md"]) {
+  for (const name of ["asset-index.json", "build-report.json", "character-assets.json", "character-index.json", "README.md"]) {
     assert.equal(isSitedataMetadata(name), true);
   }
   assert.equal(isSitedataMetadata("Data/unit001.csv"), false);

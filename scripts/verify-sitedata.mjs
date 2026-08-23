@@ -4,7 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { compareText, listFiles, mapConcurrent, sha256File } from "./apk-ledger.mjs";
-import { verifyCharacterIndex } from "./build-character-index.mjs";
+import { readCharacterOverrides, verifyCharacterOutputs } from "./build-character-index.mjs";
 import {
   GENERATED_METADATA_FILES,
   SITE_DATA_GROUPS,
@@ -32,16 +32,19 @@ export async function verifySitedata(options = {}) {
   const expectedBuildReport = createBuildReport(plan, context.versionRecord);
   const actualAssetIndex = await readJson(path.join(context.outputRoot, "asset-index.json"));
   const actualBuildReport = await readJson(path.join(context.outputRoot, "build-report.json"));
+  const actualCharacterAssets = await readJson(path.join(context.outputRoot, "character-assets.json"));
   const actualCharacterIndex = await readJson(path.join(context.outputRoot, "character-index.json"));
   assertDeepEqual(actualAssetIndex, expectedAssetIndex, "asset-index.json is stale or invalid.");
   assertDeepEqual(actualBuildReport, expectedBuildReport, "build-report.json is stale or invalid.");
-  const characterSummary = await verifyCharacterIndex({
-    actual: actualCharacterIndex,
+  const characterSummary = await verifyCharacterOutputs({
+    actualIndex: actualCharacterIndex,
+    actualAssets: actualCharacterAssets,
     versionRecord: context.versionRecord,
     files: plan.selected.map(candidate => ({
       relativePath: candidate.outputPath,
       absolutePath: candidate.sourcePath,
     })),
+    overrides: await readCharacterOverrides(context.characterOverridesPath),
   });
   const [actualReadme, expectedReadme] = await Promise.all([
     readFile(path.join(context.outputRoot, "README.md")),
@@ -92,6 +95,7 @@ export async function verifySitedata(options = {}) {
     ...summarizePlan(plan, context.versionRecord),
     assetIndexCount: indexedPaths.length,
     characterCount: characterSummary.unitCount,
+    characterPathCount: characterSummary.pathCount,
     oldClassifiedPathCount: oldPaths.length,
   };
 }
@@ -117,6 +121,7 @@ function parseArguments(argv) {
     else if (argument === "--ledger") options.ledgerPath = requireValue(argv, ++index, argument);
     else if (argument === "--server-root") options.serverRoot = requireValue(argv, ++index, argument);
     else if (argument === "--output") options.outputRoot = requireValue(argv, ++index, argument);
+    else if (argument === "--character-overrides") options.characterOverridesPath = requireValue(argv, ++index, argument);
     else if (argument === "--concurrency") options.concurrency = Number(requireValue(argv, ++index, argument));
     else throw new Error(`Unknown argument: ${argument}`);
   }

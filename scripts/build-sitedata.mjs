@@ -13,7 +13,13 @@ import {
   validateApkLedger,
   validateCurrentVersion,
 } from "./apk-ledger.mjs";
-import { createCharacterIndex } from "./build-character-index.mjs";
+import {
+  assertLegacyCharacterIndexMigratable,
+  createCharacterOutputs,
+  readCharacterOverrides,
+  serializeCharacterAssets,
+  serializeCharacterIndex,
+} from "./build-character-index.mjs";
 
 export const SITE_DATA_GROUPS = Object.freeze([
   "assets",
@@ -31,6 +37,7 @@ export const SITE_DATA_GROUPS = Object.freeze([
 export const GENERATED_METADATA_FILES = Object.freeze([
   "asset-index.json",
   "build-report.json",
+  "character-assets.json",
   "character-index.json",
   "README.md",
 ]);
@@ -219,18 +226,20 @@ export async function applyBuildPlan({
   versionRecord,
   outputRoot,
   inputRoots,
+  characterOverrides = { schemaVersion: 1, units: {} },
   concurrency = 16,
 }) {
   await assertSafeOutput(outputRoot, inputRoots);
   await hashSelectedFiles(plan, concurrency);
   const previousCharacterIndex = await readExistingCharacterIndex(outputRoot);
-  const characterIndex = await createCharacterIndex({
+  assertLegacyCharacterIndexMigratable(previousCharacterIndex);
+  const characterOutputs = await createCharacterOutputs({
     versionRecord,
     files: plan.selected.map(candidate => ({
       relativePath: candidate.outputPath,
       absolutePath: candidate.sourcePath,
     })),
-    previousIndex: previousCharacterIndex,
+    overrides: characterOverrides,
   });
   const parentRoot = path.dirname(outputRoot);
   const stageRoot = path.join(parentRoot, `.sitedata-build-${process.pid}-${Date.now()}`);
@@ -251,14 +260,15 @@ export async function applyBuildPlan({
     });
 
     const metadata = [
-      ["asset-index.json", createAssetIndex(plan, versionRecord)],
-      ["build-report.json", createBuildReport(plan, versionRecord)],
-      ["character-index.json", characterIndex],
+      { filename: "asset-index.json", source: `${JSON.stringify(createAssetIndex(plan, versionRecord), null, 2)}\n` },
+      { filename: "build-report.json", source: `${JSON.stringify(createBuildReport(plan, versionRecord), null, 2)}\n` },
+      { filename: "character-assets.json", source: serializeCharacterAssets(characterOutputs.characterAssets) },
+      { filename: "character-index.json", source: serializeCharacterIndex(characterOutputs.characterIndex) },
     ];
-    for (const [filename, payload] of metadata) {
+    for (const { filename, source } of metadata) {
       await writeFile(
         path.join(stageRoot, filename),
-        `${JSON.stringify(payload, null, 2)}\n`,
+        source,
         "utf8",
       );
     }
@@ -294,6 +304,8 @@ export async function loadBuildContext(options = {}) {
   const outputRoot = path.resolve(options.outputRoot ?? path.join(repoRoot, "jp", "sitedata"));
   const ledgerPath = path.resolve(options.ledgerPath ?? path.join(apksRoot, "index.json"));
   const versionPath = path.resolve(options.versionPath ?? path.join(repoRoot, "jp", "version.json"));
+  const characterOverridesPath = path.resolve(options.characterOverridesPath
+    ?? path.join(repoRoot, "jp", "character-overrides.json"));
   const ledger = await readApkLedger(ledgerPath);
   const ledgerValidation = await validateApkLedger(ledger, apksRoot, {
     concurrency: options.concurrency,
@@ -310,6 +322,7 @@ export async function loadBuildContext(options = {}) {
     outputRoot,
     ledgerPath,
     versionPath,
+    characterOverridesPath,
     ledger,
     currentVersion,
     ledgerValidation,
@@ -326,12 +339,14 @@ export async function buildSitedata(options = {}) {
     apkRoot: context.apkRoot,
     serverRoot: context.serverRoot,
   });
+  const characterOverrides = await readCharacterOverrides(context.characterOverridesPath);
   if (!options.dryRun) {
     await applyBuildPlan({
       plan,
       versionRecord: context.versionRecord,
       outputRoot: context.outputRoot,
       inputRoots: [context.apkRoot, context.serverRoot],
+      characterOverrides,
       concurrency,
     });
   }
@@ -524,6 +539,7 @@ function parseArguments(argv) {
     else if (argument === "--ledger") options.ledgerPath = requireValue(argv, ++index, argument);
     else if (argument === "--server-root") options.serverRoot = requireValue(argv, ++index, argument);
     else if (argument === "--output") options.outputRoot = requireValue(argv, ++index, argument);
+    else if (argument === "--character-overrides") options.characterOverridesPath = requireValue(argv, ++index, argument);
     else if (argument === "--concurrency") options.concurrency = Number(requireValue(argv, ++index, argument));
     else if (argument === "--dry-run") options.dryRun = true;
     else if (argument === "--help" || argument === "-h") options.help = true;
@@ -543,7 +559,7 @@ function requireValue(argv, index, option) {
 
 function printHelp() {
   process.stdout.write(
-    "Usage: node scripts/build-sitedata.mjs [--repo-root <dir>] [--ledger <file>] [--server-root <dir>] [--output <dir>] [--concurrency <1-64>] [--dry-run]\n",
+    "Usage: node scripts/build-sitedata.mjs [--repo-root <dir>] [--ledger <file>] [--server-root <dir>] [--output <dir>] [--character-overrides <file>] [--concurrency <1-64>] [--dry-run]\n",
   );
 }
 

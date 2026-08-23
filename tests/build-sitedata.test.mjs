@@ -15,10 +15,11 @@ import {
   selectCandidates,
 } from "../scripts/build-sitedata.mjs";
 
-test("generated metadata root contract includes character-index.json", () => {
+test("generated metadata root contract includes both character v2 files", () => {
   assert.deepEqual(GENERATED_METADATA_FILES, [
     "asset-index.json",
     "build-report.json",
+    "character-assets.json",
     "character-index.json",
     "README.md",
   ]);
@@ -106,7 +107,7 @@ test("generated output and indexes are deterministic", async () => {
     inputRoots: [fixture.apkRoot, fixture.serverRoot],
     concurrency: 2,
   });
-  for (const indexName of ["asset-index.json", "build-report.json", "character-index.json", "README.md"]) {
+  for (const indexName of ["asset-index.json", "build-report.json", "character-assets.json", "character-index.json", "README.md"]) {
     assert.equal(
       await readFile(path.join(firstOutput, indexName), "utf8"),
       await readFile(path.join(secondOutput, indexName), "utf8"),
@@ -114,8 +115,11 @@ test("generated output and indexes are deterministic", async () => {
   }
   const characterIndex = JSON.parse(await readFile(path.join(firstOutput, "character-index.json"), "utf8"));
   assert.equal(Object.keys(characterIndex)[0], "gameVersion");
+  assert.equal(characterIndex.schemaVersion, 2);
   assert.equal(characterIndex.units[0].id, "000");
   assert.equal(characterIndex.units[0].forms[0].name, "ネコ");
+  const characterAssetsSource = await readFile(path.join(firstOutput, "character-assets.json"), "utf8");
+  assert.equal(characterAssetsSource.includes("\n  \""), false);
   const readme = await readFile(path.join(firstOutput, "README.md"));
   assert.deepEqual([...readme.subarray(0, 3)], [0xef, 0xbb, 0xbf]);
 });

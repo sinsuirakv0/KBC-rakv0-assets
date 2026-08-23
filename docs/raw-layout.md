@@ -22,6 +22,8 @@ jp/apks/<compactVersion>/
 
 移動済みserver群は `jp/server/` に置く。認識する名前は `([A-Z]?)(ImageData|Image|Map|Number|Unit)Server` だけである。`ImageData` は `Image` と別の種別として解析する。
 
+キャラ別称・関連pathの永続手動変更は `jp/character-overrides.json` に置く。生成物を手編集せず、このファイルをbuildのsource of truthとする。
+
 最終データは次の固定構造にする。
 
 ```text
@@ -38,6 +40,7 @@ jp/sitedata/
 ├─ Unit/
 ├─ asset-index.json
 ├─ build-report.json
+├─ character-assets.json
 ├─ character-index.json
 └─ README.md
 ```
@@ -48,7 +51,7 @@ jp/sitedata/
 
 Localの優先度は0、無接頭serverは100、AからZは101から126であり、後の世代ほど優先する。同じ出力パスに同内容が来た場合は優先度の高い採用元へまとめ、異内容なら高い優先度で上書きする。同順位・同一出力パス・異内容は未解決衝突として、出力を書き換える前に失敗する。
 
-生成は一時ディレクトリで完了させてから `jp/sitedata/` と入れ替える。コンソールには件数と容量だけを出し、採用元は `asset-index.json`、上書きと同一内容の統合判断は `build-report.json`、キャラ索引は `character-index.json` に記録する。キャラ索引はstageへ書く前に既存出力を読み、手動別称・path差分を引き継ぐ。
+生成は一時ディレクトリで完了させてから `jp/sitedata/` と入れ替える。コンソールには件数と容量だけを出し、採用元は `asset-index.json`、上書き判断は `build-report.json`、キャラ本文は `character-index.json`、圧縮関連pathは `character-assets.json` に記録する。手動差分はsitedata外のoverrideから毎回適用する。
 
 `README.md` はサイト正規参照先、統合元、手編集禁止、各indexの用途を説明するBOM付きUTF-8の固定生成物である。`templates/sitedata-README.md` から毎回決定的に配置し、atomic再生成でも保持する。motion確認サイト向けの互換JSONは生成せず、必要な場合は利用側の専用JSONとして別途管理する。
 
@@ -57,18 +60,19 @@ Localの優先度は0、無接頭serverは100、AからZは101から126であり
 - `loadBuildContext`: APK台帳を検証し、最新確定版の入力ルートを決める
 - `scanBuildInputs`: APK 10群とserver群を固定規則で候補化する
 - `createBuildPlan`: raw出力の採用元、上書き、衝突を決定する
-- `applyBuildPlan`: SHA-256算出、ファイル複製、3つのJSONメタデータとREADME生成、出力入れ替えを行う
-- `createCharacterIndex`: Unit_Explanation、存在確認用Data CSV、関連asset pathから索引を作り、既存索引の手動差分を再適用する
-- `verifyCharacterIndex`: 現rawから形態・source alias・自動asset pathを独立再計算し、有効値と手動差分を厳格照合する
-- `verifySitedata`: 同じ入力から期待planを再構築し、全ファイルのsize/SHA-256、3 index、固定構造、旧分類パス不在を照合する
+- `applyBuildPlan`: SHA-256算出、ファイル複製、4つのJSONメタデータとREADME生成、出力入れ替えを行う
+- `createCharacterOutputs`: Unit_Explanation、Data存在、関連assetとoverrideから本文索引・圧縮path索引を分離生成する
+- `decodeCharacterAssetPaths`: templateとsuffixから指定unitのexact関連pathを復元する
+- `verifyCharacterOutputs`: 現rawとoverrideから両生成物を独立再計算し、全path roundtripも照合する
+- `verifySitedata`: 同じ入力から期待planを再構築し、全ファイルのsize/SHA-256、4 metadata JSON、固定構造、旧分類パス不在を照合する
 
 ## asset-index.json
 
 `schemaVersion`、`gameVersion`、`versionCode` と、`files` mapを持つ。mapのキーは `sitedata` 相対パス、値は `size`、`sha256`、`source` である。`source` はAPK/server種別、元ルート、世代、優先度、リポジトリ相対の元パスを保持する。
 
-## character-index.json
+## character-index.json / character-assets.json
 
-詳細なスキーマ、CSV列契約、手動差分の保持規則は `docs/character-index.md` を参照する。このJSONは生成metadataであり、`asset-index.json` とExplorerのraw payload一覧には含めない。
+詳細なschema、CSV列契約、圧縮path復元、override規則は `docs/character-index.md` を参照する。両JSONは生成metadataであり、`asset-index.json` とExplorer raw payload一覧には含めない。
 
 ## 旧パス互換JSON
 
