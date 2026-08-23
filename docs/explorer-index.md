@@ -18,6 +18,7 @@ jp/explorer/
 - APK snapshotのIDは台帳の`compactVersion`である。server/sitedataのIDは`v<versionName>-<compactVersion>`で、生成時点の最新確定APKに結び付く。
 - manifestの`files`はraw rootからの相対pathをキーにし、size、SHA-256、content type、preview種別を記録する。パスはスラッシュ区切りで、絶対path、`..`、空segment、バックスラッシュを許可しない。
 - `available: true` は対応するraw rootが存在し、manifestと全ファイルのsize/SHA-256が一致する場合だけである。過去のmanifestは削除せず、raw treeを保持しない過去版は`available: false`としてcatalogに残る。
+- confirmed/expanded recordに検証済み`archive`があれば、APK snapshotにも同じarchive objectを保持する。初回bootstrap前の`archive: null`ではlinkを生成しない。
 - `image` previewはPNG/JPEG/GIF/WebP/AVIF/BMP/ICOだけである。SVGやHTMLは`text`扱いで、サイト側はinline画像として表示してはならない。未知の拡張子は`binary`である。
 - sitedataは既存`asset-index.json`のハッシュを再利用するが、生成時に実ファイルのsize/SHA-256を必ず照合する。APK/serverもストリームhashで走査し、全ファイルをBufferとして同時に保持しない。
 

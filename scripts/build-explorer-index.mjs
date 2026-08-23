@@ -181,7 +181,7 @@ export function normalizeRelativePath(value) {
   return value;
 }
 
-function createApkDescriptor(record, manifest, available) {
+export function createApkDescriptor(record, manifest, available) {
   return {
     dataset: "apk",
     id: record.compactVersion,

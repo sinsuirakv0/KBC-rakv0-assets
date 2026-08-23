@@ -382,9 +382,6 @@ function validateVersionRecord(record, index) {
     if (record.expandedPath !== `jp/apks/${record.compactVersion}`) {
       throw new Error(`${label}.expandedPath must match jp/apks/<compactVersion>.`);
     }
-    if (record.archive !== null) {
-      throw new Error(`${label}.archive must be null while expanded.`);
-    }
   }
   if (record.state === "archived") {
     if (record.compatibility !== "compatible" || record.archive === null) {

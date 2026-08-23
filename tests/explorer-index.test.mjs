@@ -6,12 +6,36 @@ import test from "node:test";
 
 import { REQUIRED_APK_ROOTS } from "../scripts/apk-ledger.mjs";
 import {
+  createApkDescriptor,
   createCatalog,
   createManifestFromRoot,
   describeFile,
   normalizeRelativePath,
   validateManifest,
 } from "../scripts/build-explorer-index.mjs";
+
+test("expanded APK snapshot carries the verified archive link", () => {
+  const archive = {
+    provider: "github-release",
+    repository: "example/source",
+    tag: "battlecats-jp-history",
+    releaseUrl: "https://github.com/example/source/releases/tag/battlecats-jp-history",
+    assets: [{
+      name: "battlecats-jp-150501.tar.gz",
+      url: "https://github.com/example/source/releases/download/battlecats-jp-history/battlecats-jp-150501.tar.gz",
+      bytes: 123,
+      sha256: "a".repeat(64),
+      apiId: 1,
+    }],
+  };
+  const descriptor = createApkDescriptor({
+    versionName: "15.5.1", versionCode: 1505010, compactVersion: "150501", archive,
+  }, { fileCount: 2, totalSize: 10 }, true);
+  assert.deepEqual(descriptor.archive, archive);
+  assert.equal(descriptor.available, true);
+  assert.equal(descriptor.fileCount, 2);
+  assert.equal(descriptor.totalSize, 10);
+});
 
 test("preview kinds use an explicit safe allowlist", () => {
   assert.deepEqual(describeFile("Image/a.png"), { contentType: "image/png", previewKind: "image" });

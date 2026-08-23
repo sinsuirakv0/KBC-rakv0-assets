@@ -91,7 +91,7 @@ Localの優先度は0、無接頭serverは100、AからZは101から126であり
 - `reason`: compatibleなら `null`、incompatibleなら判定理由
 - 復号treeの `sha256`、`size`、`fileCount`
 - `expandedPath`: confirmed/expandedでは `jp/apks/<compactVersion>`、それ以外は `null`
-- `archive`: local展開版では `null`。archivedでは `provider`、`repository`、`tag`、`releaseUrl` と、multipart対応の `assets[{name,url,bytes,sha256,apiId}]` を持つ
+- `archive`: 初回bootstrap前のlocal展開版だけは `null` を許す。検証upload後のconfirmed/expandedとarchivedでは `provider`、`repository`、`tag`、`releaseUrl` と、multipart対応の `assets[{name,url,bytes,sha256,apiId}]` を持つ
 - 15.5.1のmerged APK SHA-256は `f7363b230345508b9ede469c927340553828d2892e030f67ecffda165c38ec97`、Google Play基準のsigner SHA-256は `baf876d554213331c6fe5f6bbf9ae9af2f95c20e82b14bc232b0ac3a77680cb1`
 - `source`: 取得元を識別できる説明
 - `state`: `confirmed`、`expanded`、`archived`、`skipped`
@@ -105,7 +105,7 @@ recordのSHA-256は、復号済み全ファイルを相対パス順に並べ、�
 ## 履歴版の受け入れ手順
 
 1. 復号結果に10個の必須ルートが正確に存在することを確認する。
-2. 最新付近の版は `jp/apks/<compactVersion>/` に展開し、`expandedPath` と実測tree SHA-256、size、fileCountを登録する。
+2. 最新付近の版は `jp/apks/<compactVersion>/` に展開し、`expandedPath` と実測tree SHA-256、size、fileCount、検証済みarchiveを登録する。初回bootstrap前のconfirmed currentだけは過渡的に `archive: null` を許す。
 3. 最新確定版だけを `state: confirmed` にし、`latestConfirmed` の三値を同じレコードに一致させる。保持する直前版は `expanded` にする。
 4. 既定2版を超えるcompatible版はGitHub Release等へアーカイブし、展開ディレクトリを置かず `state: archived`、`expandedPath: null`、multipart対応の `archive` を記録する。
 5. 必須ルートや命名形式が違い、安全な現行変換ができない版は展開せず、`compatibility: incompatible`、`state: skipped`、具体的な `reason` を記録する。

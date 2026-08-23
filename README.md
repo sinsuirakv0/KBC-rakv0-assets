@@ -4,7 +4,7 @@
 
 ## ディレクトリ
 
-- `jp/apks/<versionCode>/`: 最新付近のAPK由来生データ。既定で最大2版
+- `jp/apks/<compactVersion>/`: 最新付近のAPK由来生データ。既定で最大2版
 - `jp/apks/index.json`: 展開版・アーカイブ版・非互換版の台帳と容量ガード
 - `jp/version.json`: 現在確定版のpackage/version、merged APK・signer SHA-256、取得元
 - `jp/server/`: 移動済みserver pack群

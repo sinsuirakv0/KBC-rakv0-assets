@@ -125,6 +125,23 @@ test("archive metadata supports deterministic multipart GitHub Release assets", 
   assert.throws(() => validateApkLedgerSchema(ledger), /sorted ascending/);
 });
 
+test("compatible confirmed and expanded records may retain a verified archive", () => {
+  const ledger = createLedger([
+    createVersion({ archive: createArchive() }),
+    createVersion({
+      versionName: "15.5.0",
+      versionCode: 1505000,
+      compactVersion: "150500",
+      state: "expanded",
+      expandedPath: "jp/apks/150500",
+      archive: createArchive(),
+    }),
+  ]);
+  assert.doesNotThrow(() => validateApkLedgerSchema(ledger));
+  ledger.versions[0].archive.assets[0].sha256 = "invalid";
+  assert.throws(() => validateApkLedgerSchema(ledger), /lowercase SHA-256/);
+});
+
 test("archive URLs, hashes and version ordering are validated", () => {
   const archived = createVersion({
     versionName: "15.4.0",
