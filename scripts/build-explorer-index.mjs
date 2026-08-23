@@ -11,6 +11,7 @@ import {
   sha256File,
   validateApkLedgerSchema,
 } from "./apk-ledger.mjs";
+import { GENERATED_METADATA_FILES } from "./build-sitedata.mjs";
 
 export const EXPLORER_SCHEMA_VERSION = 1;
 export const EXPLORER_DATASETS = Object.freeze(["apk", "server", "sitedata"]);
@@ -323,7 +324,7 @@ function createSharedSnapshotId(version) { return `v${version.versionName}-${ver
 function snapshotKey(dataset, id) { return `${dataset}:${id}`; }
 function compareSnapshots(left, right) { return right.versionCode - left.versionCode || compareText(left.id, right.id); }
 function orderFiles(files) { return Object.fromEntries(Object.entries(files).sort(([left], [right]) => compareText(left, right))); }
-function isSitedataMetadata(relativePath) { return ["asset-index.json", "build-report.json", "README.md"].includes(relativePath); }
+export function isSitedataMetadata(relativePath) { return GENERATED_METADATA_FILES.includes(relativePath); }
 function isSafeSnapshotId(value) { return typeof value === "string" && /^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(value); }
 function isSha256(value) { return typeof value === "string" && /^[a-f0-9]{64}$/.test(value); }
 function isPlainObject(value) { return value !== null && typeof value === "object" && !Array.isArray(value); }

@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { compareText, listFiles, mapConcurrent, sha256File } from "./apk-ledger.mjs";
+import { verifyCharacterIndex } from "./build-character-index.mjs";
 import {
   GENERATED_METADATA_FILES,
   SITE_DATA_GROUPS,
@@ -31,8 +32,17 @@ export async function verifySitedata(options = {}) {
   const expectedBuildReport = createBuildReport(plan, context.versionRecord);
   const actualAssetIndex = await readJson(path.join(context.outputRoot, "asset-index.json"));
   const actualBuildReport = await readJson(path.join(context.outputRoot, "build-report.json"));
+  const actualCharacterIndex = await readJson(path.join(context.outputRoot, "character-index.json"));
   assertDeepEqual(actualAssetIndex, expectedAssetIndex, "asset-index.json is stale or invalid.");
   assertDeepEqual(actualBuildReport, expectedBuildReport, "build-report.json is stale or invalid.");
+  const characterSummary = await verifyCharacterIndex({
+    actual: actualCharacterIndex,
+    versionRecord: context.versionRecord,
+    files: plan.selected.map(candidate => ({
+      relativePath: candidate.outputPath,
+      absolutePath: candidate.sourcePath,
+    })),
+  });
   const [actualReadme, expectedReadme] = await Promise.all([
     readFile(path.join(context.outputRoot, "README.md")),
     readSitedataReadme(),
@@ -81,6 +91,7 @@ export async function verifySitedata(options = {}) {
   return {
     ...summarizePlan(plan, context.versionRecord),
     assetIndexCount: indexedPaths.length,
+    characterCount: characterSummary.unitCount,
     oldClassifiedPathCount: oldPaths.length,
   };
 }

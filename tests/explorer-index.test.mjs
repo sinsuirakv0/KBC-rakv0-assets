@@ -1,4 +1,4 @@
-import assert from "node:assert/strict";
+﻿import assert from "node:assert/strict";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
@@ -10,9 +10,17 @@ import {
   createCatalog,
   createManifestFromRoot,
   describeFile,
+  isSitedataMetadata,
   normalizeRelativePath,
   validateManifest,
 } from "../scripts/build-explorer-index.mjs";
+
+test("sitedata generated metadata is excluded from Explorer payloads", () => {
+  for (const name of ["asset-index.json", "build-report.json", "character-index.json", "README.md"]) {
+    assert.equal(isSitedataMetadata(name), true);
+  }
+  assert.equal(isSitedataMetadata("Data/unit001.csv"), false);
+});
 
 test("expanded APK snapshot carries the verified archive link", () => {
   const archive = {

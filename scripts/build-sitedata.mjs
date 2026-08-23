@@ -13,6 +13,7 @@ import {
   validateApkLedger,
   validateCurrentVersion,
 } from "./apk-ledger.mjs";
+import { createCharacterIndex } from "./build-character-index.mjs";
 
 export const SITE_DATA_GROUPS = Object.freeze([
   "assets",
@@ -30,6 +31,7 @@ export const SITE_DATA_GROUPS = Object.freeze([
 export const GENERATED_METADATA_FILES = Object.freeze([
   "asset-index.json",
   "build-report.json",
+  "character-index.json",
   "README.md",
 ]);
 
@@ -221,6 +223,15 @@ export async function applyBuildPlan({
 }) {
   await assertSafeOutput(outputRoot, inputRoots);
   await hashSelectedFiles(plan, concurrency);
+  const previousCharacterIndex = await readExistingCharacterIndex(outputRoot);
+  const characterIndex = await createCharacterIndex({
+    versionRecord,
+    files: plan.selected.map(candidate => ({
+      relativePath: candidate.outputPath,
+      absolutePath: candidate.sourcePath,
+    })),
+    previousIndex: previousCharacterIndex,
+  });
   const parentRoot = path.dirname(outputRoot);
   const stageRoot = path.join(parentRoot, `.sitedata-build-${process.pid}-${Date.now()}`);
   const backupRoot = path.join(parentRoot, `.sitedata-backup-${process.pid}-${Date.now()}`);
@@ -242,6 +253,7 @@ export async function applyBuildPlan({
     const metadata = [
       ["asset-index.json", createAssetIndex(plan, versionRecord)],
       ["build-report.json", createBuildReport(plan, versionRecord)],
+      ["character-index.json", characterIndex],
     ];
     for (const [filename, payload] of metadata) {
       await writeFile(
@@ -351,6 +363,19 @@ export function summarizePlan(plan, versionRecord) {
 
 export async function readSitedataReadme() {
   return readFile(new URL("../templates/sitedata-README.md", import.meta.url));
+}
+
+async function readExistingCharacterIndex(outputRoot) {
+  try {
+    const source = await readFile(path.join(outputRoot, "character-index.json"), "utf8");
+    return JSON.parse(source.replace(/^\uFEFF/, ""));
+  } catch (error) {
+    if (error.code === "ENOENT") return null;
+    if (error instanceof SyntaxError) {
+      throw new Error("Existing character-index.json is invalid JSON.", { cause: error });
+    }
+    throw error;
+  }
 }
 
 export async function selectCandidates(candidates, keySelector) {

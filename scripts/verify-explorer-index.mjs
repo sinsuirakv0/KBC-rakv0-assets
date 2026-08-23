@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { compareText, listFiles, mapConcurrent, sha256File } from "./apk-ledger.mjs";
-import { EXPLORER_DATASETS, loadExplorerContext, normalizeRelativePath, validateCatalog, validateManifest } from "./build-explorer-index.mjs";
+import { EXPLORER_DATASETS, isSitedataMetadata, loadExplorerContext, normalizeRelativePath, validateCatalog, validateManifest } from "./build-explorer-index.mjs";
 
 export async function verifyExplorerIndex(options = {}) {
   const context = await loadExplorerContext(options);
@@ -24,7 +24,7 @@ export async function verifyExplorerIndex(options = {}) {
 
 async function verifyAvailableSnapshot(repoRoot, snapshot, manifest, concurrency) {
   const rawRoot = path.join(repoRoot, ...snapshot.rawRoot.split("/"));
-  const files = (await listFiles(rawRoot)).filter(file => !(snapshot.rawRoot === "jp/sitedata" && ["asset-index.json", "build-report.json", "README.md"].includes(file.relativePath)));
+  const files = (await listFiles(rawRoot)).filter(file => !(snapshot.rawRoot === "jp/sitedata" && isSitedataMetadata(file.relativePath)));
   const actualPaths = files.map(file => normalizeRelativePath(file.relativePath));
   const indexedPaths = Object.keys(manifest.files);
   if (actualPaths.length !== indexedPaths.length || actualPaths.some((item, index) => item !== indexedPaths[index])) throw new Error(`Explorer manifest paths differ: ${snapshot.rawRoot}`);

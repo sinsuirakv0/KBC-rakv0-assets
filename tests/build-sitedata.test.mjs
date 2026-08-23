@@ -1,4 +1,4 @@
-import assert from "node:assert/strict";
+﻿import assert from "node:assert/strict";
 import { mkdtemp, mkdir, readFile, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
@@ -7,12 +7,22 @@ import test from "node:test";
 import { REQUIRED_APK_ROOTS } from "../scripts/apk-ledger.mjs";
 import {
   BuildConflictError,
+  GENERATED_METADATA_FILES,
   applyBuildPlan,
   createBuildPlan,
   resolveServerRoot,
   scanBuildInputs,
   selectCandidates,
 } from "../scripts/build-sitedata.mjs";
+
+test("generated metadata root contract includes character-index.json", () => {
+  assert.deepEqual(GENERATED_METADATA_FILES, [
+    "asset-index.json",
+    "build-report.json",
+    "character-index.json",
+    "README.md",
+  ]);
+});
 
 test("server roots parse ImageData exactly and later generations win", () => {
   assert.equal(resolveServerRoot("ImageDataServer").outputGroup, "ImageData");
@@ -74,7 +84,8 @@ test("generated output and indexes are deterministic", async () => {
   const fixture = await createFixture();
   await writeAsset(fixture.apkRoot, "assets/base.pack", "base");
   await writeAsset(fixture.apkRoot, "ImageDataLocal/007_f.png", "sprite");
-  await writeAsset(fixture.apkRoot, "DataLocal/unit8.csv", "stats");
+  await writeAsset(fixture.apkRoot, "DataLocal/unit001.csv", "stats // このコメント名は使わない");
+  await writeAsset(fixture.apkRoot, "resLocal/Unit_Explanation1_ja.csv", "ネコ,説明一,説明二,　,,\n");
   const plan = await createBuildPlan({
     candidates: await scanBuildInputs(fixture),
   });
@@ -95,12 +106,16 @@ test("generated output and indexes are deterministic", async () => {
     inputRoots: [fixture.apkRoot, fixture.serverRoot],
     concurrency: 2,
   });
-  for (const indexName of ["asset-index.json", "build-report.json", "README.md"]) {
+  for (const indexName of ["asset-index.json", "build-report.json", "character-index.json", "README.md"]) {
     assert.equal(
       await readFile(path.join(firstOutput, indexName), "utf8"),
       await readFile(path.join(secondOutput, indexName), "utf8"),
     );
   }
+  const characterIndex = JSON.parse(await readFile(path.join(firstOutput, "character-index.json"), "utf8"));
+  assert.equal(Object.keys(characterIndex)[0], "gameVersion");
+  assert.equal(characterIndex.units[0].id, "000");
+  assert.equal(characterIndex.units[0].forms[0].name, "ネコ");
   const readme = await readFile(path.join(firstOutput, "README.md"));
   assert.deepEqual([...readme.subarray(0, 3)], [0xef, 0xbb, 0xbf]);
 });
