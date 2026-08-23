@@ -7,7 +7,7 @@ import test from "node:test";
 
 const auditScript = path.resolve("scripts/verify-git-payloads.mjs");
 const payloadFiles = Object.freeze([
-  ["jp/apks/150501/mixed.csv", Buffer.from("first\r\nsecond\nthird\r\n", "utf8")],
+  ["jp/Local/150501/mixed.csv", Buffer.from("first\r\nsecond\nthird\r\n", "utf8")],
   ["jp/server/server.bin", Buffer.from([0, 13, 10, 255, 10, 0], "binary")],
   ["jp/sitedata/Data/AbilityLimit.csv", Buffer.from("one\r\ntwo\n", "utf8")],
 ]);
@@ -25,7 +25,7 @@ function runGit(repositoryRoot, args, input) {
 async function createFixture() {
   const repositoryRoot = await mkdtemp(path.join(os.tmpdir(), "git-payload-audit-"));
   await writeFile(path.join(repositoryRoot, ".gitattributes"), [
-    "jp/apks/** -text",
+    "jp/Local/** -text",
     "jp/server/** -text",
     "jp/sitedata/** -text",
     "",

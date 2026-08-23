@@ -130,7 +130,7 @@ function candidate(outputPath, family) {
 
 async function createFixture() {
   const repoRoot = await mkdtemp(path.join(os.tmpdir(), "sitedata-build-"));
-  const apkRoot = path.join(repoRoot, "jp", "apks", "150501");
+  const apkRoot = path.join(repoRoot, "jp", "Local", "150501");
   const serverRoot = path.join(repoRoot, "jp", "server");
   for (const rootName of REQUIRED_APK_ROOTS) {
     await mkdir(path.join(apkRoot, rootName), { recursive: true });

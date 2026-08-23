@@ -2,10 +2,10 @@
 
 ## 正式な配置契約
 
-APK 15.5.1（manifest versionCode `1505010`、compactVersion `150501`）の生データは `jp/apks/150501/` に置く。versionCodeとcompactVersionは別の識別子であり、相互変換や同値比較をしない。compatibleな展開版は、次の10ディレクトリを名前どおりすべて持つ必要がある。
+APK 15.5.1（manifest versionCode `1505010`、compactVersion `150501`）の生データは `jp/Local/150501/` に置く。versionCodeとcompactVersionは別の識別子であり、相互変換や同値比較をしない。compatibleな展開版は、次の10ディレクトリを名前どおりすべて持つ必要がある。
 
 ```text
-jp/apks/<compactVersion>/
+jp/Local/<compactVersion>/
 ├─ assets/
 ├─ DataLocal/
 ├─ DownloadLocal/
@@ -18,7 +18,7 @@ jp/apks/<compactVersion>/
 └─ UnitLocal/
 ```
 
-展開版root直下はこの10ディレクトリだけを許可する。`metadata.json`、`release-manifest.json` などの版メタデータをroot直下へ混在させない。現在版のメタデータは `jp/version.json`、履歴台帳は `jp/apks/index.json` に分離する。
+展開版root直下はこの10ディレクトリだけを許可する。`metadata.json`、`release-manifest.json` などの版メタデータをroot直下へ混在させない。現在版のメタデータは `jp/version.json`、履歴台帳は `jp/Local/index.json` に分離する。
 
 移動済みserver群は `jp/server/` に置く。認識する名前は `([A-Z]?)(ImageData|Image|Map|Number|Unit)Server` だけである。`ImageData` は `Image` と別の種別として解析する。
 
@@ -80,17 +80,17 @@ motion確認サイトや他サイト向けの旧パス互換JSONは、このリ�
 
 ## APK履歴版台帳
 
-`jp/apks/index.json` が履歴版の唯一の台帳である。トップレベルは `schemaVersion`、`packageName`、`latestConfirmed`、`retention`、`versions` だけを持つ。`latestConfirmed` は `versionName`、manifest `versionCode`、展開キー `compactVersion` の三値を持ち、confirmedレコードと完全一致しなければならない。`versions` はversionCode降順に並べる。
+`jp/Local/index.json` が履歴版の唯一の台帳である。トップレベルは `schemaVersion`、`packageName`、`latestConfirmed`、`retention`、`versions` だけを持つ。`latestConfirmed` は `versionName`、manifest `versionCode`、展開キー `compactVersion` の三値を持ち、confirmedレコードと完全一致しなければならない。`versions` はversionCode降順に並べる。
 
 各recordは次の固定フィールドを持つ。
 
-- `versionName`、APK manifestの `versionCode`、`jp/apks/<compactVersion>/` に使う `compactVersion`
-- `packageName`、`source`、merged APKの `mergedApkSha256`、署名証明書の `signingCertificateSha256`
+- `versionName`、APK manifestの `versionCode`、`jp/Local/<compactVersion>/` に使う `compactVersion`
+- `packageName`、`source`、merged APKの `mergedApkSha256`、署名証明書の `signingCertificateSha256`。展開treeだけを受け入れた履歴版は `state: expanded` に限り、取得できないAPK proofを `null` にする
 - `compatibility`: `compatible` または `incompatible`
 - `reason`: compatibleなら `null`、incompatibleなら判定理由
 - 復号treeの `sha256`、`size`、`fileCount`
-- `expandedPath`: confirmed/expandedでは `jp/apks/<compactVersion>`、それ以外は `null`
-- `archive`: 初回bootstrap前のlocal展開版だけは `null` を許す。検証upload後のconfirmed/expandedとarchivedでは `provider`、`repository`、`tag`、`releaseUrl` と、multipart対応の `assets[{name,url,bytes,sha256,apiId}]` を持つ
+- `expandedPath`: confirmed/expandedでは `jp/Local/<compactVersion>`、それ以外は `null`
+- `archive`: local展開版は `null` を許す。検証upload済みのconfirmed/expandedとarchivedでは `provider`、`repository`、`tag`、`releaseUrl` と、multipart対応の `assets[{name,url,bytes,sha256,apiId}]` を持つ
 - 15.5.1のmerged APK SHA-256は `f7363b230345508b9ede469c927340553828d2892e030f67ecffda165c38ec97`、Google Play基準のsigner SHA-256は `baf876d554213331c6fe5f6bbf9ae9af2f95c20e82b14bc232b0ac3a77680cb1`
 - `source`: 取得元を識別できる説明
 - `state`: `confirmed`、`expanded`、`archived`、`skipped`
@@ -99,13 +99,13 @@ recordのSHA-256は、復号済み全ファイルを相対パス順に並べ、�
 
 `jp/version.json` は現在確定版の `schemaVersion`、`packageName`、`versionName`、manifest `versionCode`、`compactVersion`、`mergedApkSha256`、`signingCertificateSha256`、`source` だけを持つ。build前にconfirmed台帳レコードとの完全一致を検証する。
 
-`retention.maxExpandedVersions` の既定は2、`retention.maxExpandedBytes` の既定は1 GiBである。`confirmed` と `expanded` の合計がどちらかの上限を超えると検証に失敗する。`archived` と `skipped` のディレクトリが `jp/apks/` に残っている場合も失敗する。
+`retention.maxExpandedVersions` の既定は4、`retention.maxExpandedBytes` の既定は1 GiBである。現在版と比較用の履歴3版までを明示的に保持し、`confirmed` と `expanded` の合計がどちらかの上限を超えると検証に失敗する。`archived` と `skipped` のディレクトリが `jp/Local/` に残っている場合も失敗する。
 
 ## 履歴版の受け入れ手順
 
 1. 復号結果に10個の必須ルートが正確に存在することを確認する。
-2. 最新付近の版は `jp/apks/<compactVersion>/` に展開し、`expandedPath` と実測tree SHA-256、size、fileCount、検証済みarchiveを登録する。初回bootstrap前のconfirmed currentだけは過渡的に `archive: null` を許す。
+2. 最新付近の版は `jp/Local/<compactVersion>/` に展開し、`expandedPath` と実測tree SHA-256、size、fileCountを登録する。archiveやmerged APK proofがないlocal importは捏造せず `null` にする。
 3. 最新確定版だけを `state: confirmed` にし、`latestConfirmed` の三値を同じレコードに一致させる。保持する直前版は `expanded` にする。
-4. 既定2版を超えるcompatible版はGitHub Release等へアーカイブし、展開ディレクトリを置かず `state: archived`、`expandedPath: null`、multipart対応の `archive` を記録する。
+4. 既定4版を超えるcompatible版はGitHub Release等へアーカイブし、展開ディレクトリを置かず `state: archived`、`expandedPath: null`、multipart対応の `archive` を記録する。
 5. 必須ルートや命名形式が違い、安全な現行変換ができない版は展開せず、`compatibility: incompatible`、`state: skipped`、具体的な `reason` を記録する。
 6. `npm run verify:apks`、`npm run build:sitedata`、`npm run verify:sitedata`、`npm test` の順に確認する。

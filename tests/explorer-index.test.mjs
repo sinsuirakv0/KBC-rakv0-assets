@@ -41,6 +41,9 @@ test("expanded APK snapshot carries the verified archive link", () => {
   }, { fileCount: 2, totalSize: 10 }, true);
   assert.deepEqual(descriptor.archive, archive);
   assert.equal(descriptor.available, true);
+  assert.equal(descriptor.dataset, "Local");
+  assert.equal(descriptor.manifestPath, "jp/explorer/manifests/Local/150501.json");
+  assert.equal(descriptor.rawRoot, "jp/Local/150501");
   assert.equal(descriptor.fileCount, 2);
   assert.equal(descriptor.totalSize, 10);
 });

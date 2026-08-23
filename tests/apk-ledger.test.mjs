@@ -36,17 +36,36 @@ test("a compatible expanded APK must have the exact required raw roots", async (
 test("expanded APK retention count and bytes are guarded", () => {
   const records = [
     createVersion({ state: "confirmed", versionCode: 1505010, compactVersion: "150501" }),
-    createVersion({ state: "expanded", versionName: "15.5.0", versionCode: 1505000, compactVersion: "150500", expandedPath: "jp/apks/150500" }),
-    createVersion({ state: "expanded", versionName: "15.4.0", versionCode: 1504000, compactVersion: "150400", expandedPath: "jp/apks/150400" }),
+    createVersion({ state: "expanded", versionName: "15.5.0", versionCode: 1505000, compactVersion: "150500", expandedPath: "jp/Local/150500" }),
+    createVersion({ state: "expanded", versionName: "15.4.0", versionCode: 1504000, compactVersion: "150400", expandedPath: "jp/Local/150400" }),
+    createVersion({ state: "expanded", versionName: "15.3.0", versionCode: 1503000, compactVersion: "150300", expandedPath: "jp/Local/150300" }),
+    createVersion({ state: "expanded", versionName: "15.2.1", versionCode: 1502010, compactVersion: "150201", expandedPath: "jp/Local/150201" }),
   ];
   assert.throws(
     () => validateApkLedgerSchema(createLedger(records)),
-    /Expanded APK count 3 exceeds limit 2/,
+    /Expanded APK count 5 exceeds limit 4/,
   );
 
   const oversized = createLedger([createVersion({ size: 101 })]);
   oversized.retention.maxExpandedBytes = 100;
   assert.throws(() => validateApkLedgerSchema(oversized), /Expanded APK bytes/);
+});
+
+test("expanded local imports may omit unavailable merged APK proof", () => {
+  const imported = createVersion({
+    state: "expanded",
+    versionName: "15.4.0",
+    versionCode: 1504000,
+    compactVersion: "150400",
+    expandedPath: "jp/Local/150400",
+    source: "local-import",
+    mergedApkSha256: null,
+    archive: null,
+  });
+  assert.doesNotThrow(() => validateApkLedgerSchema(createLedger([createVersion(), imported])));
+
+  imported.state = "confirmed";
+  assert.throws(() => validateApkLedgerSchema(createLedger([imported])), /mergedApkSha256/);
 });
 
 test("manifest versionCode and compactVersion remain distinct identifiers", () => {
@@ -133,7 +152,7 @@ test("compatible confirmed and expanded records may retain a verified archive", 
       versionCode: 1505000,
       compactVersion: "150500",
       state: "expanded",
-      expandedPath: "jp/apks/150500",
+      expandedPath: "jp/Local/150500",
       archive: createArchive(),
     }),
   ]);
@@ -205,7 +224,7 @@ function createLedger(versions) {
       versionCode: 1505010,
     },
     retention: {
-      maxExpandedVersions: 2,
+      maxExpandedVersions: 4,
       maxExpandedBytes: 1_073_741_824,
     },
     versions,
@@ -227,7 +246,7 @@ function createVersion(overrides = {}) {
     sha256: "0".repeat(64),
     size: 1,
     fileCount: 1,
-    expandedPath: "jp/apks/150501",
+    expandedPath: "jp/Local/150501",
     archive: null,
     ...overrides,
   };

@@ -2,7 +2,7 @@
 
 このディレクトリは、KBCサイトが参照するオリジナルアセットと関連データの正規参照先です。
 
-`Data/`、`Download/`、`Html/`、`ImageData/`、`Image/`、`Map/`、`Number/`、`res/`、`Unit/` は、最新確定APKのLocal 9群を基底に、無接頭server、A～Z serverの順で後の世代を優先して統合します。`assets/` は常に `jp/apks/index.json` が示す最新確定版のAPK由来です。アプリ更新時はbuild pipelineから全体を自動再生成します。
+`Data/`、`Download/`、`Html/`、`ImageData/`、`Image/`、`Map/`、`Number/`、`res/`、`Unit/` は、最新確定APKのLocal 9群を基底に、無接頭server、A～Z serverの順で後の世代を優先して統合します。`assets/` は常に `jp/Local/index.json` が示す最新確定版のAPK由来です。アプリ更新時はbuild pipelineから全体を自動再生成します。
 
 このディレクトリのrawファイルと生成JSONは手作業で編集しないでください。キャラ別称・関連pathの手動変更は `jp/character-overrides.json` に記録します。
 

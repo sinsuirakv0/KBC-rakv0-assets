@@ -13,7 +13,7 @@ export async function verifyApkLedger(options = {}) {
     path.dirname(fileURLToPath(import.meta.url)),
     "..",
   ));
-  const apksRoot = path.resolve(options.apksRoot ?? path.join(repoRoot, "jp", "apks"));
+  const apksRoot = path.resolve(options.apksRoot ?? path.join(repoRoot, "jp", "Local"));
   const ledgerPath = path.resolve(options.ledgerPath ?? path.join(apksRoot, "index.json"));
   const versionPath = path.resolve(options.versionPath ?? path.join(repoRoot, "jp", "version.json"));
   const ledger = await readApkLedger(ledgerPath);

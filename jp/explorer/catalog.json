@@ -7,17 +7,17 @@
     "compactVersion": "150501"
   },
   "datasets": {
-    "apk": {
+    "Local": {
       "snapshots": [
         {
-          "dataset": "apk",
+          "dataset": "Local",
           "id": "150501",
           "label": "15.5.1 (150501)",
           "versionName": "15.5.1",
           "versionCode": 1505010,
           "compactVersion": "150501",
-          "manifestPath": "jp/explorer/manifests/apk/150501.json",
-          "rawRoot": "jp/apks/150501",
+          "manifestPath": "jp/explorer/manifests/Local/150501.json",
+          "rawRoot": "jp/Local/150501",
           "available": true,
           "fileCount": 20073,
           "totalSize": 220312483,
@@ -43,6 +43,45 @@
               }
             ]
           }
+        },
+        {
+          "dataset": "Local",
+          "id": "150400",
+          "label": "15.4.0 (150400)",
+          "versionName": "15.4.0",
+          "versionCode": 1504000,
+          "compactVersion": "150400",
+          "manifestPath": "jp/explorer/manifests/Local/150400.json",
+          "rawRoot": "jp/Local/150400",
+          "available": true,
+          "fileCount": 19580,
+          "totalSize": 211449992
+        },
+        {
+          "dataset": "Local",
+          "id": "150300",
+          "label": "15.3.0 (150300)",
+          "versionName": "15.3.0",
+          "versionCode": 1503000,
+          "compactVersion": "150300",
+          "manifestPath": "jp/explorer/manifests/Local/150300.json",
+          "rawRoot": "jp/Local/150300",
+          "available": true,
+          "fileCount": 20218,
+          "totalSize": 219824825
+        },
+        {
+          "dataset": "Local",
+          "id": "150201",
+          "label": "15.2.1 (150201)",
+          "versionName": "15.2.1",
+          "versionCode": 1502010,
+          "compactVersion": "150201",
+          "manifestPath": "jp/explorer/manifests/Local/150201.json",
+          "rawRoot": "jp/Local/150201",
+          "available": true,
+          "fileCount": 19534,
+          "totalSize": 206245777
         }
       ]
     },

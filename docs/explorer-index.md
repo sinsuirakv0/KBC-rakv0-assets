@@ -6,7 +6,7 @@
 jp/explorer/
 ├─ catalog.json
 └─ manifests/
-   ├─ apk/<compactVersion>.json
+   ├─ Local/<compactVersion>.json
    ├─ server/v<versionName>-<compactVersion>.json
    └─ sitedata/v<versionName>-<compactVersion>.json
 ```
@@ -14,7 +14,7 @@ jp/explorer/
 ### 契約
 
 - `catalog.json` と各manifestは `schemaVersion: 1` を持つ。
-- catalogはpackage名、最新確定版、`apk`、`server`、`sitedata` のsnapshot一覧を持つ。ファイル一覧はcatalogへ入れない。
+- catalogはpackage名、最新確定版、`Local`、`server`、`sitedata` のsnapshot一覧を持つ。ファイル一覧はcatalogへ入れない。
 - APK snapshotのIDは台帳の`compactVersion`である。server/sitedataのIDは`v<versionName>-<compactVersion>`で、生成時点の最新確定APKに結び付く。
 - manifestの`files`はraw rootからの相対pathをキーにし、size、SHA-256、content type、preview種別を記録する。パスはスラッシュ区切りで、絶対path、`..`、空segment、バックスラッシュを許可しない。
 - `available: true` は対応するraw rootが存在し、manifestと全ファイルのsize/SHA-256が一致する場合だけである。過去のmanifestは削除せず、raw treeを保持しない過去版は`available: false`としてcatalogに残る。

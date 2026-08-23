@@ -1,6 +1,6 @@
 ﻿# Git payload bytes
 
-`jp/apks/`、`jp/server/`、`jp/sitedata/` は、改行コードを意味の一部として扱うraw payloadです。rootの`.gitattributes`で`-text`を指定し、Gitの改行変換を禁止します。`jp/explorer/`などのExplorer metadataはこの属性対象に含めません。
+`jp/Local/`、`jp/server/`、`jp/sitedata/` は、改行コードを意味の一部として扱うraw payloadです。rootの`.gitattributes`で`-text`を指定し、Gitの改行変換を禁止します。`jp/explorer/`などのExplorer metadataはこの属性対象に含めません。
 
 ## 監査契約
 

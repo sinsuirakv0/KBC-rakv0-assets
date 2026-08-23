@@ -299,7 +299,7 @@ export async function loadBuildContext(options = {}) {
     path.dirname(fileURLToPath(import.meta.url)),
     "..",
   ));
-  const apksRoot = path.resolve(options.apksRoot ?? path.join(repoRoot, "jp", "apks"));
+  const apksRoot = path.resolve(options.apksRoot ?? path.join(repoRoot, "jp", "Local"));
   const serverRoot = path.resolve(options.serverRoot ?? path.join(repoRoot, "jp", "server"));
   const outputRoot = path.resolve(options.outputRoot ?? path.join(repoRoot, "jp", "sitedata"));
   const ledgerPath = path.resolve(options.ledgerPath ?? path.join(apksRoot, "index.json"));

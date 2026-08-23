@@ -14,7 +14,7 @@ import {
 import { GENERATED_METADATA_FILES } from "./build-sitedata.mjs";
 
 export const EXPLORER_SCHEMA_VERSION = 1;
-export const EXPLORER_DATASETS = Object.freeze(["apk", "server", "sitedata"]);
+export const EXPLORER_DATASETS = Object.freeze(["Local", "server", "sitedata"]);
 
 const IMAGE_TYPES = new Map([
   [".avif", "image/avif"], [".bmp", "image/bmp"], [".gif", "image/gif"],
@@ -46,7 +46,7 @@ export async function buildExplorerIndex(options = {}) {
 
 export async function loadExplorerContext(options = {}) {
   const repoRoot = path.resolve(options.repoRoot ?? path.join(path.dirname(fileURLToPath(import.meta.url)), ".."));
-  const apksRoot = path.resolve(options.apksRoot ?? path.join(repoRoot, "jp", "apks"));
+  const apksRoot = path.resolve(options.apksRoot ?? path.join(repoRoot, "jp", "Local"));
   const serverRoot = path.resolve(options.serverRoot ?? path.join(repoRoot, "jp", "server"));
   const sitedataRoot = path.resolve(options.sitedataRoot ?? path.join(repoRoot, "jp", "sitedata"));
   const explorerRoot = path.resolve(options.explorerRoot ?? path.join(repoRoot, "jp", "explorer"));
@@ -62,12 +62,12 @@ export async function createCurrentSnapshots(context, concurrency) {
   const apkSnapshots = [];
   for (const record of context.ledger.versions) {
     if (record.compatibility !== "compatible" || !["confirmed", "expanded", "archived"].includes(record.state)) continue;
-    const rawRoot = `jp/apks/${record.compactVersion}`;
+    const rawRoot = `jp/Local/${record.compactVersion}`;
     const absoluteRoot = path.join(context.repoRoot, ...rawRoot.split("/"));
     const available = await isDirectory(absoluteRoot);
     if (!available) continue;
     const manifest = await createManifestFromRoot({
-      dataset: "apk", snapshot: record.compactVersion, absoluteRoot, rawRoot, concurrency,
+      dataset: "Local", snapshot: record.compactVersion, absoluteRoot, rawRoot, concurrency,
     });
     apkSnapshots.push({
       descriptor: createApkDescriptor(record, manifest, true), manifest,
@@ -184,14 +184,14 @@ export function normalizeRelativePath(value) {
 
 export function createApkDescriptor(record, manifest, available) {
   return {
-    dataset: "apk",
+    dataset: "Local",
     id: record.compactVersion,
     label: `${record.versionName} (${record.compactVersion})`,
     versionName: record.versionName,
     versionCode: record.versionCode,
     compactVersion: record.compactVersion,
-    manifestPath: manifestPath("apk", record.compactVersion),
-    rawRoot: `jp/apks/${record.compactVersion}`,
+    manifestPath: manifestPath("Local", record.compactVersion),
+    rawRoot: `jp/Local/${record.compactVersion}`,
     available,
     fileCount: manifest.fileCount,
     totalSize: manifest.totalSize,
@@ -307,7 +307,7 @@ function validateSnapshot(snapshot, dataset) {
   } catch {
     throw new Error(`Explorer snapshot rawRoot is invalid: ${dataset}`);
   }
-  if ((dataset === "apk" && snapshot.rawRoot !== `jp/apks/${snapshot.compactVersion}`)
+  if ((dataset === "Local" && snapshot.rawRoot !== `jp/Local/${snapshot.compactVersion}`)
     || (dataset === "server" && snapshot.rawRoot !== "jp/server")
     || (dataset === "sitedata" && snapshot.rawRoot !== "jp/sitedata")) {
     throw new Error(`Explorer snapshot rawRoot is invalid: ${dataset}`);

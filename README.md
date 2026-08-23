@@ -4,8 +4,8 @@
 
 ## ディレクトリ
 
-- `jp/apks/<compactVersion>/`: 最新付近のAPK由来生データ。既定で最大2版
-- `jp/apks/index.json`: 展開版・アーカイブ版・非互換版の台帳と容量ガード
+- `jp/Local/<compactVersion>/`: 最新付近のAPK由来生データ。既定で最大4版
+- `jp/Local/index.json`: 展開版・アーカイブ版・非互換版の台帳と容量ガード
 - `jp/version.json`: 現在確定版のpackage/version、merged APK・signer SHA-256、取得元
 - `jp/server/`: 移動済みserver pack群
 - `jp/sitedata/`: 台帳の最新確定版とserver群を統合したサイト配信用データ
@@ -25,4 +25,4 @@ npm run build:sitedata
 npm run verify:sitedata
 ```
 
-`build:sitedata` は `jp/apks/index.json` の `latestConfirmed.compactVersion` が指す1版だけを基底にし、`jp/server/` を世代順に上書きして `jp/sitedata/` を再生成します。手作業で `sitedata` を編集しないでください。
+`build:sitedata` は `jp/Local/index.json` の `latestConfirmed.compactVersion` が指す1版だけを基底にし、`jp/server/` を世代順に上書きして `jp/sitedata/` を再生成します。手作業で `sitedata` を編集しないでください。

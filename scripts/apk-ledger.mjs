@@ -5,7 +5,7 @@ import path from "node:path";
 
 export const APK_LEDGER_SCHEMA_VERSION = 1;
 export const CURRENT_VERSION_SCHEMA_VERSION = 1;
-export const DEFAULT_MAX_EXPANDED_VERSIONS = 2;
+export const DEFAULT_MAX_EXPANDED_VERSIONS = 4;
 export const DEFAULT_MAX_EXPANDED_BYTES = 1_073_741_824;
 export const REQUIRED_APK_ROOTS = Object.freeze([
   "assets",
@@ -370,6 +370,7 @@ function validateVersionRecord(record, index) {
     throw new Error(`${label}.sha256 must be a lowercase SHA-256 digest.`);
   }
   for (const field of ["mergedApkSha256", "signingCertificateSha256"]) {
+    if (record[field] === null && record.state === "expanded") continue;
     if (typeof record[field] !== "string" || !SHA256_PATTERN.test(record[field])) {
       throw new Error(`${label}.${field} must be a lowercase SHA-256 digest.`);
     }
@@ -379,8 +380,8 @@ function validateVersionRecord(record, index) {
     if (record.compatibility !== "compatible") {
       throw new Error(`${label} must be compatible while expanded.`);
     }
-    if (record.expandedPath !== `jp/apks/${record.compactVersion}`) {
-      throw new Error(`${label}.expandedPath must match jp/apks/<compactVersion>.`);
+    if (record.expandedPath !== `jp/Local/${record.compactVersion}`) {
+      throw new Error(`${label}.expandedPath must match jp/Local/<compactVersion>.`);
     }
   }
   if (record.state === "archived") {

@@ -13,12 +13,12 @@ import {
 const stageScript = path.resolve("scripts/stage-canonical-payloads.mjs");
 const auditScript = path.resolve("scripts/verify-git-payloads.mjs");
 const SAMPLE_PAYLOADS = Object.freeze([
-  ["jp/apks/150501/mixed.csv", Buffer.from("first\r\nsecond\nthird\r\n", "utf8")],
+  ["jp/Local/150501/mixed.csv", Buffer.from("first\r\nsecond\nthird\r\n", "utf8")],
   ["jp/server/server.bin", Buffer.from([0, 13, 10, 255, 10, 0], "binary")],
   ["jp/sitedata/Data/AbilityLimit.csv", Buffer.from("one\r\ntwo\n", "utf8")],
 ]);
 const LIMIT_PAYLOADS = Object.freeze([
-  ["jp/apks/150501/one.txt", Buffer.from("one\r\n", "utf8")],
+  ["jp/Local/150501/one.txt", Buffer.from("one\r\n", "utf8")],
   ["jp/server/two.txt", Buffer.from("two\r\n", "utf8")],
   ["jp/sitedata/Data/three.txt", Buffer.from("three\r\n", "utf8")],
 ]);
@@ -57,7 +57,7 @@ async function createHistoricalFixture(payloads = SAMPLE_PAYLOADS) {
   runGit(repositoryRoot, ["add", "jp"]);
   runGit(repositoryRoot, ["commit", "-qm", "historical payload"]);
   await writeFile(path.join(repositoryRoot, ".gitattributes"), [
-    "jp/apks/** -text",
+    "jp/Local/** -text",
     "jp/server/** -text",
     "jp/sitedata/** -text",
     "",
@@ -143,7 +143,7 @@ test("configured mismatch limit rejects before proof or index update", async () 
       () => stageCanonicalPayloads(repositoryRoot, { maxMismatches: 2 }),
       /more content mismatches/,
     );
-    assert.deepEqual(stagedPaths(repositoryRoot, "jp/apks"), []);
+    assert.deepEqual(stagedPaths(repositoryRoot, "jp/Local"), []);
     assert.deepEqual(stagedPaths(repositoryRoot, "jp/server"), []);
     assert.deepEqual(stagedPaths(repositoryRoot, "jp/sitedata"), []);
   }, LIMIT_PAYLOADS);
