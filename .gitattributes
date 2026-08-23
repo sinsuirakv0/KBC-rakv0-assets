@@ -1,0 +1,4 @@
+# Raw payloads are byte-addressed data. Never apply Git text/EOL conversion.
+jp/apks/** -text
+jp/server/** -text
+jp/sitedata/** -text
