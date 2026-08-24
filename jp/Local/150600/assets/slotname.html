@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="robots" content="noindex,nofollow">
+	<title>PONOS | 出陣スロット名前変更</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="slotname.css">
+	<script type="text/javascript">
+		
+		function setSlotName(str){
+			document.getElementById("name_box").value = decodeURIComponent(str);
+		}
+		function valuEncode(){
+			var input =document.getElementById("name_box").value;
+			
+			window.location.href = "ponos-api://function" + "?name=" + encodeURIComponent(input) ;
+			
+			return false;
+		}
+		
+	</script>
+</head>
+
+<body>
+	
+	<div id="container">
+		<p id="set_tit"><img src="slotname_tit01.png" alt=""></p>
+		
+		<div id="set_block">
+			<form id="set_name" name="set_name" action="ponos-api://function" method="get" onsubmit="return valuEncode()">
+				<input type="text" maxlength="10" id="name_box" name="name" autofocus>
+				<input type="image" src="slotname_btn01.png" alt="submit" name="submit" id="set_btn">
+			</form>
+			
+			<div id="limit_txt" name="limit_txt">10文字まで入力可能です。</div>
+		</div>
+	
+	</div><!-- /container -->
+</body>
+</html>

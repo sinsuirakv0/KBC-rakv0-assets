@@ -2,13 +2,48 @@
   "schemaVersion": 1,
   "packageName": "jp.co.ponos.battlecats",
   "latestConfirmed": {
-    "versionName": "15.5.1",
-    "versionCode": 1505010,
-    "compactVersion": "150501"
+    "versionName": "15.6.0",
+    "versionCode": 1506000,
+    "compactVersion": "150600"
   },
   "datasets": {
     "Local": {
       "snapshots": [
+        {
+          "dataset": "Local",
+          "id": "150600",
+          "label": "15.6.0 (150600)",
+          "versionName": "15.6.0",
+          "versionCode": 1506000,
+          "compactVersion": "150600",
+          "manifestPath": "jp/explorer/manifests/Local/150600.json",
+          "rawRoot": "jp/Local/150600",
+          "available": true,
+          "fileCount": 20283,
+          "totalSize": 229291000,
+          "archive": {
+            "provider": "github-release",
+            "repository": "sinsuirakv0/battlecats-apk",
+            "tag": "battlecats-jp-history",
+            "releaseUrl": "https://github.com/sinsuirakv0/battlecats-apk/releases/tag/battlecats-jp-history",
+            "assets": [
+              {
+                "name": "battlecats-jp-150600.parts.json",
+                "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/battlecats-jp-history/battlecats-jp-150600.parts.json",
+                "bytes": 359,
+                "sha256": "6296a0d991f1d07073108133877b96a6f75484a798236e661d7473675a42fcb7",
+                "apiId": 527219553
+              },
+              {
+                "name": "battlecats-jp-150600.tar.gz",
+                "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/battlecats-jp-history/battlecats-jp-150600.tar.gz",
+                "bytes": 444319377,
+                "sha256": "3b58733abba92ebf5c836e10f65e8f4eac8664d3c5ca33037b966df97ae7f225",
+                "apiId": 527219313
+              }
+            ]
+          }
+        },
         {
           "dataset": "Local",
           "id": "150501",
@@ -89,6 +124,19 @@
       "snapshots": [
         {
           "dataset": "server",
+          "id": "v15.6.0-150600",
+          "label": "15.6.0 (server)",
+          "versionName": "15.6.0",
+          "versionCode": 1506000,
+          "compactVersion": "150600",
+          "manifestPath": "jp/explorer/manifests/server/v15.6.0-150600.json",
+          "rawRoot": "jp/server",
+          "available": true,
+          "fileCount": 33780,
+          "totalSize": 523432601
+        },
+        {
+          "dataset": "server",
           "id": "v15.5.1-150501",
           "label": "15.5.1 (server)",
           "versionName": "15.5.1",
@@ -96,7 +144,7 @@
           "compactVersion": "150501",
           "manifestPath": "jp/explorer/manifests/server/v15.5.1-150501.json",
           "rawRoot": "jp/server",
-          "available": true,
+          "available": false,
           "fileCount": 33780,
           "totalSize": 523432601
         }
@@ -106,6 +154,19 @@
       "snapshots": [
         {
           "dataset": "sitedata",
+          "id": "v15.6.0-150600",
+          "label": "15.6.0 (sitedata)",
+          "versionName": "15.6.0",
+          "versionCode": 1506000,
+          "compactVersion": "150600",
+          "manifestPath": "jp/explorer/manifests/sitedata/v15.6.0-150600.json",
+          "rawRoot": "jp/sitedata",
+          "available": true,
+          "fileCount": 53773,
+          "totalSize": 738989891
+        },
+        {
+          "dataset": "sitedata",
           "id": "v15.5.1-150501",
           "label": "15.5.1 (sitedata)",
           "versionName": "15.5.1",
@@ -113,7 +174,7 @@
           "compactVersion": "150501",
           "manifestPath": "jp/explorer/manifests/sitedata/v15.5.1-150501.json",
           "rawRoot": "jp/sitedata",
-          "available": true,
+          "available": false,
           "fileCount": 53563,
           "totalSize": 730011374
         }
