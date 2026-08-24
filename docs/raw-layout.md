@@ -99,7 +99,7 @@ recordのSHA-256は、復号済み全ファイルを相対パス順に並べ、�
 
 `jp/version.json` は現在確定版の `schemaVersion`、`packageName`、`versionName`、manifest `versionCode`、`compactVersion`、`mergedApkSha256`、`signingCertificateSha256`、`source` だけを持つ。build前にconfirmed台帳レコードとの完全一致を検証する。
 
-`retention.maxExpandedVersions` の既定は4、`retention.maxExpandedBytes` の既定は1 GiBである。現在版と比較用の履歴3版までを明示的に保持し、`confirmed` と `expanded` の合計がどちらかの上限を超えると検証に失敗する。`archived` と `skipped` のディレクトリが `jp/Local/` に残っている場合も失敗する。
+`retention.maxExpandedVersions` と `retention.maxExpandedBytes` は、自動取得してRelease archiveを持つ `confirmed` / `expanded` のGit展開保持枠である。`local-import` かつ `archive: null` の比較用snapshotは常設データとしてこの枠に数えない。管理対象の件数または容量が上限を超えると検証に失敗する。`archived` と `skipped` のディレクトリが `jp/Local/` に残っている場合も失敗する。
 
 ## 履歴版の受け入れ手順
 

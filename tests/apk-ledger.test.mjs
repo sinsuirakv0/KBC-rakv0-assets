@@ -61,8 +61,16 @@ test("expanded local imports may omit unavailable merged APK proof", () => {
     source: "local-import",
     mergedApkSha256: null,
     archive: null,
+    size: 2_000_000_000,
   });
-  assert.doesNotThrow(() => validateApkLedgerSchema(createLedger([createVersion(), imported])));
+  const ledger = createLedger([createVersion(), imported]);
+  ledger.retention.maxExpandedVersions = 1;
+  ledger.retention.maxExpandedBytes = 1;
+  assert.doesNotThrow(() => validateApkLedgerSchema(ledger));
+
+  imported.source = "google-play";
+  assert.throws(() => validateApkLedgerSchema(ledger), /Expanded APK count 2 exceeds limit 1/);
+  imported.source = "local-import";
 
   imported.state = "confirmed";
   assert.throws(() => validateApkLedgerSchema(createLedger([imported])), /mergedApkSha256/);

@@ -184,12 +184,17 @@ export function validateApkLedgerSchema(ledger) {
   }
 
   const expanded = ledger.versions.filter(record => EXPANDED_STATES.has(record.state));
-  if (expanded.length > ledger.retention.maxExpandedVersions) {
+  const retainedByAutomation = expanded.filter(record => !(
+    record.state === "expanded"
+    && record.source === "local-import"
+    && record.archive === null
+  ));
+  if (retainedByAutomation.length > ledger.retention.maxExpandedVersions) {
     throw new Error(
-      `Expanded APK count ${expanded.length} exceeds limit ${ledger.retention.maxExpandedVersions}.`,
+      `Expanded APK count ${retainedByAutomation.length} exceeds limit ${ledger.retention.maxExpandedVersions}.`,
     );
   }
-  const expandedBytes = expanded.reduce((sum, record) => sum + record.size, 0);
+  const expandedBytes = retainedByAutomation.reduce((sum, record) => sum + record.size, 0);
   if (expandedBytes > ledger.retention.maxExpandedBytes) {
     throw new Error(
       `Expanded APK bytes ${expandedBytes} exceed limit ${ledger.retention.maxExpandedBytes}.`,
