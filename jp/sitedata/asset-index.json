@@ -320070,6 +320070,72 @@
         "path": "jp/server/WImageDataServer/739_f02.maanim"
       }
     },
+    "ImageData/740_c.imgcut": {
+      "size": 1791,
+      "sha256": "c9e6aa9e1467803f87a6c9f807e48986f5a7905f7ccaec2b03d638afa147b9a4",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_c.imgcut"
+      }
+    },
+    "ImageData/740_c.mamodel": {
+      "size": 5673,
+      "sha256": "b3e4924b482733fcca10823eb088a89f0764393eaf7796f3ca158cb92490c2b7",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_c.mamodel"
+      }
+    },
+    "ImageData/740_c00.maanim": {
+      "size": 6020,
+      "sha256": "32a39b9227cb40a1a1d54b4f358a7c29729273efbf1d5f4316442abf21cebd88",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_c00.maanim"
+      }
+    },
+    "ImageData/740_c01.maanim": {
+      "size": 4874,
+      "sha256": "bdbcb889127bb49f8620ca01d4e08718f8c834cb85dff95ff67d69bb708481ba",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_c01.maanim"
+      }
+    },
+    "ImageData/740_c02.maanim": {
+      "size": 17690,
+      "sha256": "58509c70751f9ca7b5484b107e19e4a74b5028f1bc266460acdc5ba514f1fbee",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_c02.maanim"
+      }
+    },
+    "ImageData/740_c03.maanim": {
+      "size": 2066,
+      "sha256": "c5e671313aeeb8e45def3f3c69c0aa07ffc4a14bfa7c5ba6281fd6fe3c54c9bd",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_c03.maanim"
+      }
+    },
     "ImageData/740_e.imgcut": {
       "size": 2986,
       "sha256": "546ff4f68ce159ec4914a8daada2769ec502e10995fa15db1b07113ac39d05ea",
@@ -320134,6 +320200,72 @@
         "generation": "local",
         "priority": 0,
         "path": "jp/Local/150600/ImageDataLocal/740_e03.maanim"
+      }
+    },
+    "ImageData/740_f.imgcut": {
+      "size": 1419,
+      "sha256": "f2f6c071ddb87695290d92a766206fbe6c958b6424a809416328ec6e6b6ccdc1",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_f.imgcut"
+      }
+    },
+    "ImageData/740_f.mamodel": {
+      "size": 3196,
+      "sha256": "27cb95ae1d21065ad958a7bf1921c5ae408d891eacedc297841664633eb4ad09",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_f.mamodel"
+      }
+    },
+    "ImageData/740_f00.maanim": {
+      "size": 1967,
+      "sha256": "9615e6994c0c88fecc995b281e6951fc282ccbae9348f25c6722d65edb95893a",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_f00.maanim"
+      }
+    },
+    "ImageData/740_f01.maanim": {
+      "size": 1616,
+      "sha256": "551ee0cbf01ab33c9660c7771466a05c25bdc4d20e11d9597af3dc613e19d57d",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_f01.maanim"
+      }
+    },
+    "ImageData/740_f02.maanim": {
+      "size": 9542,
+      "sha256": "00e2697f8c66f18568561cd09c9440b928e3b4b186029241519fb81d6e6e8d01",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_f02.maanim"
+      }
+    },
+    "ImageData/740_f03.maanim": {
+      "size": 827,
+      "sha256": "aefe588126c95619c0d22dec046efac536eeaa23d74ba9db365a229ff88185a4",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/740_f03.maanim"
       }
     },
     "ImageData/741_c.imgcut": {
@@ -328681,6 +328813,138 @@
         "generation": "W",
         "priority": 123,
         "path": "jp/server/WImageDataServer/787_f03.maanim"
+      }
+    },
+    "ImageData/788_c.imgcut": {
+      "size": 963,
+      "sha256": "2d073e015ab1f3346760a8c7bd0022e7380bd93eefe095b443540d0e5ecca4ae",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_c.imgcut"
+      }
+    },
+    "ImageData/788_c.mamodel": {
+      "size": 2884,
+      "sha256": "264406a0bd3dfee5ac27e5351d9f0534ae46a0a1d0c2db684adfd94b20370586",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_c.mamodel"
+      }
+    },
+    "ImageData/788_c00.maanim": {
+      "size": 700,
+      "sha256": "de678d2079c9e3fd72a4a5c9c3f953834788feeaa613243d74294e1149682d71",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_c00.maanim"
+      }
+    },
+    "ImageData/788_c01.maanim": {
+      "size": 183,
+      "sha256": "71fe230a8ac03a67351d22a37c51a50ff3e39e42c178c202cc8bedb217d58c09",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_c01.maanim"
+      }
+    },
+    "ImageData/788_c02.maanim": {
+      "size": 33059,
+      "sha256": "5cb4f3e01f880f4a97c62ad25341b682181a201a831bc7d47154e6bd716ab462",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_c02.maanim"
+      }
+    },
+    "ImageData/788_c03.maanim": {
+      "size": 2502,
+      "sha256": "518ba99bb751b5ed022f24065b91f4af13c6c1a184b1bcc4bf72d563af987c2f",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_c03.maanim"
+      }
+    },
+    "ImageData/788_f.imgcut": {
+      "size": 878,
+      "sha256": "69e6c2b4880cfe834f5fa5785eb9accb72c1545678cf47917c33a0aa85a53c12",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_f.imgcut"
+      }
+    },
+    "ImageData/788_f.mamodel": {
+      "size": 949,
+      "sha256": "1113f5191929b46faf504aef74a224da37b34db5809466f8c7ddb182144d38cd",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_f.mamodel"
+      }
+    },
+    "ImageData/788_f00.maanim": {
+      "size": 634,
+      "sha256": "f0ac7ee28e0138ac10dc1e9541b5947e8c986e37eeaaf91e625629adb8358e84",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_f00.maanim"
+      }
+    },
+    "ImageData/788_f01.maanim": {
+      "size": 98,
+      "sha256": "a3d379a3385a85e6fd92efb16e630b4a92984d07df86ea4e70f06eac0e63536a",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_f01.maanim"
+      }
+    },
+    "ImageData/788_f02.maanim": {
+      "size": 2766,
+      "sha256": "62541261a854430630a43fc4aca84cb5a6faf78166845b45cc5b604eede69846",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_f02.maanim"
+      }
+    },
+    "ImageData/788_f03.maanim": {
+      "size": 753,
+      "sha256": "7ad3f7e9aea998eeb678aee7dd600ef9fe90732e4afa0e7cf4575c06c2ec6c0d",
+      "source": {
+        "kind": "character-image-override",
+        "root": "ImageData",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/ImageData/788_f03.maanim"
       }
     },
     "ImageData/789_c.imgcut": {
@@ -525330,6 +525594,17 @@
         "path": "jp/server/SNumberServer/739_f.png"
       }
     },
+    "Number/740_c.png": {
+      "size": 46831,
+      "sha256": "d7d431022f938f9f1e7ad18acbaaf6ddb656b7915b30e0e2813d69e6091fb524",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Number",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Number/740_c.png"
+      }
+    },
     "Number/740_e.png": {
       "size": 60864,
       "sha256": "3a7486664c8b5f3aeaf9d34a3a128260eafca65efca58fa16f8b4ac576e1620f",
@@ -525339,6 +525614,17 @@
         "generation": "X",
         "priority": 124,
         "path": "jp/server/XNumberServer/740_e.png"
+      }
+    },
+    "Number/740_f.png": {
+      "size": 40992,
+      "sha256": "39dfff40561ced15769e2e69e4f52755569fefe1291df8a705842782e22bda87",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Number",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Number/740_f.png"
       }
     },
     "Number/741_c.png": {
@@ -526791,6 +527077,28 @@
         "generation": "V",
         "priority": 122,
         "path": "jp/server/VNumberServer/787_f.png"
+      }
+    },
+    "Number/788_c.png": {
+      "size": 7100,
+      "sha256": "52537ee42be66604884e60e58888b19fe4a60d80e6c807eedc07dcf9737d7533",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Number",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Number/788_c.png"
+      }
+    },
+    "Number/788_f.png": {
+      "size": 6156,
+      "sha256": "62e14f54688e048828cc1c55b7c9b301f26233008034830b374163524d3fcd72",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Number",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Number/788_f.png"
       }
     },
     "Number/789_c.png": {
@@ -573565,6 +573873,17 @@
         "path": "jp/server/RUnitServer/uni728_f00.png"
       }
     },
+    "Unit/uni729_f00.png": {
+      "size": 32839,
+      "sha256": "777bbdb23dad4ebe4f0f62274bced95316af5dccd9b2c19d32bc456fc8c3681c",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni729_f00.png"
+      }
+    },
     "Unit/uni730_s00.png": {
       "size": 3514,
       "sha256": "5f93795c17dabb58cd2b9718a80d5ae6c29310f75b66278490b46291cf35b369",
@@ -573598,6 +573917,17 @@
         "path": "jp/server/RUnitServer/uni731_f00.png"
       }
     },
+    "Unit/uni732_f00.png": {
+      "size": 36420,
+      "sha256": "201b051e265e0d82fd2ab204dcb0590dd78c938fefe44728c6bf22e3fb60754c",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni732_f00.png"
+      }
+    },
     "Unit/uni733_c00.png": {
       "size": 6860,
       "sha256": "57a70020e05921a274dba749d9b92d3836a1556d1f73081f610ae5e674effc00",
@@ -573629,6 +573959,17 @@
         "generation": "local",
         "priority": 0,
         "path": "jp/Local/150600/UnitLocal/uni733_s00.png"
+      }
+    },
+    "Unit/uni734_f00.png": {
+      "size": 31572,
+      "sha256": "9071966336ad62a83126f64e18b0f3cbe73e71711eeb20f67d4dda7b46ceb9d0",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni734_f00.png"
       }
     },
     "Unit/uni735_c00.png": {
@@ -573717,6 +574058,39 @@
         "generation": "S",
         "priority": 119,
         "path": "jp/server/SUnitServer/uni738_f00.png"
+      }
+    },
+    "Unit/uni739_f00.png": {
+      "size": 37964,
+      "sha256": "85132dace8cc12c74355a9418d740998bd438939a54f300e2f544d3fefc1e554",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni739_f00.png"
+      }
+    },
+    "Unit/uni740_c00.png": {
+      "size": 3236,
+      "sha256": "176017d6a785f545bf4b665dec38c60fff1f8fed56d63d022c1186bd101256ae",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni740_c00.png"
+      }
+    },
+    "Unit/uni740_f00.png": {
+      "size": 3036,
+      "sha256": "fde0975a74af36702b089c3ce65a142d7b8a6d5c303de0e088b69cdaaf1ff342",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni740_f00.png"
       }
     },
     "Unit/uni741_c00.png": {
@@ -574027,6 +574401,17 @@
         "path": "jp/server/SUnitServer/uni754_f00.png"
       }
     },
+    "Unit/uni755_f00.png": {
+      "size": 39414,
+      "sha256": "c3b571ba64c2004b33a3af2c34941c0ea8bd129cb28a14f6b4c0caa4de0b4fbf",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni755_f00.png"
+      }
+    },
     "Unit/uni756_c00.png": {
       "size": 3497,
       "sha256": "3683125824dcea047723cb8d8b03062992ea304b385af41bfdd0628a2941c0f0",
@@ -574126,6 +574511,17 @@
         "path": "jp/server/TUnitServer/uni760_f00.png"
       }
     },
+    "Unit/uni761_f00.png": {
+      "size": 33721,
+      "sha256": "afaa3f9554250f1587542d7fa2a64867863955a2090f47fac3c714c5f72c3d26",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni761_f00.png"
+      }
+    },
     "Unit/uni762_c00.png": {
       "size": 4954,
       "sha256": "96910c57901a5d48368b39cc0f33d7a3dfb63205fcfd96b3c80a91ab0617b9d3",
@@ -574168,6 +574564,17 @@
         "generation": "T",
         "priority": 120,
         "path": "jp/server/TUnitServer/uni763_f00.png"
+      }
+    },
+    "Unit/uni764_f00.png": {
+      "size": 36041,
+      "sha256": "1a93b53f81e8098cf22970b483e25f9ae542fddc7119924ea249faa5d6649a89",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni764_f00.png"
       }
     },
     "Unit/uni765_s00.png": {
@@ -574269,6 +574676,17 @@
         "path": "jp/server/TUnitServer/uni769_f00.png"
       }
     },
+    "Unit/uni770_f00.png": {
+      "size": 28446,
+      "sha256": "e53eebb6c86b7f152739229999e82300fd9301feb8a21a80d0eafc0985686321",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni770_f00.png"
+      }
+    },
     "Unit/uni771_c00.png": {
       "size": 5599,
       "sha256": "50136af4e51eb296272ca31d0f5dc19083ea282b12f944663901a4d2cb2245ca",
@@ -574355,6 +574773,17 @@
         "generation": "U",
         "priority": 121,
         "path": "jp/server/UUnitServer/uni774_f00.png"
+      }
+    },
+    "Unit/uni775_f00.png": {
+      "size": 28986,
+      "sha256": "c7aae1f3d117149a294907629a9fa9474045aa7b828fabe19a41142b61fa1904",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni775_f00.png"
       }
     },
     "Unit/uni776_c00.png": {
@@ -574489,6 +574918,17 @@
         "path": "jp/server/UUnitServer/uni781_f00.png"
       }
     },
+    "Unit/uni782_f00.png": {
+      "size": 22594,
+      "sha256": "64b52912fd5a31b10d7f5f1f38ca01aeb26988eb92023b10cdae49e990f175cd",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni782_f00.png"
+      }
+    },
     "Unit/uni783_c00.png": {
       "size": 4956,
       "sha256": "a588def155ade6cc14dcdddc814427a6d52953af37b7e10a26bffdc16cd2e8c7",
@@ -574597,6 +575037,28 @@
         "generation": "V",
         "priority": 122,
         "path": "jp/server/VUnitServer/uni787_f00.png"
+      }
+    },
+    "Unit/uni788_c00.png": {
+      "size": 3288,
+      "sha256": "3cd607dfc9b7cb48524d29ff245884519dd2b8c9d02f6d74a6491d49a45844c8",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni788_c00.png"
+      }
+    },
+    "Unit/uni788_f00.png": {
+      "size": 2235,
+      "sha256": "e9eeb851d37d88eff434ab7509936b51ed26b531549423e33b1823dd1669f24e",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni788_f00.png"
       }
     },
     "Unit/uni789_c00.png": {
@@ -574841,6 +575303,17 @@
         "path": "jp/server/XUnitServer/uni799_f00.png"
       }
     },
+    "Unit/uni800_f00.png": {
+      "size": 22250,
+      "sha256": "4b0b180bb78a12ff32f7e3467207192b6c211b9c9e0734aac4e45fc3890ad2f8",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni800_f00.png"
+      }
+    },
     "Unit/uni801_c00.png": {
       "size": 5398,
       "sha256": "d2751bcbecf67b2ae649151eb1b0e830379aa4a2a5c8c1f19abffc1ce56ef1fd",
@@ -574861,6 +575334,17 @@
         "generation": "X",
         "priority": 124,
         "path": "jp/server/XUnitServer/uni801_f00.png"
+      }
+    },
+    "Unit/uni802_f00.png": {
+      "size": 26081,
+      "sha256": "341b950b6142c2eefb085255ae303f9c4a5aca4724205945ac60df0b602b1536",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni802_f00.png"
       }
     },
     "Unit/uni803_c00.png": {
@@ -575061,6 +575545,17 @@
         "path": "jp/server/XUnitServer/uni811_f00.png"
       }
     },
+    "Unit/uni812_f00.png": {
+      "size": 31711,
+      "sha256": "7329fba9bafc01f2e9340e391411edf9fc6b79c8ea7ac616a9634acd209d16fa",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni812_f00.png"
+      }
+    },
     "Unit/uni813_c00.png": {
       "size": 5856,
       "sha256": "5f6c14c0aed498113fc27510bbe7f0e476a95df05fb5405df528603ec7135d74",
@@ -575127,6 +575622,17 @@
         "path": "jp/server/XUnitServer/uni815_f00.png"
       }
     },
+    "Unit/uni816_f00.png": {
+      "size": 30971,
+      "sha256": "83d1a83d0c0813a343dd694cd025d4f7ffa03868cfaad59a7db1128de7e8c1b4",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni816_f00.png"
+      }
+    },
     "Unit/uni817_c00.png": {
       "size": 4323,
       "sha256": "4c76c80f9994350b8cb9be969ecd6f158b87c9c984926aed507b892246374513",
@@ -575147,6 +575653,17 @@
         "generation": "X",
         "priority": 124,
         "path": "jp/server/XUnitServer/uni817_f00.png"
+      }
+    },
+    "Unit/uni818_f00.png": {
+      "size": 23680,
+      "sha256": "c34526646ac7ee6d3d88c6c32782f532d2b195e569058f96c645e26c744c0f00",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni818_f00.png"
       }
     },
     "Unit/uni819_c00.png": {
@@ -575191,6 +575708,17 @@
         "generation": "X",
         "priority": 124,
         "path": "jp/server/XUnitServer/uni820_f00.png"
+      }
+    },
+    "Unit/uni821_f00.png": {
+      "size": 32786,
+      "sha256": "a7b89e049747fd28a58b532299e2e99379683ea20e01c089d72c9e9d751c868d",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni821_f00.png"
       }
     },
     "Unit/uni822_c00.png": {
@@ -575257,6 +575785,17 @@
         "generation": "X",
         "priority": 124,
         "path": "jp/server/XUnitServer/uni824_f00.png"
+      }
+    },
+    "Unit/uni825_f00.png": {
+      "size": 27282,
+      "sha256": "664763a38903ced3f661df450c3dd38bbe965f2835b748effc91e753d8021ac0",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni825_f00.png"
       }
     },
     "Unit/uni826_c00.png": {
@@ -575532,6 +576071,28 @@
         "generation": "X",
         "priority": 124,
         "path": "jp/server/XUnitServer/uni837_f00.png"
+      }
+    },
+    "Unit/uni838_f00.png": {
+      "size": 21608,
+      "sha256": "3c68c4d16c9e02a3e21f241a496fa82b1c45f8882bd5ff02013e8a661da4dbb2",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni838_f00.png"
+      }
+    },
+    "Unit/uni839_f00.png": {
+      "size": 30256,
+      "sha256": "89a2415a3f15797b52ce3bb6b6ebcab24dbc1172bcc273cb6402515e815e4ac8",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni839_f00.png"
       }
     },
     "Unit/uni840_c00.png": {
@@ -575864,6 +576425,17 @@
         "path": "jp/Local/150600/UnitLocal/uni854_f00.png"
       }
     },
+    "Unit/uni855_f00.png": {
+      "size": 23416,
+      "sha256": "04eb6c7d5bc09a79d78a89adbc0b567c14cea00a079753cde749d66d80d230ed",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni855_f00.png"
+      }
+    },
     "Unit/uni856_c00.png": {
       "size": 4425,
       "sha256": "f2eb85fa611aa2597b8867ae9fbef03ab3462af6e7b5a47004720d613780674a",
@@ -575950,6 +576522,17 @@
         "generation": "local",
         "priority": 0,
         "path": "jp/Local/150600/UnitLocal/uni859_f00.png"
+      }
+    },
+    "Unit/uni860_f00.png": {
+      "size": 27421,
+      "sha256": "14f92ae6159c058f68f47dec7e4e12ea2e37de5f57918955875b528f9923c626",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni860_f00.png"
       }
     },
     "Unit/uni861_c00.png": {
@@ -576236,6 +576819,17 @@
         "generation": "local",
         "priority": 0,
         "path": "jp/Local/150600/UnitLocal/uni874_f00.png"
+      }
+    },
+    "Unit/uni875_f00.png": {
+      "size": 24160,
+      "sha256": "13c3a0a05a0be7f63630c2e51550ee900c0e3c24ac3c479d14d1b97c27222c6e",
+      "source": {
+        "kind": "character-image-override",
+        "root": "Unit",
+        "generation": "override",
+        "priority": 1000,
+        "path": "jp/character-image-overrides/Unit/uni875_f00.png"
       }
     },
     "Unit/uni_nyankoClub_0.png": {

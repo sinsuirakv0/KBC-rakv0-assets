@@ -14,11 +14,13 @@ const stageScript = path.resolve("scripts/stage-canonical-payloads.mjs");
 const auditScript = path.resolve("scripts/verify-git-payloads.mjs");
 const SAMPLE_PAYLOADS = Object.freeze([
   ["jp/Local/150501/mixed.csv", Buffer.from("first\r\nsecond\nthird\r\n", "utf8")],
+  ["jp/character-image-overrides/ImageData/875_f.imgcut", Buffer.from("imgcut\r\n", "utf8")],
   ["jp/server/server.bin", Buffer.from([0, 13, 10, 255, 10, 0], "binary")],
   ["jp/sitedata/Data/AbilityLimit.csv", Buffer.from("one\r\ntwo\n", "utf8")],
 ]);
 const LIMIT_PAYLOADS = Object.freeze([
   ["jp/Local/150501/one.txt", Buffer.from("one\r\n", "utf8")],
+  ["jp/character-image-overrides/Unit/uni875_f00.png", Buffer.from([0, 13, 10, 255], "binary")],
   ["jp/server/two.txt", Buffer.from("two\r\n", "utf8")],
   ["jp/sitedata/Data/three.txt", Buffer.from("three\r\n", "utf8")],
 ]);
@@ -58,6 +60,7 @@ async function createHistoricalFixture(payloads = SAMPLE_PAYLOADS) {
   runGit(repositoryRoot, ["commit", "-qm", "historical payload"]);
   await writeFile(path.join(repositoryRoot, ".gitattributes"), [
     "jp/Local/** -text",
+    "jp/character-image-overrides/** -text",
     "jp/server/** -text",
     "jp/sitedata/** -text",
     "",
@@ -108,7 +111,7 @@ test("stages canonical mixed-EOL blobs without editing working files or unstagin
     assert.notEqual(beforeAudit.status, 0);
     const result = runNodeScript(repositoryRoot, stageScript);
     assert.equal(result.status, 0, result.stderr);
-    assert.equal(result.stdout.trim(), "2");
+    assert.equal(result.stdout.trim(), "3");
     assert.equal(result.stderr, "");
 
     const afterAudit = runNodeScript(repositoryRoot, auditScript);

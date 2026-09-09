@@ -22,6 +22,8 @@ jp/Local/<compactVersion>/
 
 移動済みserver群は `jp/server/` に置く。認識する名前は `([A-Z]?)(ImageData|Image|Map|Number|Unit)Server` だけである。`ImageData` は `Image` と別の種別として解析する。
 
+JP版に存在しないキャラ画像の外部補完は `jp/character-image-overrides/` に置く。直下には `ImageData`、`Number`、`Unit` の3ディレクトリだけを許可し、同じ出力パスのAPK・serverファイルより常に優先する。これを補完画像の正本とし、`sitedata` 再生成時にも維持する。取得元と対象一覧は [character-image-overrides.md](character-image-overrides.md) を参照する。
+
 キャラ別称・関連pathの永続手動変更は `jp/character-overrides.json` に置く。生成物を手編集せず、このファイルをbuildのsource of truthとする。
 
 最終データは次の固定構造にする。
@@ -49,7 +51,7 @@ jp/sitedata/
 
 `scripts/build-sitedata.mjs` は台帳の `latestConfirmed.compactVersion` が指す `state: confirmed` かつ `compatibility: compatible` の1版だけをAPK基底に選び、同じpointerに記録したmanifest versionCodeとも一致することを検証する。別版のファイルを同時に走査しないため、履歴版は `sitedata` に混入しない。
 
-Localの優先度は0、無接頭serverは100、AからZは101から126であり、後の世代ほど優先する。同じ出力パスに同内容が来た場合は優先度の高い採用元へまとめ、異内容なら高い優先度で上書きする。同順位・同一出力パス・異内容は未解決衝突として、出力を書き換える前に失敗する。
+Localの優先度は0、無接頭serverは100、AからZは101から126、キャラ画像補完は1000である。後の世代ほど優先し、キャラ画像補完は常に最終採用する。同じ出力パスに同内容が来た場合は優先度の高い採用元へまとめ、異内容なら高い優先度で上書きする。同順位・同一出力パス・異内容は未解決衝突として、出力を書き換える前に失敗する。
 
 生成は一時ディレクトリで完了させてから `jp/sitedata/` と入れ替える。コンソールには件数と容量だけを出し、採用元は `asset-index.json`、上書き判断は `build-report.json`、キャラ本文は `character-index.json`、圧縮関連pathは `character-assets.json` に記録する。手動差分はsitedata外のoverrideから毎回適用する。
 
@@ -58,7 +60,7 @@ Localの優先度は0、無接頭serverは100、AからZは101から126であり
 主な関数の関係は次のとおり。
 
 - `loadBuildContext`: APK台帳を検証し、最新確定版の入力ルートを決める
-- `scanBuildInputs`: APK 10群とserver群を固定規則で候補化する
+- `scanBuildInputs`: APK 10群、server群、キャラ画像補完を固定規則で候補化する
 - `createBuildPlan`: raw出力の採用元、上書き、衝突を決定する
 - `applyBuildPlan`: SHA-256算出、ファイル複製、4つのJSONメタデータとREADME生成、出力入れ替えを行う
 - `createCharacterOutputs`: Unit_Explanation、Data存在、関連assetとoverrideから本文索引・圧縮path索引を分離生成する

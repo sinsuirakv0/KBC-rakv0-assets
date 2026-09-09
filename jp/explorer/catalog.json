@@ -162,8 +162,8 @@
           "manifestPath": "jp/explorer/manifests/sitedata/v15.6.0-150600.json",
           "rawRoot": "jp/sitedata",
           "available": true,
-          "fileCount": 53773,
-          "totalSize": 738989891
+          "fileCount": 53827,
+          "totalSize": 739855434
         },
         {
           "dataset": "sitedata",

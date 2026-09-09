@@ -42,6 +42,14 @@ export const GENERATED_METADATA_FILES = Object.freeze([
   "README.md",
 ]);
 
+export const CHARACTER_IMAGE_OVERRIDE_GROUPS = Object.freeze([
+  "ImageData",
+  "Number",
+  "Unit",
+]);
+
+const CHARACTER_IMAGE_OVERRIDE_PRIORITY = 1_000;
+
 const LOCAL_ROOTS = Object.freeze({
   assets: { outputGroup: "assets", family: null },
   DataLocal: { outputGroup: "Data", family: "data" },
@@ -112,7 +120,23 @@ export function resolveServerRoot(rootName) {
   };
 }
 
-export async function scanBuildInputs({ repoRoot, apkRoot, serverRoot }) {
+export function resolveCharacterImageOverrideRoot(rootName) {
+  if (!CHARACTER_IMAGE_OVERRIDE_GROUPS.includes(rootName)) {
+    throw new Error(`Unsupported character image override root: ${rootName}`);
+  }
+  return {
+    outputGroup: rootName,
+    family: {
+      ImageData: "image-data",
+      Number: "number",
+      Unit: "unit",
+    }[rootName],
+    generation: "override",
+    priority: CHARACTER_IMAGE_OVERRIDE_PRIORITY,
+  };
+}
+
+export async function scanBuildInputs({ repoRoot, apkRoot, serverRoot, characterImageRoot }) {
   const candidates = [];
   for (const rootName of REQUIRED_APK_ROOTS) {
     candidates.push(...await scanRawRoot({
@@ -138,6 +162,24 @@ export async function scanBuildInputs({ repoRoot, apkRoot, serverRoot }) {
       sourceKind: "server",
       source: resolveServerRoot(entry.name),
     }));
+  }
+
+  if (characterImageRoot) {
+    const overrideEntries = await import("node:fs/promises").then(module => (
+      module.readdir(characterImageRoot, { withFileTypes: true })
+    ));
+    for (const entry of overrideEntries.sort((left, right) => compareText(left.name, right.name))) {
+      if (!entry.isDirectory()) {
+        throw new Error(`Unsupported entry in character image override root: ${path.join(characterImageRoot, entry.name)}`);
+      }
+      candidates.push(...await scanRawRoot({
+        repoRoot,
+        parentRoot: characterImageRoot,
+        rootName: entry.name,
+        sourceKind: "character-image-override",
+        source: resolveCharacterImageOverrideRoot(entry.name),
+      }));
+    }
   }
   return candidates.sort(compareCandidate);
 }
@@ -301,6 +343,8 @@ export async function loadBuildContext(options = {}) {
   ));
   const apksRoot = path.resolve(options.apksRoot ?? path.join(repoRoot, "jp", "Local"));
   const serverRoot = path.resolve(options.serverRoot ?? path.join(repoRoot, "jp", "server"));
+  const characterImageRoot = path.resolve(options.characterImageRoot
+    ?? path.join(repoRoot, "jp", "character-image-overrides"));
   const outputRoot = path.resolve(options.outputRoot ?? path.join(repoRoot, "jp", "sitedata"));
   const ledgerPath = path.resolve(options.ledgerPath ?? path.join(apksRoot, "index.json"));
   const versionPath = path.resolve(options.versionPath ?? path.join(repoRoot, "jp", "version.json"));
@@ -319,6 +363,7 @@ export async function loadBuildContext(options = {}) {
     repoRoot,
     apksRoot,
     serverRoot,
+    characterImageRoot,
     outputRoot,
     ledgerPath,
     versionPath,
@@ -338,6 +383,7 @@ export async function buildSitedata(options = {}) {
     repoRoot: context.repoRoot,
     apkRoot: context.apkRoot,
     serverRoot: context.serverRoot,
+    characterImageRoot: context.characterImageRoot,
   });
   const characterOverrides = await readCharacterOverrides(context.characterOverridesPath);
   if (!options.dryRun) {
@@ -345,7 +391,7 @@ export async function buildSitedata(options = {}) {
       plan,
       versionRecord: context.versionRecord,
       outputRoot: context.outputRoot,
-      inputRoots: [context.apkRoot, context.serverRoot],
+      inputRoots: [context.apkRoot, context.serverRoot, context.characterImageRoot],
       characterOverrides,
       concurrency,
     });
@@ -538,6 +584,7 @@ function parseArguments(argv) {
     if (argument === "--repo-root") options.repoRoot = requireValue(argv, ++index, argument);
     else if (argument === "--ledger") options.ledgerPath = requireValue(argv, ++index, argument);
     else if (argument === "--server-root") options.serverRoot = requireValue(argv, ++index, argument);
+    else if (argument === "--character-image-root") options.characterImageRoot = requireValue(argv, ++index, argument);
     else if (argument === "--output") options.outputRoot = requireValue(argv, ++index, argument);
     else if (argument === "--character-overrides") options.characterOverridesPath = requireValue(argv, ++index, argument);
     else if (argument === "--concurrency") options.concurrency = Number(requireValue(argv, ++index, argument));
@@ -559,7 +606,7 @@ function requireValue(argv, index, option) {
 
 function printHelp() {
   process.stdout.write(
-    "Usage: node scripts/build-sitedata.mjs [--repo-root <dir>] [--ledger <file>] [--server-root <dir>] [--output <dir>] [--character-overrides <file>] [--concurrency <1-64>] [--dry-run]\n",
+    "Usage: node scripts/build-sitedata.mjs [--repo-root <dir>] [--ledger <file>] [--server-root <dir>] [--character-image-root <dir>] [--output <dir>] [--character-overrides <file>] [--concurrency <1-64>] [--dry-run]\n",
   );
 }
 

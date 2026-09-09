@@ -1,4 +1,5 @@
 # Raw payloads are byte-addressed data. Never apply Git text/EOL conversion.
 jp/Local/** -text
+jp/character-image-overrides/** -text
 jp/server/** -text
 jp/sitedata/** -text

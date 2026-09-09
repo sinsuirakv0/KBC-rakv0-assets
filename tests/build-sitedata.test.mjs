@@ -7,10 +7,12 @@ import test from "node:test";
 import { REQUIRED_APK_ROOTS } from "../scripts/apk-ledger.mjs";
 import {
   BuildConflictError,
+  CHARACTER_IMAGE_OVERRIDE_GROUPS,
   GENERATED_METADATA_FILES,
   applyBuildPlan,
   createBuildPlan,
   resolveServerRoot,
+  resolveCharacterImageOverrideRoot,
   scanBuildInputs,
   selectCandidates,
 } from "../scripts/build-sitedata.mjs";
@@ -31,6 +33,21 @@ test("server roots parse ImageData exactly and later generations win", () => {
   assert.ok(resolveServerRoot("XImageDataServer").priority > resolveServerRoot("WImageDataServer").priority);
   assert.ok(resolveServerRoot("AImageServer").priority > resolveServerRoot("ImageServer").priority);
   assert.throws(() => resolveServerRoot("AServer"), /Unsupported server raw root/);
+});
+
+test("character image overrides only accept image groups and always win", async () => {
+  assert.deepEqual(CHARACTER_IMAGE_OVERRIDE_GROUPS, ["ImageData", "Number", "Unit"]);
+  assert.equal(resolveCharacterImageOverrideRoot("ImageData").outputGroup, "ImageData");
+  assert.throws(() => resolveCharacterImageOverrideRoot("Data"), /Unsupported character image override root/);
+
+  const fixture = await createFixture();
+  await writeAsset(fixture.apkRoot, "UnitLocal/uni875_f00.png", "apk");
+  await writeAsset(fixture.serverRoot, "XUnitServer/uni875_f00.png", "server");
+  await writeAsset(fixture.characterImageRoot, "Unit/uni875_f00.png", "override");
+  const plan = await createBuildPlan({ candidates: await scanBuildInputs(fixture) });
+  const selected = plan.selected.find(candidate => candidate.outputPath === "Unit/uni875_f00.png");
+  assert.equal(selected.sourceKind, "character-image-override");
+  assert.equal(selected.sourceRoot, "Unit");
 });
 
 test("Local is the base and server applies from unprefixed through A to Z", async () => {
@@ -132,11 +149,15 @@ async function createFixture() {
   const repoRoot = await mkdtemp(path.join(os.tmpdir(), "sitedata-build-"));
   const apkRoot = path.join(repoRoot, "jp", "Local", "150501");
   const serverRoot = path.join(repoRoot, "jp", "server");
+  const characterImageRoot = path.join(repoRoot, "jp", "character-image-overrides");
   for (const rootName of REQUIRED_APK_ROOTS) {
     await mkdir(path.join(apkRoot, rootName), { recursive: true });
   }
   await mkdir(serverRoot, { recursive: true });
-  return { repoRoot, apkRoot, serverRoot };
+  for (const group of CHARACTER_IMAGE_OVERRIDE_GROUPS) {
+    await mkdir(path.join(characterImageRoot, group), { recursive: true });
+  }
+  return { repoRoot, apkRoot, serverRoot, characterImageRoot };
 }
 
 async function writeAsset(root, relativePath, content) {

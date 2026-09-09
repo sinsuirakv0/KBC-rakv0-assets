@@ -2,7 +2,12 @@ import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-export const PAYLOAD_ROOTS = Object.freeze(["jp/Local", "jp/server", "jp/sitedata"]);
+export const PAYLOAD_ROOTS = Object.freeze([
+  "jp/Local",
+  "jp/character-image-overrides",
+  "jp/server",
+  "jp/sitedata",
+]);
 const COMMAND_BUFFER_BYTES = 64 * 1024 * 1024;
 const HASH_PATTERN = /^[0-9a-f]{40}$/;
 const CONTROL_PATH_PATTERN = /[\u0000-\u001f\u007f]/u;

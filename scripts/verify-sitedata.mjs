@@ -25,6 +25,7 @@ export async function verifySitedata(options = {}) {
     repoRoot: context.repoRoot,
     apkRoot: context.apkRoot,
     serverRoot: context.serverRoot,
+    characterImageRoot: context.characterImageRoot,
   });
   await hashSelectedFiles(plan, concurrency);
 
@@ -120,6 +121,7 @@ function parseArguments(argv) {
     if (argument === "--repo-root") options.repoRoot = requireValue(argv, ++index, argument);
     else if (argument === "--ledger") options.ledgerPath = requireValue(argv, ++index, argument);
     else if (argument === "--server-root") options.serverRoot = requireValue(argv, ++index, argument);
+    else if (argument === "--character-image-root") options.characterImageRoot = requireValue(argv, ++index, argument);
     else if (argument === "--output") options.outputRoot = requireValue(argv, ++index, argument);
     else if (argument === "--character-overrides") options.characterOverridesPath = requireValue(argv, ++index, argument);
     else if (argument === "--concurrency") options.concurrency = Number(requireValue(argv, ++index, argument));

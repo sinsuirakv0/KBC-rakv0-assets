@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "gameVersion": "15.6.0",
   "versionCode": 1506000,
-  "scannedFileCount": 54063,
-  "selectedFileCount": 53773,
+  "scannedFileCount": 54117,
+  "selectedFileCount": 53827,
   "selectedSources": [
     {
       "kind": "apk",
@@ -812,6 +812,30 @@
       "priority": 124,
       "fileCount": 166,
       "size": 1200556
+    },
+    {
+      "kind": "character-image-override",
+      "root": "ImageData",
+      "generation": "override",
+      "priority": 1000,
+      "fileCount": 24,
+      "size": 103050
+    },
+    {
+      "kind": "character-image-override",
+      "root": "Number",
+      "generation": "override",
+      "priority": 1000,
+      "fileCount": 4,
+      "size": 101079
+    },
+    {
+      "kind": "character-image-override",
+      "root": "Unit",
+      "generation": "override",
+      "priority": 1000,
+      "fileCount": 26,
+      "size": 661414
     }
   ],
   "overwrites": [

@@ -8,6 +8,7 @@ import test from "node:test";
 const auditScript = path.resolve("scripts/verify-git-payloads.mjs");
 const payloadFiles = Object.freeze([
   ["jp/Local/150501/mixed.csv", Buffer.from("first\r\nsecond\nthird\r\n", "utf8")],
+  ["jp/character-image-overrides/ImageData/875_f.imgcut", Buffer.from("imgcut\r\n", "utf8")],
   ["jp/server/server.bin", Buffer.from([0, 13, 10, 255, 10, 0], "binary")],
   ["jp/sitedata/Data/AbilityLimit.csv", Buffer.from("one\r\ntwo\n", "utf8")],
 ]);
@@ -26,6 +27,7 @@ async function createFixture() {
   const repositoryRoot = await mkdtemp(path.join(os.tmpdir(), "git-payload-audit-"));
   await writeFile(path.join(repositoryRoot, ".gitattributes"), [
     "jp/Local/** -text",
+    "jp/character-image-overrides/** -text",
     "jp/server/** -text",
     "jp/sitedata/** -text",
     "",
@@ -66,7 +68,7 @@ test("raw CRLF and mixed-EOL payload bytes are preserved in index blobs", async 
   await withFixture(async (repositoryRoot) => {
     const result = runAudit(repositoryRoot);
     assert.equal(result.status, 0, result.stderr);
-    assert.match(result.stdout, /3 files across 3 roots/);
+    assert.match(result.stdout, /4 files across 4 roots/);
     for (const [relativePath, expected] of payloadFiles) {
       const actual = runGit(repositoryRoot, ["show", `HEAD:${relativePath}`]);
       assert.deepEqual(actual, expected, relativePath);
