@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "gameVersion": "15.6.0",
-  "versionCode": 1506000,
-  "scannedFileCount": 54117,
-  "selectedFileCount": 53827,
+  "gameVersion": "15.7.0",
+  "versionCode": 1507000,
+  "scannedFileCount": 54430,
+  "selectedFileCount": 54139,
   "selectedSources": [
     {
       "kind": "apk",
       "root": "DataLocal",
       "generation": "local",
       "priority": 0,
-      "fileCount": 8902,
-      "size": 8632113
+      "fileCount": 8955,
+      "size": 8694844
     },
     {
       "kind": "apk",
@@ -26,40 +26,40 @@
       "root": "ImageDataLocal",
       "generation": "local",
       "priority": 0,
-      "fileCount": 8565,
-      "size": 17077011
+      "fileCount": 8710,
+      "size": 18436545
     },
     {
       "kind": "apk",
       "root": "ImageLocal",
       "generation": "local",
       "priority": 0,
-      "fileCount": 538,
-      "size": 35078226
+      "fileCount": 554,
+      "size": 36064605
     },
     {
       "kind": "apk",
       "root": "MapLocal",
       "generation": "local",
       "priority": 0,
-      "fileCount": 419,
-      "size": 22473313
+      "fileCount": 466,
+      "size": 22632349
     },
     {
       "kind": "apk",
       "root": "NumberLocal",
       "generation": "local",
       "priority": 0,
-      "fileCount": 147,
-      "size": 6705167
+      "fileCount": 165,
+      "size": 9190256
     },
     {
       "kind": "apk",
       "root": "UnitLocal",
       "generation": "local",
       "priority": 0,
-      "fileCount": 133,
-      "size": 941581
+      "fileCount": 159,
+      "size": 1131673
     },
     {
       "kind": "apk",
@@ -67,15 +67,15 @@
       "generation": "local",
       "priority": 0,
       "fileCount": 236,
-      "size": 134295626
+      "size": 139573795
     },
     {
       "kind": "apk",
       "root": "resLocal",
       "generation": "local",
       "priority": 0,
-      "fileCount": 1151,
-      "size": 2073483
+      "fileCount": 1158,
+      "size": 2087268
     },
     {
       "kind": "server",
@@ -955,7 +955,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/enemy_icon_186.png"
+        "path": "jp/Local/150700/ImageLocal/enemy_icon_186.png"
       }
     },
     {
@@ -1006,7 +1006,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_013.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_013.png"
       }
     },
     {
@@ -1040,7 +1040,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_021.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_021.png"
       }
     },
     {
@@ -1057,7 +1057,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_024.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_024.png"
       }
     },
     {
@@ -1091,7 +1091,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_031.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_031.png"
       }
     },
     {
@@ -1142,7 +1142,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_052.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_052.png"
       }
     },
     {
@@ -1176,7 +1176,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_065.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_065.png"
       }
     },
     {
@@ -1193,7 +1193,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_071.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_071.png"
       }
     },
     {
@@ -1210,7 +1210,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_092.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_092.png"
       }
     },
     {
@@ -1227,7 +1227,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_096.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_096.png"
       }
     },
     {
@@ -1244,7 +1244,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/event_bnr_C_107.png"
+        "path": "jp/Local/150700/ImageLocal/event_bnr_C_107.png"
       }
     },
     {
@@ -1312,7 +1312,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/gatyaitemD_00_f.png"
+        "path": "jp/Local/150700/ImageLocal/gatyaitemD_00_f.png"
       }
     },
     {
@@ -1329,7 +1329,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/gatyaitemD_145_f.png"
+        "path": "jp/Local/150700/ImageLocal/gatyaitemD_145_f.png"
       }
     },
     {
@@ -1380,7 +1380,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/gatyaitemD_20_f.png"
+        "path": "jp/Local/150700/ImageLocal/gatyaitemD_20_f.png"
       }
     },
     {
@@ -1397,7 +1397,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/gatyaitemD_21_f.png"
+        "path": "jp/Local/150700/ImageLocal/gatyaitemD_21_f.png"
       }
     },
     {
@@ -1414,7 +1414,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/gatyaitemD_29_f.png"
+        "path": "jp/Local/150700/ImageLocal/gatyaitemD_29_f.png"
       }
     },
     {
@@ -1890,7 +1890,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_00_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_00_ja.png"
       }
     },
     {
@@ -1907,7 +1907,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_145_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_145_ja.png"
       }
     },
     {
@@ -1924,7 +1924,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_20_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_20_ja.png"
       }
     },
     {
@@ -1941,7 +1941,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_21_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_21_ja.png"
       }
     },
     {
@@ -1958,7 +1958,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_29_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_29_ja.png"
       }
     },
     {
@@ -2026,7 +2026,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_938_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_938_ja.png"
       }
     },
     {
@@ -2043,7 +2043,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_939_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_939_ja.png"
       }
     },
     {
@@ -2060,7 +2060,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_950_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_950_ja.png"
       }
     },
     {
@@ -2077,7 +2077,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img045_954_ja.png"
+        "path": "jp/Local/150700/ImageLocal/img045_954_ja.png"
       }
     },
     {
@@ -2094,7 +2094,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/rc089.png"
+        "path": "jp/Local/150700/ImageLocal/rc089.png"
       }
     },
     {
@@ -2111,7 +2111,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/scratch_000.png"
+        "path": "jp/Local/150700/ImageLocal/scratch_000.png"
       }
     },
     {
@@ -2128,7 +2128,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/worldmap_anim000.png"
+        "path": "jp/Local/150700/ImageLocal/worldmap_anim000.png"
       }
     },
     {
@@ -2145,7 +2145,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/186_e.imgcut"
+        "path": "jp/Local/150700/ImageDataLocal/186_e.imgcut"
       }
     },
     {
@@ -2162,7 +2162,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/186_e.mamodel"
+        "path": "jp/Local/150700/ImageDataLocal/186_e.mamodel"
       }
     },
     {
@@ -2179,7 +2179,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/186_e00.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/186_e00.maanim"
       }
     },
     {
@@ -2196,7 +2196,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/186_e02.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/186_e02.maanim"
       }
     },
     {
@@ -2213,7 +2213,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/186_e03.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/186_e03.maanim"
       }
     },
     {
@@ -2230,7 +2230,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/455_c02.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/455_c02.maanim"
       }
     },
     {
@@ -2247,7 +2247,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/455_f02.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/455_f02.maanim"
       }
     },
     {
@@ -2264,7 +2264,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/486_e03.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/486_e03.maanim"
       }
     },
     {
@@ -2281,7 +2281,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/517_c03.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/517_c03.maanim"
       }
     },
     {
@@ -2298,7 +2298,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/517_f03.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/517_f03.maanim"
       }
     },
     {
@@ -2315,7 +2315,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/633_s02.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/633_s02.maanim"
       }
     },
     {
@@ -2332,7 +2332,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/725_c02.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/725_c02.maanim"
       }
     },
     {
@@ -2349,7 +2349,24 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/725_f02.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/725_f02.maanim"
+      }
+    },
+    {
+      "path": "ImageData/754_c.mamodel",
+      "winner": {
+        "kind": "server",
+        "root": "WImageDataServer",
+        "generation": "W",
+        "priority": 123,
+        "path": "jp/server/WImageDataServer/754_c.mamodel"
+      },
+      "replaced": {
+        "kind": "apk",
+        "root": "ImageDataLocal",
+        "generation": "local",
+        "priority": 0,
+        "path": "jp/Local/150700/ImageDataLocal/754_c.mamodel"
       }
     },
     {
@@ -2791,7 +2808,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_19_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_19_v_ja.png"
       }
     },
     {
@@ -2808,7 +2825,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_20_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_20_v_ja.png"
       }
     },
     {
@@ -2825,7 +2842,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_21_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_21_v_ja.png"
       }
     },
     {
@@ -2842,7 +2859,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_22_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_22_v_ja.png"
       }
     },
     {
@@ -2859,7 +2876,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_23_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_23_v_ja.png"
       }
     },
     {
@@ -2876,7 +2893,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_24_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_24_v_ja.png"
       }
     },
     {
@@ -2893,7 +2910,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_25_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_25_v_ja.png"
       }
     },
     {
@@ -2910,7 +2927,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_26_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_26_v_ja.png"
       }
     },
     {
@@ -2927,7 +2944,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_27_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_27_v_ja.png"
       }
     },
     {
@@ -2944,7 +2961,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_28_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_28_v_ja.png"
       }
     },
     {
@@ -2961,7 +2978,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_29_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_29_v_ja.png"
       }
     },
     {
@@ -2978,7 +2995,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_30_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_30_v_ja.png"
       }
     },
     {
@@ -2995,7 +3012,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_31_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_31_v_ja.png"
       }
     },
     {
@@ -3012,7 +3029,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_32_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_32_v_ja.png"
       }
     },
     {
@@ -3029,7 +3046,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_33_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_33_v_ja.png"
       }
     },
     {
@@ -3046,7 +3063,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_34_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_34_v_ja.png"
       }
     },
     {
@@ -3063,7 +3080,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_35_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_35_v_ja.png"
       }
     },
     {
@@ -3080,7 +3097,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_36_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_36_v_ja.png"
       }
     },
     {
@@ -3097,7 +3114,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_37_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_37_v_ja.png"
       }
     },
     {
@@ -3114,7 +3131,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_38_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_38_v_ja.png"
       }
     },
     {
@@ -3131,7 +3148,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_39_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_39_v_ja.png"
       }
     },
     {
@@ -3148,7 +3165,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_40_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_40_v_ja.png"
       }
     },
     {
@@ -3165,7 +3182,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_41_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_41_v_ja.png"
       }
     },
     {
@@ -3182,7 +3199,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_42_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_42_v_ja.png"
       }
     },
     {
@@ -3199,7 +3216,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_43_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_43_v_ja.png"
       }
     },
     {
@@ -3216,7 +3233,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_44_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_44_v_ja.png"
       }
     },
     {
@@ -3233,7 +3250,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_45_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_45_v_ja.png"
       }
     },
     {
@@ -3250,7 +3267,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_46_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_46_v_ja.png"
       }
     },
     {
@@ -3267,7 +3284,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_47_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_47_v_ja.png"
       }
     },
     {
@@ -3284,7 +3301,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_48_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_48_v_ja.png"
       }
     },
     {
@@ -3301,7 +3318,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn000_49_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn000_49_v_ja.png"
       }
     },
     {
@@ -3318,7 +3335,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_00_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_00_v_ja.png"
       }
     },
     {
@@ -3335,7 +3352,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_01_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_01_v_ja.png"
       }
     },
     {
@@ -3352,7 +3369,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_02_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_02_v_ja.png"
       }
     },
     {
@@ -3369,7 +3386,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_03_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_03_v_ja.png"
       }
     },
     {
@@ -3386,7 +3403,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_04_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_04_v_ja.png"
       }
     },
     {
@@ -3403,7 +3420,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_05_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_05_v_ja.png"
       }
     },
     {
@@ -3420,7 +3437,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_06_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_06_v_ja.png"
       }
     },
     {
@@ -3437,7 +3454,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_07_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_07_v_ja.png"
       }
     },
     {
@@ -3454,7 +3471,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_08_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_08_v_ja.png"
       }
     },
     {
@@ -3471,7 +3488,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_09_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_09_v_ja.png"
       }
     },
     {
@@ -3488,7 +3505,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_10_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_10_v_ja.png"
       }
     },
     {
@@ -3505,7 +3522,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_11_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_11_v_ja.png"
       }
     },
     {
@@ -3522,7 +3539,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_12_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_12_v_ja.png"
       }
     },
     {
@@ -3539,7 +3556,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_13_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_13_v_ja.png"
       }
     },
     {
@@ -3556,7 +3573,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_14_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_14_v_ja.png"
       }
     },
     {
@@ -3573,7 +3590,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_15_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_15_v_ja.png"
       }
     },
     {
@@ -3590,7 +3607,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_16_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_16_v_ja.png"
       }
     },
     {
@@ -3607,7 +3624,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_17_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_17_v_ja.png"
       }
     },
     {
@@ -3624,7 +3641,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_18_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_18_v_ja.png"
       }
     },
     {
@@ -3641,7 +3658,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_19_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_19_v_ja.png"
       }
     },
     {
@@ -3658,7 +3675,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_20_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_20_v_ja.png"
       }
     },
     {
@@ -3675,7 +3692,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_21_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_21_v_ja.png"
       }
     },
     {
@@ -3692,7 +3709,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_22_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_22_v_ja.png"
       }
     },
     {
@@ -3709,7 +3726,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_23_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_23_v_ja.png"
       }
     },
     {
@@ -3726,7 +3743,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_24_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_24_v_ja.png"
       }
     },
     {
@@ -3743,7 +3760,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_25_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_25_v_ja.png"
       }
     },
     {
@@ -3760,7 +3777,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_26_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_26_v_ja.png"
       }
     },
     {
@@ -3777,7 +3794,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_27_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_27_v_ja.png"
       }
     },
     {
@@ -3794,7 +3811,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_28_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_28_v_ja.png"
       }
     },
     {
@@ -3811,7 +3828,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_29_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_29_v_ja.png"
       }
     },
     {
@@ -3828,7 +3845,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_30_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_30_v_ja.png"
       }
     },
     {
@@ -3845,7 +3862,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_31_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_31_v_ja.png"
       }
     },
     {
@@ -3862,7 +3879,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_32_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_32_v_ja.png"
       }
     },
     {
@@ -3879,7 +3896,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_33_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_33_v_ja.png"
       }
     },
     {
@@ -3896,7 +3913,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_34_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_34_v_ja.png"
       }
     },
     {
@@ -3913,7 +3930,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_35_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_35_v_ja.png"
       }
     },
     {
@@ -3930,7 +3947,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_36_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_36_v_ja.png"
       }
     },
     {
@@ -3947,7 +3964,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_37_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_37_v_ja.png"
       }
     },
     {
@@ -3964,7 +3981,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_38_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_38_v_ja.png"
       }
     },
     {
@@ -3981,7 +3998,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_39_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_39_v_ja.png"
       }
     },
     {
@@ -3998,7 +4015,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_40_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_40_v_ja.png"
       }
     },
     {
@@ -4015,7 +4032,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_41_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_41_v_ja.png"
       }
     },
     {
@@ -4032,7 +4049,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_42_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_42_v_ja.png"
       }
     },
     {
@@ -4049,7 +4066,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_43_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_43_v_ja.png"
       }
     },
     {
@@ -4066,7 +4083,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_44_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_44_v_ja.png"
       }
     },
     {
@@ -4083,7 +4100,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_45_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_45_v_ja.png"
       }
     },
     {
@@ -4100,7 +4117,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_46_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_46_v_ja.png"
       }
     },
     {
@@ -4117,7 +4134,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_47_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_47_v_ja.png"
       }
     },
     {
@@ -4134,7 +4151,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_48_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_48_v_ja.png"
       }
     },
     {
@@ -4151,7 +4168,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn006_49_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn006_49_v_ja.png"
       }
     },
     {
@@ -4168,7 +4185,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_00_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_00_v_ja.png"
       }
     },
     {
@@ -4185,7 +4202,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_01_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_01_v_ja.png"
       }
     },
     {
@@ -4202,7 +4219,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_02_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_02_v_ja.png"
       }
     },
     {
@@ -4219,7 +4236,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_03_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_03_v_ja.png"
       }
     },
     {
@@ -4236,7 +4253,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_04_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_04_v_ja.png"
       }
     },
     {
@@ -4253,7 +4270,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_05_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_05_v_ja.png"
       }
     },
     {
@@ -4270,7 +4287,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_06_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_06_v_ja.png"
       }
     },
     {
@@ -4287,7 +4304,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_07_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_07_v_ja.png"
       }
     },
     {
@@ -4304,7 +4321,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_08_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_08_v_ja.png"
       }
     },
     {
@@ -4321,7 +4338,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn007_09_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn007_09_v_ja.png"
       }
     },
     {
@@ -4338,7 +4355,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_00_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_00_v_ja.png"
       }
     },
     {
@@ -4355,7 +4372,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_01_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_01_v_ja.png"
       }
     },
     {
@@ -4372,7 +4389,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_02_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_02_v_ja.png"
       }
     },
     {
@@ -4389,7 +4406,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_03_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_03_v_ja.png"
       }
     },
     {
@@ -4406,7 +4423,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_04_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_04_v_ja.png"
       }
     },
     {
@@ -4423,7 +4440,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_05_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_05_v_ja.png"
       }
     },
     {
@@ -4440,7 +4457,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_06_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_06_v_ja.png"
       }
     },
     {
@@ -4457,7 +4474,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_07_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_07_v_ja.png"
       }
     },
     {
@@ -4474,7 +4491,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_08_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_08_v_ja.png"
       }
     },
     {
@@ -4491,7 +4508,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_09_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_09_v_ja.png"
       }
     },
     {
@@ -4508,7 +4525,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_10_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_10_v_ja.png"
       }
     },
     {
@@ -4525,7 +4542,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_11_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_11_v_ja.png"
       }
     },
     {
@@ -4542,7 +4559,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_12_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_12_v_ja.png"
       }
     },
     {
@@ -4559,7 +4576,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_13_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_13_v_ja.png"
       }
     },
     {
@@ -4576,7 +4593,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_14_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_14_v_ja.png"
       }
     },
     {
@@ -4593,7 +4610,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_15_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_15_v_ja.png"
       }
     },
     {
@@ -4610,7 +4627,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_16_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_16_v_ja.png"
       }
     },
     {
@@ -4627,7 +4644,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_17_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_17_v_ja.png"
       }
     },
     {
@@ -4644,7 +4661,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_18_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_18_v_ja.png"
       }
     },
     {
@@ -4661,7 +4678,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_19_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_19_v_ja.png"
       }
     },
     {
@@ -4678,7 +4695,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_20_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_20_v_ja.png"
       }
     },
     {
@@ -4695,7 +4712,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_21_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_21_v_ja.png"
       }
     },
     {
@@ -4712,7 +4729,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_22_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_22_v_ja.png"
       }
     },
     {
@@ -4729,7 +4746,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_23_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_23_v_ja.png"
       }
     },
     {
@@ -4746,7 +4763,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_24_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_24_v_ja.png"
       }
     },
     {
@@ -4763,7 +4780,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_25_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_25_v_ja.png"
       }
     },
     {
@@ -4780,7 +4797,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_26_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_26_v_ja.png"
       }
     },
     {
@@ -4797,7 +4814,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_27_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_27_v_ja.png"
       }
     },
     {
@@ -4814,7 +4831,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_28_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_28_v_ja.png"
       }
     },
     {
@@ -4831,7 +4848,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_29_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_29_v_ja.png"
       }
     },
     {
@@ -4848,7 +4865,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_30_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_30_v_ja.png"
       }
     },
     {
@@ -4865,7 +4882,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_31_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_31_v_ja.png"
       }
     },
     {
@@ -4882,7 +4899,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_32_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_32_v_ja.png"
       }
     },
     {
@@ -4899,7 +4916,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_33_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_33_v_ja.png"
       }
     },
     {
@@ -4916,7 +4933,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_34_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_34_v_ja.png"
       }
     },
     {
@@ -4933,7 +4950,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_35_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_35_v_ja.png"
       }
     },
     {
@@ -4950,7 +4967,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_36_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_36_v_ja.png"
       }
     },
     {
@@ -4967,7 +4984,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_37_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_37_v_ja.png"
       }
     },
     {
@@ -4984,7 +5001,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_38_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_38_v_ja.png"
       }
     },
     {
@@ -5001,7 +5018,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_39_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_39_v_ja.png"
       }
     },
     {
@@ -5018,7 +5035,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_40_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_40_v_ja.png"
       }
     },
     {
@@ -5035,7 +5052,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_41_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_41_v_ja.png"
       }
     },
     {
@@ -5052,7 +5069,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_42_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_42_v_ja.png"
       }
     },
     {
@@ -5069,7 +5086,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_43_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_43_v_ja.png"
       }
     },
     {
@@ -5086,7 +5103,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_44_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_44_v_ja.png"
       }
     },
     {
@@ -5103,7 +5120,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_45_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_45_v_ja.png"
       }
     },
     {
@@ -5120,7 +5137,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_46_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_46_v_ja.png"
       }
     },
     {
@@ -5137,7 +5154,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_47_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_47_v_ja.png"
       }
     },
     {
@@ -5154,7 +5171,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_48_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_48_v_ja.png"
       }
     },
     {
@@ -5171,7 +5188,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn010_49_v_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn010_49_v_ja.png"
       }
     },
     {
@@ -5222,7 +5239,7 @@
         "root": "MapLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/MapLocal/mapsn052_00_ex_ja.png"
+        "path": "jp/Local/150700/MapLocal/mapsn052_00_ex_ja.png"
       }
     },
     {
@@ -5409,7 +5426,7 @@
         "root": "NumberLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/NumberLocal/186_e.png"
+        "path": "jp/Local/150700/NumberLocal/186_e.png"
       }
     },
     {
@@ -5683,7 +5700,7 @@
         "root": "ImageLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageLocal/img013.png"
+        "path": "jp/Local/150700/ImageLocal/img013.png"
       }
     },
     {
@@ -5717,7 +5734,7 @@
         "root": "ImageDataLocal",
         "generation": "local",
         "priority": 0,
-        "path": "jp/Local/150600/ImageDataLocal/186_e01.maanim"
+        "path": "jp/Local/150700/ImageDataLocal/186_e01.maanim"
       }
     },
     {

@@ -2,13 +2,48 @@
   "schemaVersion": 1,
   "packageName": "jp.co.ponos.battlecats",
   "latestConfirmed": {
-    "versionName": "15.6.0",
-    "versionCode": 1506000,
-    "compactVersion": "150600"
+    "versionName": "15.7.0",
+    "versionCode": 1507000,
+    "compactVersion": "150700"
   },
   "datasets": {
     "Local": {
       "snapshots": [
+        {
+          "dataset": "Local",
+          "id": "150700",
+          "label": "15.7.0 (150700)",
+          "versionName": "15.7.0",
+          "versionCode": 1507000,
+          "compactVersion": "150700",
+          "manifestPath": "jp/explorer/manifests/Local/150700.json",
+          "rawRoot": "jp/Local/150700",
+          "available": true,
+          "fileCount": 20596,
+          "totalSize": 239835676,
+          "archive": {
+            "provider": "github-release",
+            "repository": "sinsuirakv0/battlecats-apk",
+            "tag": "battlecats-jp-history",
+            "releaseUrl": "https://github.com/sinsuirakv0/battlecats-apk/releases/tag/battlecats-jp-history",
+            "assets": [
+              {
+                "name": "battlecats-jp-150700.parts.json",
+                "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/battlecats-jp-history/battlecats-jp-150700.parts.json",
+                "bytes": 359,
+                "sha256": "ed128938fa35a58135108062310ccb8e23f0a9aedacaeef1f7acab3bbff57c17",
+                "apiId": 611239959
+              },
+              {
+                "name": "battlecats-jp-150700.tar.gz",
+                "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/battlecats-jp-history/battlecats-jp-150700.tar.gz",
+                "bytes": 459802946,
+                "sha256": "547ded902d7c5bbd4a763f837f29ab3f2ec02fbf6b417be1541426d351fc7def",
+                "apiId": 611239463
+              }
+            ]
+          }
+        },
         {
           "dataset": "Local",
           "id": "150600",
@@ -53,7 +88,7 @@
           "compactVersion": "150501",
           "manifestPath": "jp/explorer/manifests/Local/150501.json",
           "rawRoot": "jp/Local/150501",
-          "available": true,
+          "available": false,
           "fileCount": 20073,
           "totalSize": 220312483,
           "archive": {
@@ -124,6 +159,19 @@
       "snapshots": [
         {
           "dataset": "server",
+          "id": "v15.7.0-150700",
+          "label": "15.7.0 (server)",
+          "versionName": "15.7.0",
+          "versionCode": 1507000,
+          "compactVersion": "150700",
+          "manifestPath": "jp/explorer/manifests/server/v15.7.0-150700.json",
+          "rawRoot": "jp/server",
+          "available": true,
+          "fileCount": 33780,
+          "totalSize": 523432601
+        },
+        {
+          "dataset": "server",
           "id": "v15.6.0-150600",
           "label": "15.6.0 (server)",
           "versionName": "15.6.0",
@@ -131,7 +179,7 @@
           "compactVersion": "150600",
           "manifestPath": "jp/explorer/manifests/server/v15.6.0-150600.json",
           "rawRoot": "jp/server",
-          "available": true,
+          "available": false,
           "fileCount": 33780,
           "totalSize": 523432601
         },
@@ -154,6 +202,19 @@
       "snapshots": [
         {
           "dataset": "sitedata",
+          "id": "v15.7.0-150700",
+          "label": "15.7.0 (sitedata)",
+          "versionName": "15.7.0",
+          "versionCode": 1507000,
+          "compactVersion": "150700",
+          "manifestPath": "jp/explorer/manifests/sitedata/v15.7.0-150700.json",
+          "rawRoot": "jp/sitedata",
+          "available": true,
+          "fileCount": 54139,
+          "totalSize": 750390249
+        },
+        {
+          "dataset": "sitedata",
           "id": "v15.6.0-150600",
           "label": "15.6.0 (sitedata)",
           "versionName": "15.6.0",
@@ -161,7 +222,7 @@
           "compactVersion": "150600",
           "manifestPath": "jp/explorer/manifests/sitedata/v15.6.0-150600.json",
           "rawRoot": "jp/sitedata",
-          "available": true,
+          "available": false,
           "fileCount": 53827,
           "totalSize": 739855434
         },
