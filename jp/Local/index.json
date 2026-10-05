@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "packageName": "jp.co.ponos.battlecats",
   "latestConfirmed": {
-    "versionName": "15.7.0",
-    "versionCode": 1507000,
-    "compactVersion": "150700"
+    "versionName": "15.7.1",
+    "versionCode": 1507010,
+    "compactVersion": "150701"
   },
   "retention": {
     "maxExpandedVersions": 2,
@@ -12,13 +12,51 @@
   },
   "versions": [
     {
+      "versionName": "15.7.1",
+      "versionCode": 1507010,
+      "compactVersion": "150701",
+      "packageName": "jp.co.ponos.battlecats",
+      "source": "google-play",
+      "compatibility": "compatible",
+      "state": "confirmed",
+      "reason": null,
+      "mergedApkSha256": "a1e3b92695a866cf7a2dfd3cfc309a52e5303469d6e50429114eb37332f59d0b",
+      "signingCertificateSha256": "baf876d554213331c6fe5f6bbf9ae9af2f95c20e82b14bc232b0ac3a77680cb1",
+      "sha256": "3c25f8000ffeb70288b23b1bd5e08273be67294316b0224d33bc798eaa64c440",
+      "size": 239835676,
+      "fileCount": 20596,
+      "expandedPath": "jp/Local/150701",
+      "archive": {
+        "provider": "github-release",
+        "repository": "sinsuirakv0/battlecats-apk",
+        "tag": "battlecats-jp-history",
+        "releaseUrl": "https://github.com/sinsuirakv0/battlecats-apk/releases/tag/battlecats-jp-history",
+        "assets": [
+          {
+            "name": "battlecats-jp-150701.parts.json",
+            "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/battlecats-jp-history/battlecats-jp-150701.parts.json",
+            "bytes": 359,
+            "sha256": "d8b15f66e95f66d1e88d4a39f6084461aff5c1d09a48ff3db9167afd68d8ff5d",
+            "apiId": 611799474
+          },
+          {
+            "name": "battlecats-jp-150701.tar.gz",
+            "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/battlecats-jp-history/battlecats-jp-150701.tar.gz",
+            "bytes": 459799227,
+            "sha256": "051729d1ba835de799e99838b84f9677713c8284304bfa50f35eb5cea6774d55",
+            "apiId": 611799079
+          }
+        ]
+      }
+    },
+    {
       "versionName": "15.7.0",
       "versionCode": 1507000,
       "compactVersion": "150700",
       "packageName": "jp.co.ponos.battlecats",
       "source": "google-play",
       "compatibility": "compatible",
-      "state": "confirmed",
+      "state": "expanded",
       "reason": null,
       "mergedApkSha256": "b658c967e349ffd6e930034b60e5f848ececaa38eab416e69e040ccbbac78609",
       "signingCertificateSha256": "baf876d554213331c6fe5f6bbf9ae9af2f95c20e82b14bc232b0ac3a77680cb1",
@@ -56,14 +94,14 @@
       "packageName": "jp.co.ponos.battlecats",
       "source": "google-play",
       "compatibility": "compatible",
-      "state": "expanded",
+      "state": "archived",
       "reason": null,
       "mergedApkSha256": "5c2064b138a9fa722d51cb813d6463c45d40b69bcade27470283460b964ef246",
       "signingCertificateSha256": "baf876d554213331c6fe5f6bbf9ae9af2f95c20e82b14bc232b0ac3a77680cb1",
       "sha256": "4303774fbcff96316541769c6c971571d9072c3a24e763b046289c458f97d02f",
       "size": 229291000,
       "fileCount": 20283,
-      "expandedPath": "jp/Local/150600",
+      "expandedPath": null,
       "archive": {
         "provider": "github-release",
         "repository": "sinsuirakv0/battlecats-apk",

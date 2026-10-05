@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "packageName": "jp.co.ponos.battlecats",
-  "versionCode": 1507000,
-  "versionName": "15.7.0",
-  "compactVersion": "150700",
-  "mergedApkSha256": "b658c967e349ffd6e930034b60e5f848ececaa38eab416e69e040ccbbac78609",
+  "versionCode": 1507010,
+  "versionName": "15.7.1",
+  "compactVersion": "150701",
+  "mergedApkSha256": "a1e3b92695a866cf7a2dfd3cfc309a52e5303469d6e50429114eb37332f59d0b",
   "signingCertificateSha256": "baf876d554213331c6fe5f6bbf9ae9af2f95c20e82b14bc232b0ac3a77680cb1",
   "source": "google-play"
 }

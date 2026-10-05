@@ -1,0 +1,28 @@
+{
+  "RuleType": {
+    "0": {
+      "InvalidNyancomboID": [
+        4,
+        5,
+        8,
+        9,
+        12
+      ]
+    },
+    "1": {
+      "InvalidNyancomboID": [
+        11
+      ]
+    },
+    "4": {
+      "InvalidNyancomboID": [
+        27
+      ]
+    },
+    "10": {
+      "InvalidNyancomboID": [
+        2
+      ]
+    }
+  }
+}
