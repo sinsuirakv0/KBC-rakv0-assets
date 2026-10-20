@@ -1,4 +1,4 @@
-# データ基盤v2
+﻿# データ基盤v2
 
 ## 配置
 
@@ -39,6 +39,6 @@ GitHubはリポジトリ1GB未満を理想、5GB未満を強く推奨し、Relea
 
 ## 公開検証 2026-10-21
 
-134補完を含む通常経路のActionsでRelease保存・生成・再生成一致・破損/欠損拒否・Git pushを確認した。Release保存後の意図的停止ではbranch参照は正常版のまま。結果と復旧手順の正本はprivate battlecats-apk/docs/operations.md。mainはまだ切り替えていない。
+134補完を含む通常経路のActionsでRelease保存・生成・再生成一致・破損/欠損拒否・Git pushを確認した。Release保存後の意図的停止ではbranch参照は正常版のまま。結果と復旧手順の正本はprivate battlecats-apk/docs/operations.md。2026-10-21、ユーザー承認に基づきmainへ反映する。旧mainに追加されていた150701/150702の原本はバイトを変えず保持し、検証済みのnative原本・補完・生成物・currentはそのまま維持する。
 
 過去Server/補完は当時のGit commitから読む。最新commitで別buildのServerを選ばず、current buildを使う。採用元マップのsourceKindと、manifest.inputsがhash固定する補完出典を外部ツールにも引き渡す。

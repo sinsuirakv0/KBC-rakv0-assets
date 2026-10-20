@@ -1,10 +1,10 @@
-# 設計の入口
+﻿# 設計の入口
 
 現行契約は [data-platform.md](data-platform.md)。取得・復号・生成の実装と関数関係は `battlecats-apk/engine/docs/README.md` を参照する。
 
 旧資料のsitedata・jp/character-overrides・jp/explorer・jp/version.jsonは廃止済みの配置を説明している。補完の取得元に関する記録は引き続き有効で、現在の実体は `overrides/jp/` にある。旧スクリプト、旧テスト、移行前README、旧生成物のローカル保全先は `.local/pre-platform/`。未コミットだった別称・補完データ・設計資料も失っていない。
 
-`metadata/jp/legacy/` は過去の出所とRelease参照を保つ資料で、新エンジンの入力台帳には使わない。過去Localの5版は唯一の取得物を失わないため保持している。
+`metadata/jp/legacy/` は過去の出所とRelease参照を保つ資料で、新エンジンの入力台帳には使わない。過去Localの7版は唯一の取得物を失わないため保持している。
 
 ## 別称の編集
 
