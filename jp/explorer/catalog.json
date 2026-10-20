@@ -2,13 +2,48 @@
   "schemaVersion": 1,
   "packageName": "jp.co.ponos.battlecats",
   "latestConfirmed": {
-    "versionName": "15.6.0",
-    "versionCode": 1506000,
-    "compactVersion": "150600"
+    "versionName": "15.7.2",
+    "versionCode": 1507021,
+    "compactVersion": "150702"
   },
   "datasets": {
     "Local": {
       "snapshots": [
+        {
+          "dataset": "Local",
+          "id": "150702",
+          "label": "15.7.2 (150702)",
+          "versionName": "15.7.2",
+          "versionCode": 1507021,
+          "compactVersion": "150702",
+          "manifestPath": "jp/explorer/manifests/Local/150702.json",
+          "rawRoot": "jp/Local/150702",
+          "available": true,
+          "fileCount": 20596,
+          "totalSize": 239835677,
+          "archive": {
+            "provider": "github-release",
+            "repository": "sinsuirakv0/battlecats-apk",
+            "tag": "benchmark-39449157877-legacy",
+            "releaseUrl": "https://github.com/sinsuirakv0/battlecats-apk/releases/tag/benchmark-39449157877-legacy",
+            "assets": [
+              {
+                "name": "legacy.parts.json",
+                "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/benchmark-39449157877-legacy/legacy.parts.json",
+                "bytes": 331,
+                "sha256": "7820c6815f2e401a0c430438a0d7126a592c6d51a12896de808893091bd4aa37",
+                "apiId": 659728597
+              },
+              {
+                "name": "legacy.tar.gz",
+                "url": "https://github.com/sinsuirakv0/battlecats-apk/releases/download/benchmark-39449157877-legacy/legacy.tar.gz",
+                "bytes": 459818390,
+                "sha256": "b4940892c68b5916e006af027f998599133b1b3e92b3b241fb59b81b213c0432",
+                "apiId": 659727594
+              }
+            ]
+          }
+        },
         {
           "dataset": "Local",
           "id": "150600",
@@ -53,7 +88,7 @@
           "compactVersion": "150501",
           "manifestPath": "jp/explorer/manifests/Local/150501.json",
           "rawRoot": "jp/Local/150501",
-          "available": true,
+          "available": false,
           "fileCount": 20073,
           "totalSize": 220312483,
           "archive": {
@@ -124,6 +159,19 @@
       "snapshots": [
         {
           "dataset": "server",
+          "id": "v15.7.2-150702",
+          "label": "15.7.2 (server)",
+          "versionName": "15.7.2",
+          "versionCode": 1507021,
+          "compactVersion": "150702",
+          "manifestPath": "jp/explorer/manifests/server/v15.7.2-150702.json",
+          "rawRoot": "jp/server",
+          "available": true,
+          "fileCount": 33780,
+          "totalSize": 523432601
+        },
+        {
+          "dataset": "server",
           "id": "v15.6.0-150600",
           "label": "15.6.0 (server)",
           "versionName": "15.6.0",
@@ -131,7 +179,7 @@
           "compactVersion": "150600",
           "manifestPath": "jp/explorer/manifests/server/v15.6.0-150600.json",
           "rawRoot": "jp/server",
-          "available": true,
+          "available": false,
           "fileCount": 33780,
           "totalSize": 523432601
         },
@@ -154,6 +202,19 @@
       "snapshots": [
         {
           "dataset": "sitedata",
+          "id": "v15.7.2-150702",
+          "label": "15.7.2 (sitedata)",
+          "versionName": "15.7.2",
+          "versionCode": 1507021,
+          "compactVersion": "150702",
+          "manifestPath": "jp/explorer/manifests/sitedata/v15.7.2-150702.json",
+          "rawRoot": "jp/sitedata",
+          "available": true,
+          "fileCount": 54139,
+          "totalSize": 751291157
+        },
+        {
+          "dataset": "sitedata",
           "id": "v15.6.0-150600",
           "label": "15.6.0 (sitedata)",
           "versionName": "15.6.0",
@@ -161,7 +222,7 @@
           "compactVersion": "150600",
           "manifestPath": "jp/explorer/manifests/sitedata/v15.6.0-150600.json",
           "rawRoot": "jp/sitedata",
-          "available": true,
+          "available": false,
           "fileCount": 53827,
           "totalSize": 739855434
         },
