@@ -1,4 +1,1167 @@
-{
+﻿{
   "schemaVersion": 1,
-  "units": {}
+  "units": {
+    "011": {
+      "aliases": {
+        "include": [
+          "Mr. "
+        ],
+        "exclude": []
+      }
+    },
+    "028": {
+      "aliases": {
+        "include": [
+          "ネコ盛り"
+        ],
+        "exclude": []
+      }
+    },
+    "040": {
+      "aliases": {
+        "include": [
+          "ゴールデンネコバスたぶ"
+        ],
+        "exclude": []
+      }
+    },
+    "045": {
+      "aliases": {
+        "include": [
+          "芸者ネコ"
+        ],
+        "exclude": []
+      }
+    },
+    "092": {
+      "aliases": {
+        "include": [
+          "大狂ゴム"
+        ],
+        "exclude": []
+      }
+    },
+    "097": {
+      "aliases": {
+        "include": [
+          "狂乱のネコ島"
+        ],
+        "exclude": []
+      }
+    },
+    "104": {
+      "aliases": {
+        "include": [
+          "コイ・The・Night"
+        ],
+        "exclude": []
+      }
+    },
+    "138": {
+      "aliases": {
+        "include": [
+          "破壊衛生カオスムーン",
+          "破壊衛生デスムーン"
+        ],
+        "exclude": []
+      }
+    },
+    "147": {
+      "aliases": {
+        "include": [
+          "ネコプレーン"
+        ],
+        "exclude": []
+      }
+    },
+    "149": {
+      "aliases": {
+        "include": [
+          "ねこカメラマン"
+        ],
+        "exclude": []
+      }
+    },
+    "155": {
+      "aliases": {
+        "include": [
+          "ユニット 155 000",
+          "ユニット 155 001"
+        ],
+        "exclude": []
+      }
+    },
+    "177": {
+      "aliases": {
+        "include": [
+          "オムライス"
+        ],
+        "exclude": []
+      }
+    },
+    "182": {
+      "aliases": {
+        "include": [
+          "쿠쿠크루12",
+          "쿠쿠크루12+1"
+        ],
+        "exclude": []
+      }
+    },
+    "188": {
+      "aliases": {
+        "include": [
+          "寂滅のミスティカCC"
+        ],
+        "exclude": []
+      }
+    },
+    "197": {
+      "aliases": {
+        "include": [
+          "ネコサイキックネコ"
+        ],
+        "exclude": []
+      }
+    },
+    "225": {
+      "aliases": {
+        "include": [
+          "ハイ・ドゥ MK Ⅲ CC"
+        ],
+        "exclude": []
+      }
+    },
+    "229": {
+      "aliases": {
+        "include": [
+          "ハロウィンウィンディ",
+          "ハロウィンディ"
+        ],
+        "exclude": []
+      }
+    },
+    "230": {
+      "aliases": {
+        "include": [
+          "ハロウィンサンディア"
+        ],
+        "exclude": []
+      }
+    },
+    "241": {
+      "aliases": {
+        "include": [
+          "冬カイ"
+        ],
+        "exclude": []
+      }
+    },
+    "242": {
+      "aliases": {
+        "include": [
+          "冬クウ"
+        ],
+        "exclude": []
+      }
+    },
+    "243": {
+      "aliases": {
+        "include": [
+          "冬カッパー"
+        ],
+        "exclude": []
+      }
+    },
+    "256": {
+      "aliases": {
+        "include": [
+          "ウサギゴーレム"
+        ],
+        "exclude": []
+      }
+    },
+    "258": {
+      "aliases": {
+        "include": [
+          "イヌビス"
+        ],
+        "exclude": []
+      }
+    },
+    "269": {
+      "aliases": {
+        "include": [
+          "白ガオウ"
+        ],
+        "exclude": []
+      }
+    },
+    "274": {
+      "aliases": {
+        "include": [
+          "トロカリ",
+          "夏カリファ"
+        ],
+        "exclude": []
+      }
+    },
+    "275": {
+      "aliases": {
+        "include": [
+          "サマキャ",
+          "夏ホワラビ"
+        ],
+        "exclude": []
+      }
+    },
+    "285": {
+      "aliases": {
+        "include": [
+          "狂乱のネコ大籠包",
+          "狂乱のネコ小籠包"
+        ],
+        "exclude": []
+      }
+    },
+    "302": {
+      "aliases": {
+        "include": [
+          "ハロウィンアイス"
+        ],
+        "exclude": []
+      }
+    },
+    "304": {
+      "aliases": {
+        "include": [
+          "極激滅戦車ギガパルド",
+          "超激滅戦車ギガパルド"
+        ],
+        "exclude": []
+      }
+    },
+    "310": {
+      "aliases": {
+        "include": [
+          "冬ナース"
+        ],
+        "exclude": []
+      }
+    },
+    "311": {
+      "aliases": {
+        "include": [
+          "ちび島"
+        ],
+        "exclude": []
+      }
+    },
+    "318": {
+      "aliases": {
+        "include": [
+          "白ミタマ"
+        ],
+        "exclude": []
+      }
+    },
+    "320": {
+      "aliases": {
+        "include": [
+          "一二三～原偶像貓",
+          "三原慧悟",
+          "偶像三原＆貓咪"
+        ],
+        "exclude": []
+      }
+    },
+    "330": {
+      "aliases": {
+        "include": [
+          "春上杉"
+        ],
+        "exclude": []
+      }
+    },
+    "333": {
+      "aliases": {
+        "include": [
+          "黒ガオウ"
+        ],
+        "exclude": []
+      }
+    },
+    "339": {
+      "aliases": {
+        "include": [
+          "鉄壁砲"
+        ],
+        "exclude": []
+      }
+    },
+    "351": {
+      "aliases": {
+        "include": [
+          "シシコマ"
+        ],
+        "exclude": []
+      }
+    },
+    "353": {
+      "aliases": {
+        "include": [
+          "貓化巧克力",
+          "貓咪與巧克力",
+          "貓奴巧克力"
+        ],
+        "exclude": []
+      }
+    },
+    "354": {
+      "aliases": {
+        "include": [
+          "夏カイ"
+        ],
+        "exclude": []
+      }
+    },
+    "378": {
+      "aliases": {
+        "include": [
+          "黒ミタマ"
+        ],
+        "exclude": []
+      }
+    },
+    "380": {
+      "aliases": {
+        "include": [
+          "白ダル"
+        ],
+        "exclude": []
+      }
+    },
+    "432": {
+      "aliases": {
+        "include": [
+          "Betakkuma",
+          "Black Betakkuma"
+        ],
+        "exclude": []
+      }
+    },
+    "433": {
+      "aliases": {
+        "include": [
+          "Killer Nekokkuma",
+          "Nekokkuma"
+        ],
+        "exclude": []
+      }
+    },
+    "435": {
+      "aliases": {
+        "include": [
+          "ちびヴァル"
+        ],
+        "exclude": []
+      }
+    },
+    "438": {
+      "aliases": {
+        "include": [
+          "夏クウ"
+        ],
+        "exclude": []
+      }
+    },
+    "441": {
+      "aliases": {
+        "include": [
+          "黒ダル"
+        ],
+        "exclude": []
+      }
+    },
+    "465": {
+      "aliases": {
+        "include": [
+          "麻吉貓＆貓咪旅行團",
+          "麻吉貓＆貓咪遊寶島"
+        ],
+        "exclude": []
+      }
+    },
+    "492": {
+      "aliases": {
+        "include": [
+          "HAPPI",
+          "HAPPI&麻吉貓",
+          "HAPPI&麻吉貓&貓咪"
+        ],
+        "exclude": []
+      }
+    },
+    "494": {
+      "aliases": {
+        "include": [
+          "夏カッパー"
+        ],
+        "exclude": []
+      }
+    },
+    "497": {
+      "aliases": {
+        "include": [
+          "シャクレルネコ",
+          "シャクレルネコビルダー"
+        ],
+        "exclude": []
+      }
+    },
+    "498": {
+      "aliases": {
+        "include": [
+          "シャクレルライオン",
+          "シャクレルライオンCC"
+        ],
+        "exclude": []
+      }
+    },
+    "499": {
+      "aliases": {
+        "include": [
+          "シャクレルトラ",
+          "シャクレルトラCC"
+        ],
+        "exclude": []
+      }
+    },
+    "500": {
+      "aliases": {
+        "include": [
+          "シャクレルパンダ",
+          "シャクレルパンダCC"
+        ],
+        "exclude": []
+      }
+    },
+    "519": {
+      "aliases": {
+        "include": [
+          "シラス"
+        ],
+        "exclude": []
+      }
+    },
+    "526": {
+      "aliases": {
+        "include": [
+          "冬シシコマ"
+        ],
+        "exclude": []
+      }
+    },
+    "529": {
+      "aliases": {
+        "include": [
+          "白キャス"
+        ],
+        "exclude": []
+      }
+    },
+    "543": {
+      "aliases": {
+        "include": [
+          "黒キャス"
+        ],
+        "exclude": []
+      }
+    },
+    "553": {
+      "aliases": {
+        "include": [
+          "ネコブーラメン"
+        ],
+        "exclude": []
+      }
+    },
+    "558": {
+      "aliases": {
+        "include": [
+          "福引きガチャネコ"
+        ],
+        "exclude": []
+      }
+    },
+    "560": {
+      "aliases": {
+        "include": [
+          "ルカ姉"
+        ],
+        "exclude": []
+      }
+    },
+    "563": {
+      "aliases": {
+        "include": [
+          "夏サキ"
+        ],
+        "exclude": []
+      }
+    },
+    "564": {
+      "aliases": {
+        "include": [
+          "夏ルガ"
+        ],
+        "exclude": []
+      }
+    },
+    "570": {
+      "aliases": {
+        "include": [
+          "ハロウィンバルス"
+        ],
+        "exclude": []
+      }
+    },
+    "584": {
+      "aliases": {
+        "include": [
+          "サンタ前田"
+        ],
+        "exclude": []
+      }
+    },
+    "585": {
+      "aliases": {
+        "include": [
+          "白ガル"
+        ],
+        "exclude": []
+      }
+    },
+    "587": {
+      "aliases": {
+        "include": [
+          "バレンタインメガロ"
+        ],
+        "exclude": []
+      }
+    },
+    "588": {
+      "aliases": {
+        "include": [
+          "バレンタインメルシュ"
+        ],
+        "exclude": []
+      }
+    },
+    "589": {
+      "aliases": {
+        "include": [
+          "バレンタインチョコねこ"
+        ],
+        "exclude": []
+      }
+    },
+    "595": {
+      "aliases": {
+        "include": [
+          "イースターかむくら",
+          "春かむくら"
+        ],
+        "exclude": []
+      }
+    },
+    "609": {
+      "aliases": {
+        "include": [
+          "黒ガル"
+        ],
+        "exclude": []
+      }
+    },
+    "614": {
+      "aliases": {
+        "include": [
+          "南国衛生サンシャイン",
+          "南国衛生スーパーシャイン",
+          "夏かぐや"
+        ],
+        "exclude": []
+      }
+    },
+    "629": {
+      "aliases": {
+        "include": [
+          "洗脳ネコ"
+        ],
+        "exclude": []
+      }
+    },
+    "636": {
+      "aliases": {
+        "include": [
+          "洗脳ゴム"
+        ],
+        "exclude": []
+      }
+    },
+    "641": {
+      "aliases": {
+        "include": [
+          "白イズ"
+        ],
+        "exclude": []
+      }
+    },
+    "644": {
+      "aliases": {
+        "include": [
+          "ホワイトデーメカ子"
+        ],
+        "exclude": []
+      }
+    },
+    "645": {
+      "aliases": {
+        "include": [
+          "洗脳暗黒"
+        ],
+        "exclude": []
+      }
+    },
+    "648": {
+      "aliases": {
+        "include": [
+          "ホワイトデーにゃんま"
+        ],
+        "exclude": []
+      }
+    },
+    "654": {
+      "aliases": {
+        "include": [
+          "洗脳キモ",
+          "洗脳足"
+        ],
+        "exclude": []
+      }
+    },
+    "657": {
+      "aliases": {
+        "include": [
+          "黒イズ"
+        ],
+        "exclude": []
+      }
+    },
+    "662": {
+      "aliases": {
+        "include": [
+          "洗脳ライオン"
+        ],
+        "exclude": []
+      }
+    },
+    "666": {
+      "aliases": {
+        "include": [
+          "夏リリン"
+        ],
+        "exclude": []
+      }
+    },
+    "667": {
+      "aliases": {
+        "include": [
+          "洗脳トリ"
+        ],
+        "exclude": []
+      }
+    },
+    "683": {
+      "aliases": {
+        "include": [
+          "ハロウィン真田",
+          "伯爵真田"
+        ],
+        "exclude": []
+      }
+    },
+    "684": {
+      "aliases": {
+        "include": [
+          "洗脳島"
+        ],
+        "exclude": []
+      }
+    },
+    "687": {
+      "aliases": {
+        "include": [
+          "冬テルン"
+        ],
+        "exclude": []
+      }
+    },
+    "690": {
+      "aliases": {
+        "include": [
+          "白フォノウ"
+        ],
+        "exclude": []
+      }
+    },
+    "693": {
+      "aliases": {
+        "include": [
+          "執事グラ"
+        ],
+        "exclude": []
+      }
+    },
+    "694": {
+      "aliases": {
+        "include": [
+          "洗脳ジャラミ"
+        ],
+        "exclude": []
+      }
+    },
+    "699": {
+      "aliases": {
+        "include": [
+          "イースターサトル"
+        ],
+        "exclude": []
+      }
+    },
+    "701": {
+      "aliases": {
+        "include": [
+          "シン・にゃんこ仮面ライダー"
+        ],
+        "exclude": []
+      }
+    },
+    "705": {
+      "aliases": {
+        "include": [
+          "黒フォノウ"
+        ],
+        "exclude": []
+      }
+    },
+    "714": {
+      "aliases": {
+        "include": [
+          "夏カンナ",
+          "波打ち際のダイバーカンナ"
+        ],
+        "exclude": []
+      }
+    },
+    "729": {
+      "aliases": {
+        "include": [
+          "精霊（ソラクティス）"
+        ],
+        "exclude": []
+      }
+    },
+    "730": {
+      "aliases": {
+        "include": [
+          "ネコシシマイ"
+        ],
+        "exclude": []
+      }
+    },
+    "732": {
+      "aliases": {
+        "include": [
+          "精霊（イザナギ）"
+        ],
+        "exclude": []
+      }
+    },
+    "734": {
+      "aliases": {
+        "include": [
+          "精霊（ペガサ）"
+        ],
+        "exclude": []
+      }
+    },
+    "736": {
+      "aliases": {
+        "include": [
+          "ホワイトデーアイス"
+        ],
+        "exclude": []
+      }
+    },
+    "737": {
+      "aliases": {
+        "include": [
+          "スプカリ"
+        ],
+        "exclude": []
+      }
+    },
+    "739": {
+      "aliases": {
+        "include": [
+          "精霊（イザナミ）"
+        ],
+        "exclude": []
+      }
+    },
+    "740": {
+      "aliases": {
+        "include": [
+          "Mimic Cat",
+          "Trash Cat"
+        ],
+        "exclude": []
+      }
+    },
+    "741": {
+      "aliases": {
+        "include": [
+          "染香綺狐 ‧ 妲己",
+          "染香綺狐 ‧ 妲己＆貓咪"
+        ],
+        "exclude": []
+      }
+    },
+    "742": {
+      "aliases": {
+        "include": [
+          "一曲傾心・莫莉安娜貓",
+          "莫莉安娜貓"
+        ],
+        "exclude": []
+      }
+    },
+    "743": {
+      "aliases": {
+        "include": [
+          "瘋頭",
+          "瘋頭貓"
+        ],
+        "exclude": []
+      }
+    },
+    "744": {
+      "aliases": {
+        "include": [
+          "傭兵貓團長 ‧ 費利克斯貓",
+          "貓公爵 ‧ 費利克斯貓"
+        ],
+        "exclude": []
+      }
+    },
+    "745": {
+      "aliases": {
+        "include": [
+          "生日派對點點貓",
+          "點點貓"
+        ],
+        "exclude": []
+      }
+    },
+    "755": {
+      "aliases": {
+        "include": [
+          "精霊（明智光秀）"
+        ],
+        "exclude": []
+      }
+    },
+    "756": {
+      "aliases": {
+        "include": [
+          "ジュンブラマシン"
+        ],
+        "exclude": []
+      }
+    },
+    "759": {
+      "aliases": {
+        "include": [
+          "夏サンディア"
+        ],
+        "exclude": []
+      }
+    },
+    "761": {
+      "aliases": {
+        "include": [
+          "精霊（ガンドロス）"
+        ],
+        "exclude": []
+      }
+    },
+    "764": {
+      "aliases": {
+        "include": [
+          "精霊（ダイナザウルス）"
+        ],
+        "exclude": []
+      }
+    },
+    "770": {
+      "aliases": {
+        "include": [
+          "精霊（花咲かじいさん）"
+        ],
+        "exclude": []
+      }
+    },
+    "772": {
+      "aliases": {
+        "include": [
+          "ハロウィンソドム"
+        ],
+        "exclude": []
+      }
+    },
+    "775": {
+      "aliases": {
+        "include": [
+          "精霊（アクセル）"
+        ],
+        "exclude": []
+      }
+    },
+    "777": {
+      "aliases": {
+        "include": [
+          "冬成田甲斐"
+        ],
+        "exclude": []
+      }
+    },
+    "779": {
+      "aliases": {
+        "include": [
+          "白ルナーシャ",
+          "白ルーナ"
+        ],
+        "exclude": []
+      }
+    },
+    "782": {
+      "aliases": {
+        "include": [
+          "精霊（マモルガ）"
+        ],
+        "exclude": []
+      }
+    },
+    "786": {
+      "aliases": {
+        "include": [
+          "ホワイトデーキャットマン"
+        ],
+        "exclude": []
+      }
+    },
+    "787": {
+      "aliases": {
+        "include": [
+          "黒ルナーシャ",
+          "黒ルーナ"
+        ],
+        "exclude": []
+      }
+    },
+    "788": {
+      "aliases": {
+        "include": [
+          "急診貓",
+          "驚喜急診貓"
+        ],
+        "exclude": []
+      }
+    },
+    "800": {
+      "aliases": {
+        "include": [
+          "精霊（ランチャーズ）"
+        ],
+        "exclude": []
+      }
+    },
+    "802": {
+      "aliases": {
+        "include": [
+          "精霊（ニュトーン）"
+        ],
+        "exclude": []
+      }
+    },
+    "810": {
+      "aliases": {
+        "include": [
+          "野獣先輩",
+          "黒トリクシー",
+          "黒人"
+        ],
+        "exclude": []
+      }
+    },
+    "812": {
+      "aliases": {
+        "include": [
+          "精霊（スカンダ）"
+        ],
+        "exclude": []
+      }
+    },
+    "816": {
+      "aliases": {
+        "include": [
+          "精霊（カヲル）"
+        ],
+        "exclude": []
+      }
+    },
+    "818": {
+      "aliases": {
+        "include": [
+          "精霊（コモリ）"
+        ],
+        "exclude": []
+      }
+    },
+    "820": {
+      "aliases": {
+        "include": [
+          "シーペガ"
+        ],
+        "exclude": []
+      }
+    },
+    "821": {
+      "aliases": {
+        "include": [
+          "精霊（シーサイドペガサ）"
+        ],
+        "exclude": []
+      }
+    },
+    "825": {
+      "aliases": {
+        "include": [
+          "精霊（シドミ）"
+        ],
+        "exclude": []
+      }
+    },
+    "837": {
+      "aliases": {
+        "include": [
+          "白ルーノス"
+        ],
+        "exclude": []
+      }
+    },
+    "838": {
+      "aliases": {
+        "include": [
+          "精霊（ルーノ）"
+        ],
+        "exclude": []
+      }
+    },
+    "839": {
+      "aliases": {
+        "include": [
+          "精霊（ルーノス）"
+        ],
+        "exclude": []
+      }
+    },
+    "841": {
+      "aliases": {
+        "include": [
+          "竈門禰豆子",
+          "竈門禰豆子CC"
+        ],
+        "exclude": []
+      }
+    },
+    "846": {
+      "aliases": {
+        "include": [
+          "煉獄杏寿郎",
+          "煉獄杏寿郎CC"
+        ],
+        "exclude": []
+      }
+    },
+    "849": {
+      "aliases": {
+        "include": [
+          "ネコ禰豆子",
+          "ネコ禰豆子CC"
+        ],
+        "exclude": []
+      }
+    },
+    "855": {
+      "aliases": {
+        "include": [
+          "精霊（ダーヴィン）"
+        ],
+        "exclude": []
+      }
+    },
+    "859": {
+      "aliases": {
+        "include": [
+          "黒ルーノス"
+        ],
+        "exclude": []
+      }
+    },
+    "860": {
+      "aliases": {
+        "include": [
+          "精霊（ペガサ第三形態）",
+          "精霊（黒ルーノス）"
+        ],
+        "exclude": []
+      }
+    },
+    "871": {
+      "aliases": {
+        "include": [
+          "アダルトザリガニネコ"
+        ],
+        "exclude": []
+      }
+    },
+    "872": {
+      "aliases": {
+        "include": [
+          "ジャングルハンターCC"
+        ],
+        "exclude": []
+      }
+    },
+    "873": {
+      "aliases": {
+        "include": [
+          "黒こねこ"
+        ],
+        "exclude": []
+      }
+    }
+  }
 }
