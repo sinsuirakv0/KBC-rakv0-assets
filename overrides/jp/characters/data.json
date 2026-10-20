@@ -1,0 +1,338 @@
+﻿{
+  "schemaVersion": 1,
+  "reviewedVersion": "15.7.1",
+  "sources": {
+    "ybc": {
+      "url": "https://ybcecho.vercel.app/l_unit.html",
+      "checkedAt": "2026-10-13"
+    },
+    "history": {
+      "url": "https://wikiwiki.jp/bccharadata/%E3%81%AE%E3%81%B9%E3%81%AB%E3%82%83%E3%82%93",
+      "checkedAt": "2026-10-13"
+    }
+  },
+  "units": {
+    "139": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "ネコンドー"
+        },
+        {
+          "name": "ネコンドーＨＧ"
+        },
+        {
+          "name": "ネコンドーＳＰ"
+        }
+      ]
+    },
+    "155": {
+      "source": "history",
+      "kind": "retired",
+      "note": "削除済みキャラ。表示名・数値は現行データを使用。",
+      "forms": [
+        {
+          "name": "のべにゃん"
+        },
+        {
+          "name": "とばにゃん"
+        }
+      ],
+      "useNativeNames": true
+    },
+    "182": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "CuckooCrew12"
+        },
+        {
+          "name": "CuckooCrew12+1"
+        }
+      ]
+    },
+    "202": {
+      "source": "ybc",
+      "kind": "normal",
+      "forms": [
+        {
+          "name": "ネコ小籠包"
+        },
+        {
+          "name": "ネコ大籠包"
+        }
+      ]
+    },
+    "285": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "狂乱の小籠包にゃんこ"
+        },
+        {
+          "name": "狂乱の大籠包にゃんこ"
+        }
+      ]
+    },
+    "320": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "三原慧悟"
+        },
+        {
+          "name": "一二三～原偶像貓"
+        },
+        {
+          "name": "偶像三原＆貓咪"
+        }
+      ]
+    },
+    "353": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "チョコレート"
+        },
+        {
+          "name": "チョコレートとネコ"
+        },
+        {
+          "name": "チョコレートにゃんこ"
+        }
+      ]
+    },
+    "432": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "ベタックマ"
+        },
+        {
+          "name": "ブラックベタックマ"
+        }
+      ]
+    },
+    "433": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "ベタックマ（ネコ）"
+        },
+        {
+          "name": "殺意ベタックマ（ネコ）"
+        }
+      ]
+    },
+    "465": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "majimeow＆旅行ツアー"
+        },
+        {
+          "name": "majimeow＆台湾ツアー"
+        }
+      ]
+    },
+    "492": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "HAPPI"
+        },
+        {
+          "name": "HAPPIとmajimeow"
+        },
+        {
+          "name": "HAPPIとmajimeowとネコ"
+        }
+      ]
+    },
+    "497": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "シャクレルネコ"
+        },
+        {
+          "name": "シャクレルネコビルダー"
+        }
+      ]
+    },
+    "498": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "シャクレルライオン"
+        },
+        {
+          "name": "シャクレルライオンCC"
+        }
+      ]
+    },
+    "499": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "シャクレルトラ"
+        },
+        {
+          "name": "シャクレルトラCC"
+        }
+      ]
+    },
+    "500": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "シャクレルパンダ"
+        },
+        {
+          "name": "シャクレルパンダCC"
+        }
+      ]
+    },
+    "740": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "ゴミ箱ネコ"
+        },
+        {
+          "name": "ミミックネコ"
+        }
+      ]
+    },
+    "741": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "染香綺狐 ‧ 妲己"
+        },
+        {
+          "name": "染香綺狐 ‧ 妲己とネコ"
+        }
+      ]
+    },
+    "742": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "莫莉安娜貓"
+        },
+        {
+          "name": "一曲傾心・莫莉安娜貓"
+        }
+      ]
+    },
+    "743": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "マッドヘッド"
+        },
+        {
+          "name": "マッドヘッドネコ"
+        }
+      ]
+    },
+    "744": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "貓公爵 ‧ 費利克斯貓"
+        },
+        {
+          "name": "傭兵貓團長 ‧ 費利克斯貓"
+        }
+      ]
+    },
+    "745": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "ダディネコ"
+        },
+        {
+          "name": "バースデーダディネコ"
+        }
+      ]
+    },
+    "788": {
+      "source": "ybc",
+      "kind": "overseas",
+      "forms": [
+        {
+          "name": "상자 고양이"
+        },
+        {
+          "name": "깜짝상자 고양이"
+        }
+      ]
+    }
+  },
+  "motionForms": {
+    "741": [
+      "f",
+      "c"
+    ],
+    "742": [
+      "f",
+      "c"
+    ],
+    "743": [
+      "f",
+      "c"
+    ],
+    "744": [
+      "f",
+      "c"
+    ],
+    "745": [
+      "f",
+      "c"
+    ]
+  },
+  "iconForms": {
+    "741": [
+      "f",
+      "c"
+    ],
+    "742": [
+      "f",
+      "c"
+    ],
+    "743": [
+      "f",
+      "c"
+    ],
+    "744": [
+      "f",
+      "c"
+    ],
+    "745": [
+      "c",
+      "f"
+    ]
+  }
+}
