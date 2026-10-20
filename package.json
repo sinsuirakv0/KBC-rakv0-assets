@@ -6,14 +6,13 @@
     "node": ">=20"
   },
   "scripts": {
-    "build:sitedata": "node scripts/build-sitedata.mjs",
-    "build:explorer": "node scripts/build-explorer-index.mjs",
-    "verify:git-payloads": "node scripts/verify-git-payloads.mjs",
-    "repair:stage-git-payloads": "node scripts/stage-canonical-payloads.mjs",
-    "verify:apks": "node scripts/verify-apk-ledger.mjs",
-    "verify:sitedata": "node scripts/verify-sitedata.mjs",
-    "verify:explorer": "node scripts/verify-explorer-index.mjs",
-    "test": "node --test \"tests/*.test.mjs\"",
-    "check": "npm run verify:git-payloads && npm run verify:apks && npm run verify:sitedata && npm run verify:explorer && npm test"
+    "build": "node scripts/data.mjs build",
+    "verify": "node scripts/data.mjs verify",
+    "prune:generated": "node scripts/data.mjs prune",
+    "edit:character-aliases": "node scripts/edit-character-aliases.mjs",
+    "build:character-aliases": "node scripts/update-character-aliases.mjs",
+    "publish:character-aliases": "node scripts/publish-character-aliases.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm test && npm run verify"
   }
 }

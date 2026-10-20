@@ -3,3 +3,6 @@ jp/Local/** -text
 jp/character-image-overrides/** -text
 jp/server/** -text
 jp/sitedata/** -text
+overrides/** -text
+generated/** -text
+metadata/** -text

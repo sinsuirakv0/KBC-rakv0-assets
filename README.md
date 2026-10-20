@@ -1,28 +1,17 @@
-﻿# KBC-rakv0-assets
+﻿# KBC Assets
 
-にゃんこ大戦争JP版の復号済み生データと、サイト配信用の確定データを管理するリポジトリです。旧来の `units/`、`enemies/`、`resources/` などの分類済み実体は置かず、実データは `jp/sitedata/asset-index.json` で管理します。旧パス互換用JSONは別途、利用側の要件に合わせて作成します。
+本家由来データ、手動補完、再生成できる索引、版メタデータを分離して保存する。
 
-## ディレクトリ
+- `jp/Local/<datasetId>/`：署名検証済みAPKから復号した9群
+- `jp/server/`：本家サーバー由来データ
+- `overrides/jp/`：手動別称・補完表示名・画像・モーション
+- `generated/jp/datasets/<buildId>/`：採用元マップ・キャラ検索・Explorer
+- `metadata/jp/current.json`：検証済み最新版への参照
 
-- `jp/Local/<compactVersion>/`: 最新付近のAPK由来生データ。既定で最大4版
-- `jp/Local/index.json`: 展開版・アーカイブ版・非互換版の台帳と容量ガード
-- `jp/version.json`: 現在確定版のpackage/version、merged APK・signer SHA-256、取得元
-- `jp/server/`: 移動済みserver pack群
-- `jp/sitedata/`: 台帳の最新確定版とserver群を統合したサイト配信用データ
-- `scripts/`: build、台帳検証、sitedata検証
-- `tests/`: Node.js組み込みtest runnerのテスト
+設計と操作は [docs/README.md](docs/README.md)、配置と保存方式の判断は [docs/data-platform.md](docs/data-platform.md)。
 
-詳細な契約、競合規則、履歴版の受け入れ手順は [docs/raw-layout.md](docs/raw-layout.md) を参照してください。
+`npm run build` で保存済み現在版を再生成、`npm run verify` で原本・生成物・採用元を独立検証する。エンジンは `KBC_DATA_ENGINE` またはPATH上の `kbc-data` を使用する。ローカル開発では隣接battlecats-apkのreleaseビルドも利用する。
 
-## コマンド
+`npm run prune:generated -- --keep 2` は削除候補の表示だけを行い、`--apply` を追加した場合に古い生成物を削除する。現行buildと原本は削除しない。過去版再生成は対応するinventoryとraw、同じServer・overrideがあるGit commitを指定して行う。
 
-Node.js 20以上を使用します。
-
-```powershell
-npm test
-npm run verify:apks
-npm run build:sitedata
-npm run verify:sitedata
-```
-
-`build:sitedata` は `jp/Local/index.json` の `latestConfirmed.compactVersion` が指す1版だけを基底にし、`jp/server/` を世代順に上書きして `jp/sitedata/` を再生成します。手作業で `sitedata` を編集しないでください。
+生成物は手動編集せず、手動変更は必ずoverridesへ記録する。HTTP利用時はcurrent・索引・実ファイルを一つのGit commit SHAへ固定する。
