@@ -12,7 +12,7 @@ export function verifyBytes(bytes, expected) {
   return bytes;
 }
 
-export async function openDataset({ ref = 'main', region = 'jp', repository = assetRepository, read, fetchImpl = fetch } = {}) {
+export async function openDataset({ ref = 'main', region = 'jp', repository = assetRepository, read, readAssetFile, fetchImpl = fetch } = {}) {
   if (!['jp', 'en', 'kr', 'tw'].includes(region)) throw Error('Unknown region');
   let revision = ref;
   if (!/^[a-f0-9]{40}$/.test(revision)) {
@@ -54,7 +54,7 @@ export async function openDataset({ ref = 'main', region = 'jp', repository = as
   const readAsset = async name => {
     const descriptor = selected.files[safePath(name)];
     if (!descriptor) throw Error(`Asset not selected: ${name}`);
-    return verifyBytes(await readFile(descriptor.path, revision), descriptor);
+    return verifyBytes(await (readAssetFile || readFile)(descriptor.path, revision), descriptor);
   };
   const readInput = async name => {
     const descriptor = manifest.inputs?.[name];

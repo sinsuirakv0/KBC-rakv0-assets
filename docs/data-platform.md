@@ -36,3 +36,9 @@ GitHubはリポジトリ1GB未満を理想、5GB未満を強く推奨し、Relea
 ## 移行時の保全
 
 既存の未コミット別称・補完画像を保持する。旧Local版は保存元APKの再取得可否が版ごとに異なるため、一括削除しない。旧生成物を削除する前に、採用元マップから必要ファイルへ到達できることを確認する。元APK、独自補完、認証設定を生成物と同じ削除対象へ入れない。
+
+## 公開検証 2026-10-21
+
+134補完を含む通常経路のActionsでRelease保存・生成・再生成一致・破損/欠損拒否・Git pushを確認した。Release保存後の意図的停止ではbranch参照は正常版のまま。結果と復旧手順の正本はprivate battlecats-apk/docs/operations.md。mainはまだ切り替えていない。
+
+過去Server/補完は当時のGit commitから読む。最新commitで別buildのServerを選ばず、current buildを使う。採用元マップのsourceKindと、manifest.inputsがhash固定する補完出典を外部ツールにも引き渡す。

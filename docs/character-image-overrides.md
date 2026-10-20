@@ -1,11 +1,15 @@
-﻿# キャラ画像補完
+﻿# v2での参照先
+
+正本はoverrides/jp/。生成先はmetadata/jp/current.jsonのgeneratedPathから解決する。旧sitedata用スクリプトの記述は移行前の記録であり、再生成はscripts/data.mjsを使う。
+
+# キャラ画像補完
 
 ## 目的
 
-`jp/character-image-overrides/` は、JP版APKとserver packに存在しないキャラ画像を外部データから補完する正本である。`jp/sitedata/` の再生成時に毎回読み込み、同じ出力パスのLocal・server候補より優先する。
+`overrides/jp/assets/` は、JP版APKとserver packに存在しないキャラ画像を外部データから補完する正本である。`jp/sitedata/` の再生成時に毎回読み込み、同じ出力パスのLocal・server候補より優先する。
 
 ```text
-jp/character-image-overrides/
+overrides/jp/assets/
 ├─ ImageData/
 ├─ Number/
 └─ Unit/
@@ -34,6 +38,10 @@ jp/character-image-overrides/
 
 各stemには、`Number/<stem>.png` と、`ImageData/<stem>.imgcut`、`<stem>.mamodel`、`<stem>00.maanim` から `<stem>03.maanim` を収録する。
 
+2026年10月13日、同じ取得先からID741〜745の第1・第2形態（741_f〜745_c）の10形態・70ファイルを追加した。索引だけでは空の定義を検出できないため、実内容を確認した。現在の補完モーションは計14形態。Web側へ同梱する10形態はcharacter-data-overrides.jsonのmotionFormsで明示する。詳細は[名称・形態の補完資料](character-data-overrides.md)。
+
+同日、同じIDの10枚の通常アイコンも1×1の仮画像であることを確認してUnitLocalから追加した。通常アイコンの正本は合計36枚。Web同梱する10枚をiconFormsで明示する。
+
 現行索引上で不足しているID `155`、`202`、`285`、`432`、`433`、`497`、`498`、`499`、`500` の第3形態画像は、上記取得元にも存在しない。404レスポンスや推測生成物は保存しない。
 
 ## build時の優先規則
@@ -46,7 +54,7 @@ jp/character-image-overrides/
 
 1. 既存の`jp/sitedata`と比較し、不足しているファイルだけを特定する。
 2. HTTP 200、PNG署名、`imgcut`内のPNG名、`mamodel`・`maanim`のヘッダーを確認する。
-3. 対応する`jp/character-image-overrides/`配下へ配置する。
+3. 対応する`overrides/jp/assets/`配下へ配置する。
 4. `npm run build:sitedata`、`npm run verify:sitedata`、`npm test`を実行する。
 
 取得元に同名ファイルが存在しても、既存補完を自動更新しない。差し替える場合は内容を比較し、意図した更新としてレビューする。
