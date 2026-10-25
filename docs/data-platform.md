@@ -42,3 +42,11 @@ GitHubはリポジトリ1GB未満を理想、5GB未満を強く推奨し、Relea
 134補完を含む通常経路のActionsでRelease保存・生成・再生成一致・破損/欠損拒否・Git pushを確認した。Release保存後の意図的停止ではbranch参照は正常版のまま。結果と復旧手順の正本はprivate battlecats-apk/docs/operations.md。2026-10-21、ユーザー承認に基づきmainへ反映する。旧mainに追加されていた150701/150702の原本はバイトを変えず保持し、検証済みのnative原本・補完・生成物・currentはそのまま維持する。
 
 過去Server/補完は当時のGit commitから読む。最新commitで別buildのServerを選ばず、current buildを使う。採用元マップのsourceKindと、manifest.inputsがhash固定する補完出典を外部ツールにも引き渡す。
+
+## 元APKのassets全体（2026-10-25）
+
+jp/Local/<datasetId>/assets/に、元APKのassets/全体を無加工で保存する。.list/.pack以外のネストしたファイルも含む。復号した9群と同じ版のディレクトリに置く。inventory.filesではsourcePack=assets、採用元マップでは論理パスassets/<name>で参照する。proof.assetFilesに全原本のsize/SHA256、proof.selectedEntriesに所属APKを記録する。
+
+15.7.2の公開commit b2aae318a4e5413c01f2b6e92ba66b185ede839eでは236ファイル、139,573,796bytes（うち.list/.packは18ファイル）。GitHub Actionsで署名検証、ZIPからの独立全件照合、欠損時拒否、再生成一致、Release保全とGit公開に成功した。engine 0.4.2、buildId jp-1507021-2c1ac20b9c424404-29ff28f2cb1be3b1。
+
+既存の9群の復号済み原本は変更せず追加した。過去commitや元APK Releaseは削除していない。実行記録: https://github.com/sinsuirakv0/battlecats-apk/actions/runs/40149957749
