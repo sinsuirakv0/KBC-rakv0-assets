@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* リセットスタイルシート */
+
+html,body {
+  -webkit-text-size-adjust: none;
+}
+
+
+*{
+	margin:0;
+	padding:0;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+img{
+	border:none;
+	max-width: 100%;
+    height: auto;
+	vertical-align: bottom;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+table th{
+	font-weight:normal;
+	vertical-align:top;
+}
+th td{
+	vertical-align:top;
+}
+ol,ul{
+	list-style:none;
+}
+body{
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	line-height:1.5;
+	font-size:13px;
+	text-align:center;
+	/*background: url(../img/common/bg.png);*/
+}
+table{
+	font-size:1em;
+}
+h1,h2,h3,h4,h5{
+	font-size:100%;
+	font-weight:normal;
+}
+a{
+	outline:none;
+	text-decoration:none;
+}
+
+address{
+  font-style:normal;
+}
+
+span.fw{
+	font-weight: bold;
+}
+
+/* ---------------------------------------*/
+/* table_style */
+/* ---------------------------------------*/
+.table_style {
+	text-align: center;
+	width: 95%;
+	border: solid #ccc 1px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 auto 20px;
+}
+
+.table_style th {
+	text-align: left;
+	padding: 8px 0 8px 8px;
+	background: #f1f1f1;
+	border-right: solid #ccc 1px;
+	border-bottom: solid #ccc 1px;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+.table_style td {
+	text-align: left;
+	padding: 8px;
+	border-right: solid #ccc 1px;
+	border-bottom: solid #ccc 1px;
+}
+
+.table_style td.orange {
+	background: #fef3e8;
+}
+.clearfix:after {  
+  content: ".";   
+  display: block;   
+  height: 0;   
+  clear: both;   
+  visibility: hidden;  
+}  
+  
+.clearfix { display: inline-table; }  
+  
+/* Hides from IE-mac \*/  
+* html .clearfix { height: 1%; }  
+.clearfix { display: block; }  
+/* End hide from IE-mac */
+
+cf{
+	zoom: 1;
+}
