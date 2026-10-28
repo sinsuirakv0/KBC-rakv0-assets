@@ -13,6 +13,7 @@ export function verifyBytes(bytes, expected) {
 }
 
 export function datasetPaths(current,region=current.sourceRegion){
+  if(current.storageVersion!=null&&![1,2].includes(current.storageVersion))throw Error('Unknown storage layout');
   const numeric=current.storageVersion===2;
   if(numeric&&(!Number.isSafeInteger(current.versionCode)||current.versionCode<=0))throw Error('Invalid storage versionCode');
   const version=numeric?String(current.versionCode):current.datasetId;
@@ -67,7 +68,8 @@ export async function openDataset({ ref = 'main', region = 'jp', repository = as
   };
   const readInput = async name => {
     const descriptor = manifest.inputs?.[name];
-    if (!descriptor || descriptor.path !== `overrides/${region}/characters/${name}`) throw Error('Missing input descriptor');
+    const expectedPath=name==='music-sources.json'?`overrides/${region}/${name}`:`overrides/${region}/characters/${name}`;
+    if (!descriptor || descriptor.path !== expectedPath) throw Error('Missing input descriptor');
     return parseJson(verifyBytes(await readFile(descriptor.path, revision), descriptor));
   };
   return { revision, current, manifest, files: selected.files, characters, rawBase, readAsset, readInput };
