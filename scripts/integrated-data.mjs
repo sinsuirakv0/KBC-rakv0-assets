@@ -1,4 +1,4 @@
-import {copyFile,mkdir,rename,rm} from 'node:fs/promises';
+﻿import {copyFile,mkdir,rename,rm} from 'node:fs/promises';
 import path from 'node:path';
 import {files,hashFile,parallel,readJson,within,writeJson} from './lib/data-files.mjs';
 
