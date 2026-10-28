@@ -33,3 +33,7 @@ publish-integrated.ymlでは `gh release view --json databaseId` で下書きの
 [source Actions 40780859612](https://github.com/sinsuirakv0/battlecats-apk/actions/runs/40780859612) で15.7.4を実際に再取得し、同じbuildIdとIntegrated-data全54,338ファイルの一致を確認した。移行済みの版には再移行処理を行わない。変更されたのは取得日時を含むproofだけだった。
 
 この実行中にassetsのZIPワークフロー修正を先にpushしたため、sourceからの最終pushはnon-fast-forwardで拒否された。正常なcurrent・公開済みReleaseは維持され、並行更新を上書きしなかった。競合時は変更を強制pushせず、修正を確定してから通常Publishを再実行する。
+
+修正確定後の [source Actions 40781548106](https://github.com/sinsuirakv0/battlecats-apk/actions/runs/40781548106) は通常公開まで成功した。公開commitは `877db31665dc12419df3cf0b07f016b3d1747a9b`。APK再取得22秒、同一buildId・全生成物一致、不正/欠損拒否、APK assets全236ファイルと統合物全件照合、private Release照合、Git pushを再確認した。差分は `1507040.proof.json` の取得記録1ファイルだけで、版フォルダや生成物は増えなかった。
+
+配布内容が変わらないためZIPの再生成は起動せず、既存の検証済みReleaseを維持した。音源の採用元は最新APKが27本、保全正本が172本。保全側のsnd001.ogg、最新APK側のsnd195.oggもSDK経由で取得・hash検証した。
