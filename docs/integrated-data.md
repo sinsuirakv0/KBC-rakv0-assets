@@ -47,3 +47,4 @@ manifest.jsonのheaderにversionCode/versionName/datasetId/buildId、revisionに
 同じ版の再実行でも新しい配布Releaseを作り、既存配布を壊さずlatestを切り替える。tagの末尾はActions実行番号で、利用側が固定する必要はない。生成失敗時は前のReleaseを維持する。upload失敗のdraftは公開されない。より新しいcurrentが先に公開された場合は古い候補をlatestへ昇格しない。
 
 手動再生成はsource側のPublishをforce_download=trueで実行する。ZIPのみの再生成は本repoのPublish Integrated-data ZIP downloadsを手動実行する。別称編集の既存build/publishも同じIntegrated-data生成処理を使う。
+実環境での検証結果・障害原因と修正は [2026-10-29検証記録](integrated-data-validation-20261029.md) を参照する。
