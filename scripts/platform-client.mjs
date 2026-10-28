@@ -12,6 +12,14 @@ export function verifyBytes(bytes, expected) {
   return bytes;
 }
 
+export function datasetPaths(current,region=current.sourceRegion){
+  const numeric=current.storageVersion===2;
+  if(numeric&&(!Number.isSafeInteger(current.versionCode)||current.versionCode<=0))throw Error('Invalid storage versionCode');
+  const version=numeric?String(current.versionCode):current.datasetId;
+  safePath(version);if(version.includes('/'))throw Error('Invalid version path');
+  return {rawPath:`${region}/Local/${version}`,inventoryPath:`metadata/${region}/versions/${version}.inventory.json`,proofPath:`metadata/${region}/versions/${version}.proof.json`,generatedPath:`generated/${region}/datasets/${numeric?version:current.buildId}`};
+}
+
 export async function openDataset({ ref = 'main', region = 'jp', repository = assetRepository, read, readAssetFile, fetchImpl = fetch } = {}) {
   if (!['jp', 'en', 'kr', 'tw'].includes(region)) throw Error('Unknown region');
   let revision = ref;
@@ -29,7 +37,8 @@ export async function openDataset({ ref = 'main', region = 'jp', repository = as
   });
   const current = parseJson(await readFile(`metadata/${region}/current.json`, revision));
   const { datasetId, buildId, generatedPath } = current;
-  if (current.schemaVersion !== 1 || current.status !== 'verified' || current.sourceRegion !== region || generatedPath !== `generated/${region}/datasets/${buildId}`) throw Error('Invalid current');
+  const paths=datasetPaths(current,region);
+  if (current.schemaVersion !== 1 || current.status !== 'verified' || current.sourceRegion !== region || generatedPath !== paths.generatedPath) throw Error('Invalid current');
   safePath(datasetId); safePath(buildId);
   if (datasetId.includes('/') || buildId.includes('/')) throw Error('Invalid dataset identity');
   const bytes = await readFile(`${generatedPath}/manifest.json`, revision);
@@ -46,7 +55,7 @@ export async function openDataset({ ref = 'main', region = 'jp', repository = as
   };
   const selected = await readArtifact('indexes/assets.json');
   const characters = await readArtifact('site/characters.json');
-  const prefixes = [`${region}/Local/${datasetId}/`, `${region}/server/`, `overrides/${region}/assets/`];
+  const prefixes = [paths.rawPath+'/', `${region}/server/`, `overrides/${region}/assets/`, `overrides/${region}/music/`];
   for (const [name, file] of Object.entries(selected.files)) {
     safePath(name); safePath(file.path);
     if (!prefixes.some(prefix => file.path.startsWith(prefix))) throw Error('Asset outside dataset');

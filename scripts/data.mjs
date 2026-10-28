@@ -1,3 +1,4 @@
+﻿import {datasetPaths} from "./platform-client.mjs";
 import { spawn, spawnSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
@@ -8,8 +9,8 @@ export const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)
 export async function readJson(file) { return JSON.parse((await readFile(file, "utf8")).replace(/^\uFEFF/, "")); }
 export async function readDataContext(root = repoRoot) {
   const current = await readJson(path.join(root, "metadata/jp/current.json"));
-  if (current.status !== "verified" || current.sourceRegion !== "jp" || !/^[a-zA-Z0-9._-]+$/.test(current.datasetId) || current.generatedPath !== `generated/jp/datasets/${current.buildId}`) throw Error("Invalid current dataset");
-  return { current, characterIndexPath: path.join(root, current.generatedPath, "site/characters.json"), inventoryPath: path.join(root, `metadata/jp/versions/${current.datasetId}.inventory.json`), raw: `jp/Local/${current.datasetId}` };
+  if (current.status !== "verified" || current.sourceRegion !== "jp" || !/^[a-zA-Z0-9._-]+$/.test(current.datasetId) || current.generatedPath !== datasetPaths(current).generatedPath) throw Error("Invalid current dataset");
+  return { current, characterIndexPath: path.join(root, current.generatedPath, "site/characters.json"), inventoryPath: path.join(root, datasetPaths(current).inventoryPath), raw: datasetPaths(current).rawPath };
 }
 export async function runEngine(args) {
   const local = path.resolve(repoRoot, "../battlecats-apk/engine/target/release", process.platform === "win32" ? "kbc-data.exe" : "kbc-data");
@@ -28,6 +29,7 @@ export async function runEngine(args) {
 export async function buildCurrent(root = repoRoot) {
   const { inventoryPath, raw } = await readDataContext(root);
   await runEngine(["build", "--root", root, "--inventory", inventoryPath, "--raw", raw, "--publish"]);
+  await new Promise((resolve,reject)=>{const child=spawn(process.execPath,[path.join(repoRoot,"scripts/integrated-data.mjs"),"build",root],{stdio:"inherit",windowsHide:true});child.on("error",reject);child.on("exit",code=>code===0?resolve():reject(Error("Integrated-data build failed")));});
   return readDataContext(root);
 }
 async function main() {

@@ -6,3 +6,5 @@ jp/sitedata/** -text
 overrides/** -text
 generated/** -text
 metadata/** -text
+
+jp/Integrated-data/** -text

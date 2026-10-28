@@ -1,22 +1,24 @@
-﻿# データ基盤v2
+﻿現行の配置・統合音源・ZIP自動配布は[integrated-data.md](integrated-data.md)を参照する。
+
+# データ基盤v2
 
 ## 配置
 
 ```text
-jp/Local/<datasetId>/<9群>/       本家の復号済みファイル
+jp/Local/<versionCode>/<9群>/       本家の復号済みファイル
 jp/server/<server群>/            本家サーバー由来ファイル
 overrides/jp/assets/<分類>/       手動補完画像・モーション
 overrides/jp/characters/          aliases.json / data.json
-generated/jp/datasets/<buildId>/  site / indexes / explorer / manifest.json
+generated/jp/datasets/<versionCode>/  site / indexes / explorer / manifest.json
 metadata/jp/current.json         検証済み最新版への唯一のポインタ
 metadata/jp/versions/             元split proof / 復号inventory
 ```
 
-`jp/`へ生成JSON・手動補完を置かない。`generated/`は手動編集しない。変更は必ずoverridesへ記録し、エンジンで再生成する。関数・呼出関係の正本はbattlecats-apkの `engine/docs/README.md`。
+`jp/Integrated-data/`には索引から生成した統合実体を置く。手動補完はoverridesへ置く。`generated/`は手動編集しない。変更は必ずoverridesへ記録し、エンジンで再生成する。関数・呼出関係の正本はbattlecats-apkの `engine/docs/README.md`。
 
-Localは復号時inventoryを共有し、Serverと補完は一度の走査で一覧・hashを共通化する。採用優先度はLocal、Server、A～Z Server、手動補完の順。同順位・異内容はエラー。ファイルを統合先へコピーせず、`indexes/assets.json`のlogical path → 元pathを利用する。
+Localは復号時inventoryを共有し、Serverと補完は一度の走査で一覧・hashを共通化する。採用優先度はLocal、Server、A～Z Server、手動補完の順。同順位・異内容はエラー。`indexes/assets.json`のlogical path → 元pathを正本の参照とし、そこから最新の`jp/Integrated-data/`実体を生成する。
 
-生成物は共通のdatasetId・buildIdを持つ。rawの版をversionNameから推測せず、署名検証済みmanifestのversionCodeを使う。同じversionCodeに異なる元APKが来た場合は上書きしない。currentの切替前に復号inventoryの独立再読込検証を行う。
+生成物は共通のdatasetId・buildIdを持つ。rawの版をversionNameから推測せず、署名検証済みmanifestのversionCodeを使う。同じversionCodeは検証した候補で上書きする。出典のdatasetId/buildIdとGit commitは区別し、過去版の参照はcommitへ固定する。currentの切替前に復号inventoryの独立再読込検証を行う。
 
 ## 保存方式の判断
 
@@ -45,7 +47,7 @@ GitHubはリポジトリ1GB未満を理想、5GB未満を強く推奨し、Relea
 
 ## 元APKのassets全体（2026-10-25）
 
-jp/Local/<datasetId>/assets/に、元APKのassets/全体を無加工で保存する。.list/.pack以外のネストしたファイルも含む。復号した9群と同じ版のディレクトリに置く。inventory.filesではsourcePack=assets、採用元マップでは論理パスassets/<name>で参照する。proof.assetFilesに全原本のsize/SHA256、proof.selectedEntriesに所属APKを記録する。
+jp/Local/<versionCode>/assets/に、元APKのassets/全体を無加工で保存する。.list/.pack以外のネストしたファイルも含む。復号した9群と同じ版のディレクトリに置く。inventory.filesではsourcePack=assets、採用元マップでは論理パスassets/<name>で参照する。proof.assetFilesに全原本のsize/SHA256、proof.selectedEntriesに所属APKを記録する。
 
 15.7.2の公開commit b2aae318a4e5413c01f2b6e92ba66b185ede839eでは236ファイル、139,573,796bytes（うち.list/.packは18ファイル）。GitHub Actionsで署名検証、ZIPからの独立全件照合、欠損時拒否、再生成一致、Release保全とGit公開に成功した。engine 0.4.2、buildId jp-1507021-2c1ac20b9c424404-29ff28f2cb1be3b1。
 

@@ -1,0 +1,76 @@
+name: Publish Integrated-data ZIP downloads
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - jp/Integrated-data/**
+      - metadata/jp/integrated.json
+      - metadata/jp/current.json
+      - scripts/package-integrated.py
+      - .github/workflows/publish-integrated.yml
+permissions:
+  contents: write
+concurrency:
+  group: integrated-jp-downloads
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /jp/Integrated-data/
+            /metadata/jp/current.json
+            /metadata/jp/integrated.json
+            /scripts/package-integrated.py
+      - name: Check publication inputs
+        id: gate
+        run: |
+          if test -f metadata/jp/integrated.json; then echo ready=true >> "$GITHUB_OUTPUT"; else echo ready=false >> "$GITHUB_OUTPUT"; fi
+      - name: Package and verify each folder
+        if: steps.gate.outputs.ready == 'true'
+        id: package
+        run: |
+          set -euo pipefail
+          version_code="$(node -p 'JSON.parse(require("fs").readFileSync("metadata/jp/current.json","utf8")).versionCode')"
+          tag="integrated-jp-$version_code-$GITHUB_RUN_NUMBER-$GITHUB_RUN_ATTEMPT"
+          output="$RUNNER_TEMP/integrated-zips"
+          python3 scripts/package-integrated.py . "$output" "$GITHUB_SHA" "$GITHUB_REPOSITORY" "$tag"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "output=$output" >> "$GITHUB_OUTPUT"
+      - name: Upload verified draft and promote complete release
+        if: steps.gate.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.package.outputs.tag }}
+          OUTPUT: ${{ steps.package.outputs.output }}
+        run: |
+          set -euo pipefail
+          gh release create "$TAG" --draft --target "$GITHUB_SHA" --title "JP Integrated-data $TAG" --notes 'Verified complete folder archives. Read manifest.json and verify SHA256 before replacing local data.'
+          gh release upload "$TAG" "$OUTPUT"/*.zip "$OUTPUT/manifest.json"
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" > "$RUNNER_TEMP/uploaded-release.json"
+          RELEASE_JSON="$RUNNER_TEMP/uploaded-release.json" node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import {createHash} from 'node:crypto';
+          const release=JSON.parse(fs.readFileSync(process.env.RELEASE_JSON,'utf8'));
+          for(const name of fs.readdirSync(process.env.OUTPUT)){
+            const file=process.env.OUTPUT+'/'+name,hash=createHash('sha256');let size=0;
+            for await(const bytes of fs.createReadStream(file)){size+=bytes.length;hash.update(bytes);}
+            const asset=release.assets.find(asset=>asset.name===name);
+            if(asset?.state!=='uploaded'||asset.size!==size||asset.digest!=='sha256:'+hash.digest('hex'))throw Error('Release upload mismatch: '+name);
+          }
+          JS
+          gh api "repos/$GITHUB_REPOSITORY/contents/metadata/jp/current.json?ref=main" --jq .content | base64 --decode > "$RUNNER_TEMP/latest-current.json"
+          if ! node -e 'const fs=require("fs");process.exit(JSON.parse(fs.readFileSync("metadata/jp/current.json","utf8")).buildId===JSON.parse(fs.readFileSync(process.argv[1],"utf8")).buildId?0:1)' "$RUNNER_TEMP/latest-current.json"; then
+            echo 'Superseded publication retained as draft.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          gh release edit "$TAG" --draft=false --latest
+          echo "Manifest: https://github.com/$GITHUB_REPOSITORY/releases/latest/download/manifest.json" >> "$GITHUB_STEP_SUMMARY"
+          echo "Music: https://github.com/$GITHUB_REPOSITORY/releases/latest/download/music.zip" >> "$GITHUB_STEP_SUMMARY"

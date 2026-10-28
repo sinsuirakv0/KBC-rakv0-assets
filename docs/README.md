@@ -11,3 +11,6 @@
 `npm run edit:character-aliases -- --id 11 --add "Mr. "` で `overrides/jp/characters/aliases.json` を編集する。`npm run build` は現在版の原本と全overrideから新しいbuildIdを作り、検証後にローカルのcurrentを切り替える。生成JSONを直接書き換えない。
 
 `scripts/character-aliases.mjs` が別称の型・重複・存在IDを検証し、`edit-character-aliases.mjs` が編集、`data.mjs` がRustエンジン呼出し、`update-character-aliases.mjs` が再生成を担当する。公開はデータ基盤全体の検証済みcommitで行う。
+
+
+2026-10-29: [Integrated-data・music・自動ZIP配布](integrated-data.md)が現行の保存契約。数字だけの版パスはdatasetPaths()で解決し、ZIPはReleaseのmanifest.jsonから版固定URL・hashを取得する。

@@ -1,4 +1,4 @@
-import { spawn } from "node:child_process";
+﻿import { spawn } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -22,8 +22,8 @@ export async function publishCharacterAliases(options = {}) {
   await runGit(repoRoot, ["symbolic-ref", "--quiet", "--short", "HEAD"]);
   await runGit(repoRoot, ["rev-parse", "--abbrev-ref", "--symbolic-full-name", "@{upstream}"]);
   const {current} = await readDataContext(repoRoot);
-  await runGit(repoRoot,["cat-file","-e",`HEAD:jp/Local/${current.datasetId}`]);
-  await runGit(repoRoot,["diff","--quiet","HEAD","--",`jp/Local/${current.datasetId}`,"jp/server","overrides/jp/assets","overrides/jp/characters/data.json"]);
+  await runGit(repoRoot,["cat-file","-e",`HEAD:jp/Local/${current.versionCode}`]);
+  await runGit(repoRoot,["diff","--quiet","HEAD","--",`jp/Local/${current.versionCode}`,"jp/server","overrides/jp/assets","overrides/jp/characters/data.json"]);
 
   const staged = splitNull((await runGit(repoRoot, [
     "diff",
