@@ -54,7 +54,8 @@ jobs:
           set -euo pipefail
           gh release create "$TAG" --draft --target "$GITHUB_SHA" --title "JP Integrated-data $TAG" --notes 'Verified complete folder archives. Read manifest.json and verify SHA256 before replacing local data.'
           gh release upload "$TAG" "$OUTPUT"/*.zip "$OUTPUT/manifest.json"
-          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" > "$RUNNER_TEMP/uploaded-release.json"
+          release_id="$(gh release view "$TAG" --json databaseId --jq .databaseId)"
+          gh api "repos/$GITHUB_REPOSITORY/releases/$release_id" > "$RUNNER_TEMP/uploaded-release.json"
           RELEASE_JSON="$RUNNER_TEMP/uploaded-release.json" node --input-type=module <<'JS'
           import fs from 'node:fs';
           import {createHash} from 'node:crypto';
