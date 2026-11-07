@@ -16,6 +16,12 @@
 `npm run prune:generated -- --keep 2` は削除候補の表示だけを行い、`--apply` を追加した場合に古い生成物を削除する。現行buildと原本は削除しない。過去版再生成は対応するinventoryとraw、同じServer・overrideがあるGit commitを指定して行う。
 
 生成物は手動編集せず、手動変更は必ずoverridesへ記録する。HTTP利用時はcurrent・索引・実ファイルを一つのGit commit SHAへ固定する。
+
+## JP公開後のネイティブ解析
+
+`notify-native-analysis.yml` はmainの `metadata/jp/current.json` が更新されたとき、そのコミットSHAでKBCSの `native-analysis.yml` を起動する。APK検証済みデータの公開が通知の境界。通知ジョブはKBCSの受付応答で終了し、既存のZIP配布とは独立して進む。
+
+Actions Secret `KBCS_ACTIONS_TOKEN` は `sinsuirakv0/KBCS` だけを対象にした `Actions: write` の専用トークン。手動起動の `check_only=true` で通知の疎通を確認できる。Secret未設定や通知の失敗時は、KBCS側の定期確認で処理される。[GitHubのworkflow dispatch権限](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event)
 Integrated-data・音源・フォルダ別ZIPの自動更新は [現行契約](docs/integrated-data.md)、Actions実行結果は [検証記録](docs/integrated-data-validation-20261029.md) を参照する。アプリ向けの入口は [配布manifest](https://github.com/sinsuirakv0/KBC-rakv0-assets/releases/latest/download/manifest.json)。同じmanifestの版固定URLを使用する。
 
 統合実体の全件検証は `node scripts/integrated-data.mjs verify .`。通常のsource Actionsでは原本・索引・統合実体を全て検証してから公開する。

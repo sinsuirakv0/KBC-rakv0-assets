@@ -1,0 +1,38 @@
+name: Notify KBCS of verified JP publication
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - metadata/jp/current.json
+  workflow_dispatch:
+    inputs:
+      check_only:
+        description: Check the handoff without starting analysis or publication
+        type: boolean
+        default: true
+
+permissions: {}
+
+jobs:
+  notify:
+    if: github.repository == 'sinsuirakv0/KBC-rakv0-assets' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - name: Dispatch the assets commit to KBCS
+        env:
+          GH_TOKEN: ${{ secrets.KBCS_ACTIONS_TOKEN }}
+          CHECK_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.check_only }}
+        shell: bash
+        run: |
+          if [[ -z "$GH_TOKEN" ]]; then
+            echo '::warning::KBCS_ACTIONS_TOKEN is missing. KBCS will use its scheduled source check.'
+            if [[ "$CHECK_ONLY" == true ]]; then exit 1; fi
+            exit 0
+          fi
+          [[ "$GITHUB_SHA" =~ ^[a-f0-9]{40}$ ]]
+          jq -n --arg commit "$GITHUB_SHA" --argjson check "${CHECK_ONLY:-false}" \
+            '{ref: "main", inputs: {assets_commit: $commit, check_only: $check, publish_reference: true}}' \
+            | gh api --method POST repos/sinsuirakv0/KBCS/actions/workflows/native-analysis.yml/dispatches --input -
+          printf 'KBCS dispatch accepted for assets commit `%s`.\n' "$GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
