@@ -1,0 +1,294 @@
+{
+  "MapID": {
+    "39000": {
+      "StageIndex": {
+        "0": {
+          "RuleType": 0,
+          "PageHeadline": "PointRulePageHeadline001",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline001",
+            "PointRuleHeadline002",
+            "PointRuleHeadline003",
+            -1,
+            -1
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation001",
+            "PointRuleExplanation002",
+            -1,
+            -1,
+            -1
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "Parameters": [
+            7,
+            15,
+            2000,
+            17,
+            4500,
+            25,
+            5500,
+            30,
+            7000,
+            0,
+            10000
+          ],
+          "RuleImageLabel": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "1": {
+          "RuleType": 0,
+          "PageHeadline": "PointRulePageHeadline001",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline001",
+            "PointRuleHeadline002",
+            "PointRuleHeadline003",
+            -1,
+            -1
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation001",
+            "PointRuleExplanation002",
+            -1,
+            -1,
+            -1
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "Parameters": [
+            9,
+            17,
+            2000,
+            19,
+            4500,
+            31,
+            5500,
+            37,
+            7000,
+            0,
+            10000
+          ],
+          "RuleImageLabel": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "2": {
+          "RuleType": 0,
+          "PageHeadline": "PointRulePageHeadline001",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline001",
+            "PointRuleHeadline002",
+            "PointRuleHeadline003",
+            -1,
+            -1
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation001",
+            "PointRuleExplanation002",
+            -1,
+            -1,
+            -1
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "Parameters": [
+            10,
+            20,
+            2000,
+            22,
+            4500,
+            37,
+            5500,
+            45,
+            7000,
+            0,
+            10000
+          ],
+          "RuleImageLabel": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "39001": {
+      "StageIndex": {
+        "-1": {
+          "RuleType": -1,
+          "PageHeadline": "PointRulePageHeadline002",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline004",
+            "PointRuleHeadline005",
+            "PointRuleHeadline006",
+            "PointRuleHeadline007",
+            "PointRuleHeadline008"
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation003",
+            "PointRuleExplanation004",
+            "PointRuleExplanation005",
+            "PointRuleExplanation006",
+            "PointRuleExplanation007"
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "RuleImageLabel": [
+            "2026_anniversaryevent_webimage_001.png",
+            -1,
+            -1,
+            "2026_anniversaryevent_webimage_002.png",
+            "2026_anniversaryevent_webimage_003.png",
+            "2026_anniversaryevent_webimage_004.png"
+          ]
+        }
+      }
+    },
+    "39002": {
+      "StageIndex": {
+        "-1": {
+          "RuleType": -1,
+          "PageHeadline": "PointRulePageHeadline002",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline004",
+            "PointRuleHeadline005",
+            "PointRuleHeadline006",
+            "PointRuleHeadline007",
+            "PointRuleHeadline008"
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation003",
+            "PointRuleExplanation004",
+            "PointRuleExplanation005",
+            "PointRuleExplanation006",
+            "PointRuleExplanation007"
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "RuleImageLabel": [
+            "2026_anniversaryevent_webimage_001.png",
+            -1,
+            -1,
+            "2026_anniversaryevent_webimage_002.png",
+            "2026_anniversaryevent_webimage_003.png",
+            "2026_anniversaryevent_webimage_004.png"
+          ]
+        }
+      }
+    },
+    "39003": {
+      "StageIndex": {
+        "-1": {
+          "RuleType": -1,
+          "PageHeadline": "PointRulePageHeadline002",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline004",
+            "PointRuleHeadline005",
+            "PointRuleHeadline006",
+            "PointRuleHeadline007",
+            "PointRuleHeadline008"
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation003",
+            "PointRuleExplanation004",
+            "PointRuleExplanation005",
+            "PointRuleExplanation006",
+            "PointRuleExplanation007"
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "RuleImageLabel": [
+            "2026_anniversaryevent_webimage_001.png",
+            -1,
+            -1,
+            "2026_anniversaryevent_webimage_002.png",
+            "2026_anniversaryevent_webimage_003.png",
+            "2026_anniversaryevent_webimage_004.png"
+          ]
+        }
+      }
+    },
+    "39004": {
+      "StageIndex": {
+        "-1": {
+          "RuleType": -1,
+          "PageHeadline": "PointRulePageHeadline002",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline004",
+            "PointRuleHeadline005",
+            "PointRuleHeadline006",
+            "PointRuleHeadline007",
+            "PointRuleHeadline008"
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation003",
+            "PointRuleExplanation004",
+            "PointRuleExplanation005",
+            "PointRuleExplanation006",
+            "PointRuleExplanation007"
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "RuleImageLabel": [
+            "2026_anniversaryevent_webimage_001.png",
+            -1,
+            -1,
+            "2026_anniversaryevent_webimage_002.png",
+            "2026_anniversaryevent_webimage_003.png",
+            "2026_anniversaryevent_webimage_004.png"
+          ]
+        }
+      }
+    }
+  }
+}
